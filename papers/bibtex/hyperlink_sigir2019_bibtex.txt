@@ -1,0 +1,7 @@
+@inproceedings{lee-sigir2019,
+ author = {Lee, Geon and Kang, Seonggoo and Whang, Joyce Jiyoung},
+ title = {Hyperlink Classification via Structured Graph Embedding},
+ booktitle = {Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+ year = {2019},
+ pages = {1017--1020}
+}

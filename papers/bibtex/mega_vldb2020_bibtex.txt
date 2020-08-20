@@ -1,0 +1,9 @@
+@ARTICLE{whang-pvldb2020, 
+ author={J. J. Whang and R. Du and S. Jung and G. Lee and B. Drake and Q. Liu and S. Kang and H. Park}, 
+ journal={Proceedings of the VLDB Endowment},
+ title={{MEGA}: Multi-View Semi-Supervised Clustering of Hypergraphs}, 
+ year={2020}, 
+ volume={13},
+ number={5},
+ pages={698--711}
+}
