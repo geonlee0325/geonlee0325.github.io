@@ -8,31 +8,34 @@ redirect_from:
   - /about.html
 ---
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
-\vspace{-5truemm}
 
-<span style="font-family:PT Sans;"> About Me</span>
+
+<span style="font-family:PT Sans;">**About Me**</span>
 ------
 <span style="font-family:PT Sans; text-align:justify">
 I am a M.S. & Ph.D. student in the [Kim Jaechul Graduate School of AI](https://gsai.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/kr/), where I am advised by [Prof. Kijung Shin](https://kijungs.github.io/) at [Data Mining Lab](https://sites.google.com/view/kaistdata). I received my B.S. in Computer Science and Engineering from [Sungkyunkwan University](https://www.skku.edu/skku/index.do). I will join [Amazon](https://www.amazon.com/) as an applied scientist intern this September. My research interests include data mining, graph mining, social network analysis, and machine learning.
 </span>
 
-Education
+<span style="font-family:PT Sans;">**Education**</span>
 ------
 * **Korea Advanced Institute of Science and Technology (KAIST)**
   * M.S. & Ph.D. in Artificial Intelligence (Sep. 2020 - )
 * **Sungkyunkwan University (SKKU)**
   * B.S. in Computer Science and Engineering (Mar. 2016 - Aug. 2019)
 
-Work Experience
+<span style="font-family:PT Sans;">**Work Experience**</span>
 ------
 * **Amazon**
   * Applied Scientist Intern (Expected at Sep. 2022 - Dec. 2022)
 
-Publications
+<span style="font-family:PT Sans;">**Publications**</span>
 ------
 * <span style="font-family:PT Sans;">
-    **HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**
-    Geon Lee, Minyoung Choe, and Kijung Shin
+    * **HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**..
+    Geon Lee, Minyoung Choe, and Kijung Shin..
+    IJCAI 2022
+    * **HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**..
+    Geon Lee, Minyoung Choe, and Kijung Shin..
     IJCAI 2022
   </span>
 
