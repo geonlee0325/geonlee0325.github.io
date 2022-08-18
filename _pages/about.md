@@ -9,6 +9,11 @@ redirect_from:
 ---
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
 
+div{
+  display:inline-block;
+  padding:0px;
+  margin-left:-4px;
+} 
 
 <span style="font-family:PT Sans;">**About Me**</span>
 ------
@@ -31,14 +36,15 @@ I am a M.S. & Ph.D. student in the [Kim Jaechul Graduate School of AI](https://g
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
 * <span style="font-family:PT Sans;">
-    * **HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**..
-    Geon Lee, Minyoung Choe, and Kijung Shin..
-    IJCAI 2022
-    * **HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**..
-    Geon Lee, Minyoung Choe, and Kijung Shin..
+    **HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**\\
+    Geon Lee, Minyoung Choe, and Kijung Shin\\
     IJCAI 2022
   </span>
-
+* <span style="font-family:PT Sans;">
+    **HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**\\
+    Geon Lee, Minyoung Choe, and Kijung Shin\\
+    IJCAI 2022
+  </span>
 
 
 
