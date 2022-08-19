@@ -19,15 +19,15 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 <span style="font-family:PT Sans;">**Education**</span>
 ------
-* <span style="font-family:PT Sans;font-weight:600">**Korea Advanced Institute of Science and Technology (KAIST)**</span>
-  * <span style="font-family:PT Sans;color:#8A8A8A">M.S. & Ph.D. in Artificial Intelligence (Sep. 2020 - )</span>
-* <span style="font-family:PT Sans;font-weight:600">**Sungkyunkwan University (SKKU)**</span>
-  * <span style="font-family:PT Sans;color:#8A8A8A">B.S. in Computer Science and Engineering (Mar. 2016 - Aug. 2019)</span>
+* <span style="font-family:PT Sans;font-weight:600">**Korea Advanced Institute of Science and Technology (KAIST)**</span>\\
+  <span style="font-family:PT Sans;color:#8A8A8A">M.S. & Ph.D. in Artificial Intelligence (Sep. 2020 - )</span>
+* <span style="font-family:PT Sans;font-weight:600">**Sungkyunkwan University (SKKU)**</span>\\
+  <span style="font-family:PT Sans;color:#8A8A8A">B.S. in Computer Science and Engineering (Mar. 2016 - Aug. 2019)</span>
 
 <span style="font-family:PT Sans;">**Work Experience**</span>
 ------
-* <span style="font-family:PT Sans;">**Amazon**</span>
-  * <span style="font-family:PT Sans;color:#8A8A8A">Applied Scientist Intern (Expected at Sep. 2022 - Dec. 2022)</span>
+* <span style="font-family:PT Sans;">**Amazon**</span>\\
+  <span style="font-family:PT Sans;color:#8A8A8A">Applied Scientist Intern (Expected at Sep. 2022 - Dec. 2022)</span>
 
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
@@ -42,7 +42,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="files/hashnwalk_ijcai2022_poster.pdf" style="color:#218bff; text-decoration:none;">poster</a> |
   <a href="https://github.com/geonlee0325/HashNWalk" style="color:#218bff; text-decoration:none;">code and datasets</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/ijcai/LeeCS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
-  </span><br>
+  </span><br><br>
 * <span style="font-family:PT Sans; color:#24292f">
   <span style="color:#24292f;font-weight:600">**MiDaS: Representative Sampling from Real-World Hypergraphs**</span>\\
   <span style="color:#8A8A8A">Minyoung Choe, Jaemin Yoo, </span><span style="color:black;">**Geon Lee**</span>, <span style="color:#8A8A8A">, Woonsung Baek, U Kang, and Kijung Shin </span>\\
@@ -53,7 +53,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="http://dmlab.kaist.ac.kr/~kijungs/midasWWW2022.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="https://github.com/young917/MiDaS" style="color:#218bff; text-decoration:none;">code and datasets</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/www/ChoeYLBKS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
-  </span><br>
+  </span><br><br>
 * <span style="font-family:PT Sans; color:#24292f">
   <span style="color:#24292f;font-weight:600">**Simple Epidemic Models with Segmentation Can Be Better than Complex Ones**</span>\\
   <span style="color:black;">**Geon Lee**</span><span style="color:#8A8A8A">, Se-eun Yoon, and Kijung Shin</span>\\
@@ -64,4 +64,26 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="https://github.com/geonlee0325/covid_segmentation" style="color:#218bff; text-decoration:none;">code and datasets</a> |
   <a href="https://journals.plos.org/plosone/article/citation?id=10.1371/journal.pone.0262244" style="color:#218bff; text-decoration:none;">bib</a> ]\\
   Oral presentation at <a href="https://epidamik.github.io/2021/index.html" style="color:#fa8072; text-decoration:none;">epiDAMIK workshop in KDD 2021</a>
-  </span>
+  </span><br><br>
+* <span style="font-family:PT Sans; color:#24292f">
+  <span style="color:#24292f;font-weight:600">**THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting**</span>\\
+  <span style="color:black;">**Geon Lee**</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
+  <a href="https://icdm2021.auckland.ac.nz/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2021</a> &nbsp;
+  [ <a href="https://arxiv.org/pdf/2109.08341.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
+  <a href="https://github.com/geonlee0325/THyMe/blob/main/supplements.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
+  <a href="https://youtu.be/EJVwrT0NroI" style="color:#218bff; text-decoration:none;">video</a> |
+  <a href="files/thmotif_icdm2021_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
+  <a href="https://github.com/geonlee0325/THyMe" style="color:#218bff; text-decoration:none;">code and datasets</a> |
+  <a href="https://dblp.uni-trier.de/rec/conf/icdm/LeeS21.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
+  </span><br><br>
+* <span style="font-family:PT Sans; color:#24292f">
+  <span style="color:#24292f;font-weight:600">**How Do Hyperedges Overlap in Real-World Hypergraphs? - Patterns, Measures, and Generators**</span>\\
+  <span style="color:black;">**Geon Lee**</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
+  <a href="https://www2021.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">WWW 2021</a> &nbsp;
+  [ <a href="https://arxiv.org/pdf/2101.07480.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
+  <a href="https://github.com/young917/www21-hyperlap/blob/master/online_appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
+  <a href="https://youtu.be/u7LMnuFPJpE" style="color:#218bff; text-decoration:none;">video</a> |
+  <a href="files/hyperlap_www2021_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
+  <a href="https://github.com/young917/www21-hyperlap" style="color:#218bff; text-decoration:none;">code and datasets</a> |
+  <a href="https://dblp.uni-trier.de/rec/conf/www/LeeCS21.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
+  </span><br><br>
