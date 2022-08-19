@@ -35,7 +35,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 ------
 * <span style="font-family:PT Sans;">
   <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators (Tutorial)**</span>\\
-  <span style="text-decoration:underline>**Geon Lee**</span><span style="color:#8A8A8A">, Jaemin Yoo, and Kijung Shin</span>\\
+  <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Jaemin Yoo, and Kijung Shin</span>\\
   <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2022</a> / <a href="https://www.cikm2022.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">CIKM 2022</a> / <a href="http://dsaa2022.dsaa.co/" style="color:#0F52BA; font-weight:600; text-decoration:none;">DSAA 2022</a> &nbsp;
   [ <span style="color:#8A8A8A">proposal</span> |
   <a href="https://sites.google.com/view/hypergraph-tutorial" style="color:#218bff; text-decoration:none;">slides</a> |
@@ -47,7 +47,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 * <span style="font-family:PT Sans;">
   <span style="font-weight:600">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
-  <span style="text-decoration:underline>**Geon Lee**</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
+  <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
   <a href="https://ijcai-22.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">IJCAI 2022</a> &nbsp;
   [ <a href="https://www.ijcai.org/proceedings/2022/0296.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/geonlee0325/HashNWalk/blob/main/online_appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -62,7 +62,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 * <span style="font-family:PT Sans;">
   <span style="color:#24292f;font-weight:600">**MiDaS: Representative Sampling from Real-World Hypergraphs**</span>\\
-  <span style="color:#8A8A8A">Minyoung Choe, Jaemin Yoo, </span><span style="text-decoration:underline>**Geon Lee**</span><span style="color:#8A8A8A">, Woonsung Baek, U Kang, and Kijung Shin </span>\\
+  <span style="color:#8A8A8A">Minyoung Choe, Jaemin Yoo, </span><span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Woonsung Baek, U Kang, and Kijung Shin </span>\\
   <a href="https://www2022.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">WWW 2022</a> &nbsp;
   [ <a href="https://arxiv.org/pdf/2202.01587.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/young917/MiDaS/blob/main/MiDaS_ONLINE_APPENDIX.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -76,7 +76,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 * <span style="font-family:PT Sans;">
   <span style="color:#24292f;font-weight:600">**Simple Epidemic Models with Segmentation Can Be Better than Complex Ones**</span>\\
-  <span style="text-decoration:underline>**Geon Lee**</span><span style="color:#8A8A8A">, Se-eun Yoon, and Kijung Shin</span>\\
+  <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Se-eun Yoon, and Kijung Shin</span>\\
   <a href="https://journals.plos.org/plosone/" style="color:#BF0000; font-weight:600; text-decoration:none;">PLOS ONE (2022)</a> &nbsp;
   [ <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0262244" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/geonlee0325/covid_segmentation/blob/main/appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -105,7 +105,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 * <span style="font-family:PT Sans;">
   <span style="color:#24292f;font-weight:600">**How Do Hyperedges Overlap in Real-World Hypergraphs? - Patterns, Measures, and Generators**</span>\\
-  <span style="text-decoration:underline>**Geon Lee***</span><span style="color:#8A8A8A">, Minyoung Choe*, and Kijung Shin</span>\\
+  <span style="text-decoration:underline">**Geon Lee***</span><span style="color:#8A8A8A">, Minyoung Choe*, and Kijung Shin</span>\\
   <a href="https://www2021.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">WWW 2021</a> &nbsp;
   [ <a href="https://arxiv.org/pdf/2101.07480.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/young917/www21-hyperlap/blob/master/online_appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -119,7 +119,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 * <span style="font-family:PT Sans;">
   <span style="color:#24292f;font-weight:600">**Hypergraph Motifs: Concepts, Algorithms, and Discoveries**</span>\\
-  <span style="text-decoration:underline>**Geon Lee**</span><span style="color:#8A8A8A">, Jihoon Ko, and Kijung Shin</span>\\
+  <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Jihoon Ko, and Kijung Shin</span>\\
   <a href="https://vldb2020.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">VLDB 2020</a> &nbsp;
   [ <a href="http://www.vldb.org/pvldb/vol13/p2256-lee.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/geonlee0325/MoCHy/blob/master/supplementary.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -133,7 +133,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 * <span style="font-family:PT Sans;">
   <span style="color:#24292f;font-weight:600">**MEGA: Multi-View Semi-Supervised Clustering of Hypergraphs**</span>\\
-  <span style="color:#8A8A8A">Joyce Jiyoung Whang, Rundong Du, Sangwon Jung,</span> <span style="text-decoration:underline>**Geon Lee**</span><span style="color:#8A8A8A">, Barry Drake, Qingqing Liu, Seonggoo Kang, and Haesun Park</span>\\
+  <span style="color:#8A8A8A">Joyce Jiyoung Whang, Rundong Du, Sangwon Jung,</span> <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Barry Drake, Qingqing Liu, Seonggoo Kang, and Haesun Park</span>\\
   <a href="https://vldb2020.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">VLDB 2020</a> &nbsp;
   [ <a href="http://www.vldb.org/pvldb/vol13/p698-whang.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://dblp.uni-trier.de/rec/journals/pvldb/WhangDJLDLKP20.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
@@ -143,7 +143,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 * <span style="font-family:PT Sans;">
   <span style="color:#24292f;font-weight:600">**Hyperlink Classification via Structured Graph Embedding**</span>\\
-  <span style="text-decoration:underline>**Geon Lee**</span><span style="color:#8A8A8A">, Seonggoo Kang, and Joyce Jiyoung Whang</span>\\
+  <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Seonggoo Kang, and Joyce Jiyoung Whang</span>\\
   <a href="https://sigir.org/sigir2019/" style="color:#0F52BA; font-weight:600; text-decoration:none;">SIGIR 2019</a> &nbsp;
   [ <a href="files/hyperlink_sigir2019_paper.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/sigir/LeeKW19.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
