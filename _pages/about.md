@@ -32,8 +32,8 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
 * <span style="font-family:PT Sans; color:#24292f">
-  <span style="color:#24292f;font-weight:600">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
-  <span style="color:black;">**Geon Lee**</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
+  <span style="font-weight:600">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
+  <span>**Geon Lee**</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
   <a href="https://ijcai-22.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">IJCAI 2022</a> &nbsp;
   [ <a href="https://www.ijcai.org/proceedings/2022/0296.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/geonlee0325/HashNWalk/blob/main/online_appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -45,7 +45,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   </span><br><br>
 * <span style="font-family:PT Sans; color:#24292f">
   <span style="color:#24292f;font-weight:600">**MiDaS: Representative Sampling from Real-World Hypergraphs**</span>\\
-  <span style="color:#8A8A8A">Minyoung Choe, Jaemin Yoo, </span><span style="color:black;">**Geon Lee**</span>, <span style="color:#8A8A8A">, Woonsung Baek, U Kang, and Kijung Shin </span>\\
+  <span style="color:#8A8A8A">Minyoung Choe, Jaemin Yoo, </span><span>**Geon Lee**</span>, <span style="color:#8A8A8A">, Woonsung Baek, U Kang, and Kijung Shin </span>\\
   <a href="https://www2022.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">WWW 2022</a> &nbsp;
   [ <a href="https://arxiv.org/pdf/2202.01587.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/young917/MiDaS/blob/main/MiDaS_ONLINE_APPENDIX.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -56,7 +56,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   </span><br><br>
 * <span style="font-family:PT Sans; color:#24292f">
   <span style="color:#24292f;font-weight:600">**Simple Epidemic Models with Segmentation Can Be Better than Complex Ones**</span>\\
-  <span style="color:black;">**Geon Lee**</span><span style="color:#8A8A8A">, Se-eun Yoon, and Kijung Shin</span>\\
+  <span>**Geon Lee**</span><span style="color:#8A8A8A">, Se-eun Yoon, and Kijung Shin</span>\\
   <a href="https://journals.plos.org/plosone/" style="color:#BF0000; font-weight:600; text-decoration:none;">PLOS ONE (2022)</a> &nbsp;
   [ <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0262244" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/geonlee0325/covid_segmentation/blob/main/appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -67,7 +67,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   </span><br><br>
 * <span style="font-family:PT Sans; color:#24292f">
   <span style="color:#24292f;font-weight:600">**THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting**</span>\\
-  <span style="color:black;">**Geon Lee**</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
+  <span>**Geon Lee**</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
   <a href="https://icdm2021.auckland.ac.nz/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2021</a> &nbsp;
   [ <a href="https://arxiv.org/pdf/2109.08341.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/geonlee0325/THyMe/blob/main/supplements.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -78,7 +78,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   </span><br><br>
 * <span style="font-family:PT Sans; color:#24292f">
   <span style="color:#24292f;font-weight:600">**How Do Hyperedges Overlap in Real-World Hypergraphs? - Patterns, Measures, and Generators**</span>\\
-  <span style="color:black;">**Geon Lee**</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
+  <span>**Geon Lee**</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
   <a href="https://www2021.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">WWW 2021</a> &nbsp;
   [ <a href="https://arxiv.org/pdf/2101.07480.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/young917/www21-hyperlap/blob/master/online_appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -86,4 +86,15 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="files/hyperlap_www2021_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="https://github.com/young917/www21-hyperlap" style="color:#218bff; text-decoration:none;">code and datasets</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/www/LeeCS21.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
+  </span><br><br>
+* <span style="font-family:PT Sans; color:#24292f">
+  <span style="color:#24292f;font-weight:600">**Hypergraph Motifs: Concepts, Algorithms, and Discoveries**</span>\\
+  <span>**Geon Lee**</span><span style="color:#8A8A8A">, Jihoon Ko, and Kijung Shin</span>\\
+  <a href="https://vldb2020.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">VLDB 2020</a> &nbsp;
+  [ <a href="http://www.vldb.org/pvldb/vol13/p2256-lee.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
+  <a href="https://github.com/geonlee0325/MoCHy/blob/master/supplementary.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
+  <a href="https://youtu.be/HYHkEwojfBQ" style="color:#218bff; text-decoration:none;">video</a> |
+  <a href="files/hmotif_vldb2020_slide" style="color:#218bff; text-decoration:none;">slides</a> |
+  <a href="https://github.com/lg970325/MoCHy" style="color:#218bff; text-decoration:none;">code and datasets</a> |
+  <a href="https://dblp.uni-trier.de/rec/journals/pvldb/LeeKS20.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span><br><br>
