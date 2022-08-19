@@ -34,7 +34,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
 * <span style="font-family:PT Sans;">
-  <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators (Tutorial)**</span>\\
+  <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators**</span> <span style="font-weight:600;color:#0F52BA">**(Tutorial)**</span>\\
   <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Jaemin Yoo, and Kijung Shin</span>\\
   <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2022</a> / <a href="https://www.cikm2022.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">CIKM 2022</a> / <a href="http://dsaa2022.dsaa.co/" style="color:#0F52BA; font-weight:600; text-decoration:none;">DSAA 2022</a> &nbsp;
   [ <span style="color:#8A8A8A">proposal</span> |
