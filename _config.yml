@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Geon Lee @ KAIST"
+title                    : 
 title_separator          :
 name                     : &name "Geon Lee"
 description              : &description "Ph.D. student at KAIST AI"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/geon-lee-70322a161/"
+  linkedin         : "geon-lee-70322a161"
   orcid            :
   pinterest        :
   soundcloud       :

@@ -90,7 +90,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 * <span style="font-family:PT Sans;">
   <span style="color:#24292f;font-weight:600">**THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting**</span>\\
-  <span>**Geon Lee**</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
+  <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
   <a href="https://icdm2021.auckland.ac.nz/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2021</a> &nbsp;
   [ <a href="https://arxiv.org/pdf/2109.08341.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/geonlee0325/THyMe/blob/main/supplements.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -175,4 +175,3 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   [ <span style="font-family:PT Sans;color:#8A8A8A">Spring 2022</span> ]
 * <span style="font-family:PT Sans;font-weight:600">**SKKU CSE3036 Seminar in Computer Engineering**</span>
   [ <span style="font-family:PT Sans;color:#8A8A8A">Fall 2019</span> ]
-  
