@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "&nbsp;"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from:
@@ -35,5 +35,5 @@ I am a M.S. & Ph.D. student in the [Kim Jaechul Graduate School of AI](https://g
 * <span style="font-family:PT Sans;">
   **HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**\\
   Geon Lee, Minyoung Choe, and Kijung Shin\\
-  [IJCAI 2022](https://ijcai-22.org/)
+  <a href="https://ijcai-22.org/" style="color:#0F52BA;">IJCAI 2022</a>
   </span>
