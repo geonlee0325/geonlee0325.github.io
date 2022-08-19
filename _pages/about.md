@@ -167,3 +167,12 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 ------
 * <span style="font-family:PT Sans;font-weight:600">**KAIST AI506 Data Mining and Search**</span>
   [ <a href="https://sites.google.com/view/ai506-2021spring/home" style="color:#218bff; text-decoration:none;">Spring 2021</a> ]
+* <span style="font-family:PT Sans;font-weight:600">**KAIST AI607 Graph Mining and Social Network Analysis**</span>
+  [ <span style="font-family:PT Sans;color:#8A8A8A">Fall 2022</span> |
+  <a href="https://sites.google.com/view/ai607/home" style="color:#218bff; text-decoration:none;">Fall 2021</a> |
+  <a href="https://sites.google.com/view/ai607-2020fall/home" style="color:#218bff; text-decoration:none;">Fall 2020</a> ]
+* <span style="font-family:PT Sans;font-weight:600">**KAIST AI617 Machine Learning for Robotics**</span>
+  [ <span style="font-family:PT Sans;color:#8A8A8A">Spring 2022</span> ]
+* <span style="font-family:PT Sans;font-weight:600">**SKKU CSE3036 Seminar in Computer Engineering**</span>
+  [ <span style="font-family:PT Sans;color:#8A8A8A">Fall 2019</span> ]
+  
