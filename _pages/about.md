@@ -8,11 +8,14 @@ redirect_from:
   - /about.html
 ---
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Korean">
+
 <!---
 <span style="font-family:PT Sans;">**About Me**</span>
 ------
 -->
-<span style="font-family:PT Sans; text-align:justify">
+<span style="font-family:Noto Sans Korean; text-align:justify">
 I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#218bff; text-decoration:none;">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/kr/" style="color:#218bff; text-decoration:none;">KAIST</a>, where I am advised by <a href="https://kijungs.github.io/" style="color:#218bff; text-decoration:none;">Prof. Kijung Shin</a> at <a href="https://sites.google.com/view/kaistdata" style="color:#218bff; text-decoration:none;">Data Mining Lab</a>. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" style="color:#218bff; text-decoration:none;">Sungkyunkwan University</a>. I will join <a href="https://www.amazon.com/" style="color:#218bff; text-decoration:none;">Amazon</a> as an applied scientist intern this September. My research interests include data mining, graph mining, social network analysis, and machine learning.
 </span>
 
@@ -59,7 +62,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
     <!-- -->
 
-* <span style="font-family:PT Sans;">
+* <span style="font-family:Noto Sans Korean;">
   <span style="color:#24292f;font-weight:600">**Simple Epidemic Models with Segmentation Can Be Better than Complex Ones**</span>\\
   <span>**Geon Lee**</span><span style="color:#8A8A8A">, Se-eun Yoon, and Kijung Shin</span>\\
   <a href="https://journals.plos.org/plosone/" style="color:#BF0000; font-weight:600; text-decoration:none;">PLOS ONE (2022)</a> &nbsp;
