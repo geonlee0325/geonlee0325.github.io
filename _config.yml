@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : 
+title                    : "Geon Lee @ KAIST"
 title_separator          :
 name                     : &name "Geon Lee"
 description              : &description "Ph.D. student at KAIST AI"
