@@ -151,10 +151,10 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 <span style="font-family:PT Sans;">**Awards & Honors**</span>
 ------
-* <span style="font-family:PT Sans;font-weight:600">**Selected as One of the Best-Ranked Papers of ICDM 2021** (Dec. 2021)</span>
-* <span style="font-family:PT Sans;font-weight:600">**Sungkyunkwan Presidential Award** (Aug. 2019)</span>
-* <span style="font-family:PT Sans;font-weight:600">**Dean's List** (2016 - 2019)</span>
-* <span style="font-family:PT Sans;font-weight:600">**Sungkyun Software Scholarship** (Full tuition for all semesters. 2016 - 2019)</span>
+* <span style="font-family:PT Sans;font-weight:600">**Selected as One of the Best-Ranked Papers of ICDM 2021**</span> <span style="font-family:PT Sans;color:#8A8A8A">(Dec. 2021)</span>
+* <span style="font-family:PT Sans;font-weight:600">**Sungkyunkwan Presidential Award**</span> <span style="font-family:PT Sans;color:#8A8A8A">(Aug. 2019)</span>
+* <span style="font-family:PT Sans;font-weight:600">**Dean's List**</span> <span style="font-family:PT Sans;color:#8A8A8A">(2016 - 2019)</span>
+* <span style="font-family:PT Sans;font-weight:600">**Sungkyun Software Scholarship**</span> <span style="font-family:PT Sans;color:#8A8A8A">(Full tuition for all semesters. 2016 - 2019)</span>
 
 <span style="font-family:PT Sans;">**Projects**</span>
 ------
@@ -162,3 +162,8 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <span style="font-family:PT Sans;color:#8A8A8A">Developing a search engine that finds similar satellite images of the Korean Peninsula from the past 40 years, given a query image.</span>
 * <span style="font-family:PT Sans;font-weight:600">**COVID-19 Task Force** (Mar. 2020 - Sep. 2020)</span>\\
   <span style="font-family:PT Sans;color:#8A8A8A">Developed a model for fitting and predicting epidemic events of COVID-19.</span>
+
+<span style="font-family:PT Sans;">**Teaching**</span>
+------
+* <span style="font-family:PT Sans;font-weight:600">**KAIST AI506 Data Mining and Search**</span>
+  [ <a href="https://sites.google.com/view/ai506-2021spring/home" style="color:#218bff; text-decoration:none;">Spring 2021</a> ]
