@@ -15,7 +15,7 @@ redirect_from:
 <span style="font-family:PT Sans;">**About Me**</span>
 ------
 -->
-<span style="font-family:Noto Sans Korean; text-align:justify">
+<span style="font-family:PT Sans; text-align:justify">
 I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#218bff; text-decoration:none;">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/kr/" style="color:#218bff; text-decoration:none;">KAIST</a>, where I am advised by <a href="https://kijungs.github.io/" style="color:#218bff; text-decoration:none;">Prof. Kijung Shin</a> at <a href="https://sites.google.com/view/kaistdata" style="color:#218bff; text-decoration:none;">Data Mining Lab</a>. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" style="color:#218bff; text-decoration:none;">Sungkyunkwan University</a>. I will join <a href="https://www.amazon.com/" style="color:#218bff; text-decoration:none;">Amazon</a> as an applied scientist intern this September. My research interests include data mining, graph mining, social network analysis, and machine learning.
 </span>
 
@@ -34,6 +34,18 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
 * <span style="font-family:PT Sans;">
+  <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators (Tutorial)**</span>\\
+  <span>**Geon Lee**</span><span style="color:#8A8A8A">, Jaemin Yoo, and Kijung Shin</span>\\
+  <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2022</a> / <a href="https://www.cikm2022.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">CIKM 2022</a> / <a href="http://dsaa2022.dsaa.co/" style="color:#0F52BA; font-weight:600; text-decoration:none;">DSAA 2022</a> &nbsp;
+  [ <span style="color:#8A8A8A">proposal</span> |
+  <a href="https://sites.google.com/view/hypergraph-tutorial" style="color:#218bff; text-decoration:none;">slides</a> |
+  <span style="color:#8A8A8A">video</span> |
+  <span style="color:#8A8A8A">bib</span> ]
+  </span>
+
+  <!-- -->
+
+* <span style="font-family:PT Sans;">
   <span style="font-weight:600">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
   <span>**Geon Lee**</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
   <a href="https://ijcai-22.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">IJCAI 2022</a> &nbsp;
@@ -50,7 +62,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 * <span style="font-family:PT Sans;">
   <span style="color:#24292f;font-weight:600">**MiDaS: Representative Sampling from Real-World Hypergraphs**</span>\\
-  <span style="color:#8A8A8A">Minyoung Choe, Jaemin Yoo, </span><span>**Geon Lee**</span>, <span style="color:#8A8A8A">, Woonsung Baek, U Kang, and Kijung Shin </span>\\
+  <span style="color:#8A8A8A">Minyoung Choe, Jaemin Yoo, </span><span>**Geon Lee**</span><span style="color:#8A8A8A">, Woonsung Baek, U Kang, and Kijung Shin </span>\\
   <a href="https://www2022.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">WWW 2022</a> &nbsp;
   [ <a href="https://arxiv.org/pdf/2202.01587.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/young917/MiDaS/blob/main/MiDaS_ONLINE_APPENDIX.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
@@ -62,7 +74,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
     <!-- -->
 
-* <span style="font-family:Noto Sans Korean;">
+* <span style="font-family:PT Sans;">
   <span style="color:#24292f;font-weight:600">**Simple Epidemic Models with Segmentation Can Be Better than Complex Ones**</span>\\
   <span>**Geon Lee**</span><span style="color:#8A8A8A">, Se-eun Yoon, and Kijung Shin</span>\\
   <a href="https://journals.plos.org/plosone/" style="color:#BF0000; font-weight:600; text-decoration:none;">PLOS ONE (2022)</a> &nbsp;
