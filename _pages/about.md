@@ -54,7 +54,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="http://dmlab.kaist.ac.kr/~kijungs/midasWWW2022.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="https://github.com/young917/MiDaS" style="color:#218bff; text-decoration:none;">code and datasets</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/www/ChoeYLBKS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
-  </span><br><br>
+  </span><br>
 * <span style="font-family:PT Sans; color:#24292f">
   <span style="color:#24292f;font-weight:600">**Simple Epidemic Models with Segmentation Can Be Better than Complex Ones**</span>\\
   <span>**Geon Lee**</span><span style="color:#8A8A8A">, Se-eun Yoon, and Kijung Shin</span>\\
@@ -64,7 +64,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="files/segmentation_epidamik2021_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="https://github.com/geonlee0325/covid_segmentation" style="color:#218bff; text-decoration:none;">code and datasets</a> |
   <a href="https://journals.plos.org/plosone/article/citation?id=10.1371/journal.pone.0262244" style="color:#218bff; text-decoration:none;">bib</a> ]\\
-  Oral presentation at <a href="https://epidamik.github.io/2021/index.html" style="color:#fa8072; text-decoration:none;">epiDAMIK workshop in KDD 2021</a>
+  <span style="color:#8A8A8A">Oral presentation at</span> <a href="https://epidamik.github.io/2021/index.html" style="color:#fa8072; text-decoration:none;">epiDAMIK workshop in KDD 2021</a>
   </span><br><br>
 * <span style="font-family:PT Sans; color:#24292f">
   <span style="color:#24292f;font-weight:600">**THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting**</span>\\
@@ -75,11 +75,12 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="https://youtu.be/EJVwrT0NroI" style="color:#218bff; text-decoration:none;">video</a> |
   <a href="files/thmotif_icdm2021_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="https://github.com/geonlee0325/THyMe" style="color:#218bff; text-decoration:none;">code and datasets</a> |
-  <a href="https://dblp.uni-trier.de/rec/conf/icdm/LeeS21.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
+  <a href="https://dblp.uni-trier.de/rec/conf/icdm/LeeS21.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]\\
+  <span style="color:#FF8303">Selected as one of the best-ranked papers of ICDM 2021 for fast-track journal invitation</span>
   </span><br><br>
 * <span style="font-family:PT Sans; color:#24292f">
   <span style="color:#24292f;font-weight:600">**How Do Hyperedges Overlap in Real-World Hypergraphs? - Patterns, Measures, and Generators**</span>\\
-  <span>**Geon Lee***</span><span style="color:#8A8A8A">, Minyoung Choe*, and Kijung Shin</span>\\
+  <span>**Geon Lee***</span>, Minyoung Choe*, and Kijung Shin</span>\\
   <a href="https://www2021.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">WWW 2021</a> &nbsp;
   [ <a href="https://arxiv.org/pdf/2101.07480.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/young917/www21-hyperlap/blob/master/online_appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
