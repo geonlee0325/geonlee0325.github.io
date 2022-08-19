@@ -7,8 +7,8 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Geon Lee @ KAIST"
-title_separator          : 
+title                    : ""
+title_separator          :
 name                     : &name "Geon Lee"
 description              : &description "Ph.D. student at KAIST AI"
 url                      : https://geon0325.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
