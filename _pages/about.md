@@ -155,3 +155,10 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 * <span style="font-family:PT Sans;font-weight:600">**Sungkyunkwan Presidential Award** (Aug. 2019)</span>
 * <span style="font-family:PT Sans;font-weight:600">**Dean's List** (2016 - 2019)</span>
 * <span style="font-family:PT Sans;font-weight:600">**Sungkyun Software Scholarship** (Full tuition for all semesters. 2016 - 2019)</span>
+
+<span style="font-family:PT Sans;">**Projects**</span>
+------
+* <span style="font-family:PT Sans;font-weight:600">**AI-based Weather Forecast Support Development** (July 2021 - )</span>\\
+  <span style="font-family:PT Sans;color:#8A8A8A">Developing a search engine that finds similar satellite images of the Korean Peninsula from the past 40 years, given a query image.</span>
+* <span style="font-family:PT Sans;font-weight:600">**COVID-19 Task Force** (Mar. 2020 - Sep. 2020)</span>\\
+  <span style="font-family:PT Sans;color:#8A8A8A">Developed a model for fitting and predicting epidemic events of COVID-19.</span>
