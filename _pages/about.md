@@ -148,3 +148,10 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   [ <a href="files/hyperlink_sigir2019_paper.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/sigir/LeeKW19.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
+
+<span style="font-family:PT Sans;">**Awards & Honors**</span>
+------
+* <span style="font-family:PT Sans;font-weight:600">**Selected as One of the Best-Ranked Papers of ICDM 2021** (Dec. 2021)</span>
+* <span style="font-family:PT Sans;font-weight:600">**Sungkyunkwan Presidential Award** (Aug. 2019)</span>
+* <span style="font-family:PT Sans;font-weight:600">**Dean's List** (2016 - 2019)</span>
+* <span style="font-family:PT Sans;font-weight:600">**Sungkyun Software Scholarship** (Full tuition for all semesters. 2016 - 2019)</span>
