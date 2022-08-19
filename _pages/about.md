@@ -17,9 +17,9 @@ I am a M.S. & Ph.D. student in the [Kim Jaechul Graduate School of AI](https://g
 
 <span style="font-family:PT Sans;">**Education**</span>
 ------
-* <span style="font-family:PT Sans;">**Korea Advanced Institute of Science and Technology (KAIST)**</span>
+* <span style="font-family:PT Sans;font-weight:600">**Korea Advanced Institute of Science and Technology (KAIST)**</span>
   * <span style="font-family:PT Sans;">M.S. & Ph.D. in Artificial Intelligence (Sep. 2020 - )</span>
-* <span style="font-family:PT Sans;">**Sungkyunkwan University (SKKU)**</span>
+* <span style="font-family:PT Sans;font-weight:600">**Sungkyunkwan University (SKKU)**</span>
   * <span style="font-family:PT Sans;">B.S. in Computer Science and Engineering (Mar. 2016 - Aug. 2019)</span>
 
 <span style="font-family:PT Sans;">**Work Experience**</span>
@@ -30,8 +30,8 @@ I am a M.S. & Ph.D. student in the [Kim Jaechul Graduate School of AI](https://g
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
 * <span style="font-family:PT Sans; color:#24292f">
-  <span style="color:#24292f">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
-  <span style="color:black;font-weight:500"><ins>**Geon Lee**</ins></span>, Minyoung Choe, and Kijung Shin\\
+  <span style="color:#24292f;font-weight:600">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
+  <span style="color:black;font-weight:600;text-underline-offset:1px;">Geon Lee</span>, Minyoung Choe, and Kijung Shin\\
   <a href="https://ijcai-22.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">IJCAI 2022</a> &nbsp;
   [ <a href="https://www.ijcai.org/proceedings/2022/0296.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/geonlee0325/HashNWalk/blob/main/online_appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
