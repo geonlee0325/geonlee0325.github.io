@@ -7,7 +7,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
 
 <!---
 <span style="font-family:PT Sans;">**About Me**</span>
@@ -41,8 +40,11 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="files/hashnwalk_ijcai2022_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="files/hashnwalk_ijcai2022_poster.pdf" style="color:#218bff; text-decoration:none;">poster</a> |
   <a href="https://github.com/geonlee0325/HashNWalk" style="color:#218bff; text-decoration:none;">code and datasets</a> |
-  <a href="https://dblp.uni-trier.de/rec/conf/ijcai/LeeCS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]\\
+  <a href="https://dblp.uni-trier.de/rec/conf/ijcai/LeeCS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
+
+  <!-- -->
+
 * <span style="font-family:PT Sans;">
   <span style="color:#24292f;font-weight:600">**MiDaS: Representative Sampling from Real-World Hypergraphs**</span>\\
   <span style="color:#8A8A8A">Minyoung Choe, Jaemin Yoo, </span><span>**Geon Lee**</span>, <span style="color:#8A8A8A">, Woonsung Baek, U Kang, and Kijung Shin </span>\\
