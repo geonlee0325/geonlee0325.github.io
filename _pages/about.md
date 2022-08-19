@@ -54,7 +54,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="http://dmlab.kaist.ac.kr/~kijungs/midasWWW2022.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="https://github.com/young917/MiDaS" style="color:#218bff; text-decoration:none;">code and datasets</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/www/ChoeYLBKS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
-  </span><br>
+  </span><br style="line-height: 150%">
 * <span style="font-family:PT Sans; color:#24292f">
   <span style="color:#24292f;font-weight:600">**Simple Epidemic Models with Segmentation Can Be Better than Complex Ones**</span>\\
   <span>**Geon Lee**</span><span style="color:#8A8A8A">, Se-eun Yoon, and Kijung Shin</span>\\
@@ -65,7 +65,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="https://github.com/geonlee0325/covid_segmentation" style="color:#218bff; text-decoration:none;">code and datasets</a> |
   <a href="https://journals.plos.org/plosone/article/citation?id=10.1371/journal.pone.0262244" style="color:#218bff; text-decoration:none;">bib</a> ]\\
   <span style="color:#8A8A8A">Oral presentation at</span> <a href="https://epidamik.github.io/2021/index.html" style="color:#fa8072; text-decoration:none;">epiDAMIK workshop in KDD 2021</a>
-  </span><br><br>
+  </span><br style="line-height: 50%">
 * <span style="font-family:PT Sans; color:#24292f">
   <span style="color:#24292f;font-weight:600">**THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting**</span>\\
   <span>**Geon Lee**</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
