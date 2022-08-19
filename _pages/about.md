@@ -1,6 +1,6 @@
 ---
 permalink: /
-#title: "Geon Lee @ KAIST"
+title: "&nbsp;"
 excerpt: "About me"
 author_profile: true
 redirect_from:
@@ -32,6 +32,8 @@ I am a M.S. & Ph.D. student in the [Kim Jaechul Graduate School of AI](https://g
 * <span style="font-family:PT Sans;">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
   <span style="font-family:PT Sans;">**Geon Lee**, Minyoung Choe, and Kijung Shin</span>\\
   <span style="font-family:PT Sans; color:#0F52BA">[**IJCAI 2022**](https://ijcai-22.org/)</span>
-* <span style="font-family:PT Sans;">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
-  <span style="font-family:PT Sans;">Geon Lee, Minyoung Choe, and Kijung Shin</span>\\
-  <span style="font-family:PT Sans; color:#218bff">[IJCAI 2022](https://ijcai-22.org/)</span>
+* <span style="font-family:PT Sans;">
+  **HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**\\
+  Geon Lee, Minyoung Choe, and Kijung Shin\\
+  [IJCAI 2022](https://ijcai-22.org/)
+  </span>
