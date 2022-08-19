@@ -30,14 +30,14 @@ I am a M.S. & Ph.D. student in the [Kim Jaechul Graduate School of AI](https://g
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
 * <span style="font-family:PT Sans; color:#24292f">
-  <span style="color:#24292f">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams<**/span>\\
+  <span style="color:#24292f">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
   <span style="color:black;font-weight:500"><ins>**Geon Lee**</ins></span>, Minyoung Choe, and Kijung Shin\\
-  <a href="https://ijcai-22.org/" style="color:#0F52BA; font-weight:600">IJCAI 2022</a> &nbsp;
-  [ <a href="https://www.ijcai.org/proceedings/2022/0296.pdf" style="color:#218bff">paper</a> |
-  <a href="https://github.com/geonlee0325/HashNWalk/blob/main/online_appendix.pdf" style="color:#218bff">appendix</a> |
-  <a href="https://www.youtube.com/watch?v=3zdPV_HFJY0" style="color:#218bff">video</a> |
-  <a href="papers/hashnwalk_ijcai2022_slide.pdf" style="color:#218bff">slides</a> |
-  <a href="papers/hashnwalk_ijcai2022_poster.pdf" style="color:#218bff">poster</a> |
-  <a href="https://github.com/geonlee0325/HashNWalk" style="color:#218bff">code and datasets</a> |
-  <a href="https://dblp.uni-trier.de/rec/conf/ijcai/LeeCS22.html?view=bibtex" style="color:#218bff">bib</a> ]
+  <a href="https://ijcai-22.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">IJCAI 2022</a> &nbsp;
+  [ <a href="https://www.ijcai.org/proceedings/2022/0296.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
+  <a href="https://github.com/geonlee0325/HashNWalk/blob/main/online_appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
+  <a href="https://www.youtube.com/watch?v=3zdPV_HFJY0" style="color:#218bff; text-decoration:none;">video</a> |
+  <a href="papers/hashnwalk_ijcai2022_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
+  <a href="papers/hashnwalk_ijcai2022_poster.pdf" style="color:#218bff; text-decoration:none;">poster</a> |
+  <a href="https://github.com/geonlee0325/HashNWalk" style="color:#218bff; text-decoration:none;">code and datasets</a> |
+  <a href="https://dblp.uni-trier.de/rec/conf/ijcai/LeeCS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
