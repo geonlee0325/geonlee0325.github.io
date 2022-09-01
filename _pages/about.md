@@ -50,7 +50,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 <span style="font-family:Source Sans Pro;">**Publications**</span>
 ------
-  <span style="font-family:Source Sans Pro;">
+* <span style="font-family:Source Sans Pro;">
   <span>**[C8] Set2Box: Similarity Preserving Representation Learning of Sets**</span>\\
   <span style="font-size:95%">
   <span style="text-decoration:underline; color=#000000">Geon Lee</span><span style="color:#8A8A8A">, Chanyoung Park, and Kijung Shin</span>\\
@@ -66,7 +66,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <!-- -->
 
 * <span style="font-family:Source Sans Pro;">
-  <span style="font-weight:600">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
+  <span style="font-weight:600">**[C7] HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
   <span style="font-size:95%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
   <a href="https://ijcai-22.org/" style="color:#0F52BA; text-decoration:none;">**IJCAI 2022**</a> &nbsp;
@@ -83,7 +83,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <!-- -->
 
 * <span style="font-family:Source Sans Pro;">
-  <span style="color:#24292f;font-weight:600">**MiDaS: Representative Sampling from Real-World Hypergraphs**</span>\\
+  <span style="color:#24292f;font-weight:600">**[C6] MiDaS: Representative Sampling from Real-World Hypergraphs**</span>\\
   <span style="font-size:95%">
   <span style="color:#8A8A8A">Minyoung Choe, Jaemin Yoo, </span><span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Woonsung Baek, U Kang, and Kijung Shin </span>\\
   <a href="https://www2022.thewebconf.org/" style="color:#0F52BA; text-decoration:none;">**WWW 2022**</a> &nbsp;
