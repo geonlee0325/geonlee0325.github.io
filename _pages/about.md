@@ -48,15 +48,15 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 <span style="font-family:Source Sans Pro;">**Publications**</span>
 ------
-···<span style="font-family:Source Sans Pro;">
-···[C8] <span style="font-weight:600">**Set2Box: Similarity Preserving Representation Learning of Sets**</span>\\
-······<span style="text-decoration:underline; color=#000000">Geon Lee</span><span style="color:#8A8A8A">, Chanyoung Park, and Kijung Shin</span>\\
-······<a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; text-decoration:none;">**ICDM 2022**</a>  &nbsp;
-    [ <span style="color:#8A8A8A">paper</span> |
-    <span style="color:#8A8A8A">appendix</span> |
-    <span style="color:#8A8A8A">video</span> |
-    <span style="color:#8A8A8A">code and datasets</span> |
-    <span style="color:#8A8A8A">bib</span> ]
+* <span style="font-family:Source Sans Pro;">
+  <span style="font-weight:600">**Set2Box: Similarity Preserving Representation Learning of Sets**</span>\\
+  <span style="text-decoration:underline; color=#000000">**Geon Lee**</span><span style="color:#8A8A8A">, Chanyoung Park, and Kijung Shin</span>\\
+  <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; text-decoration:none;">**ICDM 2022**</a>  &nbsp;
+  [ <span style="color:#8A8A8A">paper</span> |
+  <span style="color:#8A8A8A">appendix</span> |
+  <span style="color:#8A8A8A">video</span> |
+  <span style="color:#8A8A8A">code and datasets</span> |
+  <span style="color:#8A8A8A">bib</span> ]
   </span>
 
   <!-- -->
@@ -64,7 +64,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 * <span style="font-family:Source Sans Pro;">
   <span style="font-weight:600">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
   <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
-  <a href="https://ijcai-22.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">IJCAI 2022</a> &nbsp;
+  <a href="https://ijcai-22.org/" style="color:#0F52BA; text-decoration:none;">**IJCAI 2022**</a> &nbsp;
   [ <a href="https://www.ijcai.org/proceedings/2022/0296.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/geonlee0325/HashNWalk/blob/main/online_appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
   <a href="https://www.youtube.com/watch?v=3zdPV_HFJY0" style="color:#218bff; text-decoration:none;">video</a> |
