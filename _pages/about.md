@@ -61,7 +61,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
   <!-- -->
 
-* <span style="font-family:Calibri;">
+* <span style="font-family:Noto Sans KR;">
   <span style="font-weight:600">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
   <span style="font-size:95%">
   <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
