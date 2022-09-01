@@ -32,7 +32,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 <span style="font-family:Source Sans Pro;">**Work Experience**</span>
 ------
 * <span style="font-family:Source Sans Pro;">**Amazon**</span>\\
-  <span style="font-family:Source Sans Pro;color:#8A8A8A;font-size:95%"">Applied Scientist Intern (Expected at Sep. 2022 - Dec. 2022)</span>
+  <span style="font-family:Source Sans Pro;color:#8A8A8A;font-size:95%">Applied Scientist Intern (Expected at Sep. 2022 - Dec. 2022)</span>
 
 <span style="font-family:Source Sans Pro;">**Tutorial**</span>
 ------
