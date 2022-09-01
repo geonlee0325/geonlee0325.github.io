@@ -9,31 +9,32 @@ redirect_from:
 ---
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Korean">
 
 <!---
-<span style="font-family:PT Sans;">**About Me**</span>
+<span style="font-family:Open Sans;">**About Me**</span>
 ------
 -->
-<span style="font-family:PT Sans; text-align:justify">
+<span style="font-family:Open Sans; text-align:justify">
 I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#218bff; text-decoration:none;">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/kr/" style="color:#218bff; text-decoration:none;">KAIST</a>, where I am advised by <a href="https://kijungs.github.io/" style="color:#218bff; text-decoration:none;">Prof. Kijung Shin</a> at <a href="https://sites.google.com/view/kaistdata" style="color:#218bff; text-decoration:none;">Data Mining Lab</a>. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" style="color:#218bff; text-decoration:none;">Sungkyunkwan University</a>. I will join <a href="https://www.amazon.com/" style="color:#218bff; text-decoration:none;">Amazon</a> as an applied scientist intern this September. My research interests include data mining, graph mining, social network analysis, and machine learning.
 </span>
 
-<span style="font-family:PT Sans;">**Education**</span>
+<span style="font-family:Open Sans;">**Education**</span>
 ------
-* <span style="font-family:PT Sans;font-weight:600">**Korea Advanced Institute of Science and Technology (KAIST)**</span>\\
-  <span style="font-family:PT Sans;color:#8A8A8A">M.S. & Ph.D. in Artificial Intelligence (Sep. 2020 - )</span>
-* <span style="font-family:PT Sans;font-weight:600">**Sungkyunkwan University (SKKU)**</span>\\
-  <span style="font-family:PT Sans;color:#8A8A8A">B.S. in Computer Science and Engineering (Mar. 2016 - Aug. 2019)</span>
+* <span style="font-family:Open Sans;font-weight:600">**Korea Advanced Institute of Science and Technology (KAIST)**</span>\\
+  <span style="font-family:Open Sans;color:#8A8A8A">M.S. & Ph.D. in Artificial Intelligence (Sep. 2020 - )</span>
+* <span style="font-family:Open Sans;font-weight:600">**Sungkyunkwan University (SKKU)**</span>\\
+  <span style="font-family:Open Sans;color:#8A8A8A">B.S. in Computer Science and Engineering (Mar. 2016 - Aug. 2019)</span>
 
-<span style="font-family:PT Sans;">**Work Experience**</span>
+<span style="font-family:Open Sans;">**Work Experience**</span>
 ------
-* <span style="font-family:PT Sans;">**Amazon**</span>\\
-  <span style="font-family:PT Sans;color:#8A8A8A">Applied Scientist Intern (Expected at Sep. 2022 - Dec. 2022)</span>
+* <span style="font-family:Open Sans;">**Amazon**</span>\\
+  <span style="font-family:Open Sans;color:#8A8A8A">Applied Scientist Intern (Expected at Sep. 2022 - Dec. 2022)</span>
 
-<span style="font-family:PT Sans;">**Tutorial**</span>
+<span style="font-family:Open Sans;">**Tutorial**</span>
 ------
-* <span style="font-family:PT Sans;">
+* <span style="font-family:Open Sans;">
   <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators**</span>\\
   <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Jaemin Yoo, and Kijung Shin</span>\\
   <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2022</a> / <a href="https://www.cikm2022.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">CIKM 2022</a> / <a href="http://dsaa2022.dsaa.co/" style="color:#0F52BA; font-weight:600; text-decoration:none;">DSAA 2022</a> &nbsp;
@@ -43,9 +44,9 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <span style="color:#8A8A8A">bib</span> ]
   </span>
 
-<span style="font-family:PT Sans;">**Publications**</span>
-  ------
-* <span style="font-family:PT Sans;">
+<span style="font-family:Open Sans;">**Publications**</span>
+------
+* <span style="font-family:Open Sans;">
   <span style="font-weight:600">**Set2Box: Similarity Preserving Representation Learning of Sets**</span>\\
   <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Chanyoung Park, and Kijung Shin</span>\\
   <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2022</a>  &nbsp;
@@ -58,7 +59,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
   <!-- -->
 
-* <span style="font-family:PT Sans;">
+* <span style="font-family:Open Sans;">
   <span style="font-weight:600">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
   <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
   <a href="https://ijcai-22.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">IJCAI 2022</a> &nbsp;
@@ -73,7 +74,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
   <!-- -->
 
-* <span style="font-family:PT Sans;">
+* <span style="font-family:Open Sans;">
   <span style="color:#24292f;font-weight:600">**MiDaS: Representative Sampling from Real-World Hypergraphs**</span>\\
   <span style="color:#8A8A8A">Minyoung Choe, Jaemin Yoo, </span><span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Woonsung Baek, U Kang, and Kijung Shin </span>\\
   <a href="https://www2022.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">WWW 2022</a> &nbsp;
@@ -87,7 +88,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
     <!-- -->
 
-* <span style="font-family:PT Sans;">
+* <span style="font-family:Open Sans;">
   <span style="color:#24292f;font-weight:600">**Simple Epidemic Models with Segmentation Can Be Better than Complex Ones**</span>\\
   <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Se-eun Yoon, and Kijung Shin</span>\\
   <a href="https://journals.plos.org/plosone/" style="color:#BF0000; font-weight:600; text-decoration:none;">PLOS ONE (2022)</a> &nbsp;
@@ -101,7 +102,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
     <!-- -->
 
-* <span style="font-family:PT Sans;">
+* <span style="font-family:Open Sans;">
   <span style="color:#24292f;font-weight:600">**THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting**</span>\\
   <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
   <a href="https://icdm2021.auckland.ac.nz/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2021</a> &nbsp;
@@ -116,7 +117,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
     <!-- -->
 
-* <span style="font-family:PT Sans;">
+* <span style="font-family:Open Sans;">
   <span style="color:#24292f;font-weight:600">**How Do Hyperedges Overlap in Real-World Hypergraphs? - Patterns, Measures, and Generators**</span>\\
   <span style="text-decoration:underline">**Geon Lee***</span><span style="color:#8A8A8A">, Minyoung Choe*, and Kijung Shin</span>\\
   <a href="https://www2021.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">WWW 2021</a> &nbsp;
@@ -130,7 +131,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
     <!-- -->
 
-* <span style="font-family:PT Sans;">
+* <span style="font-family:Open Sans;">
   <span style="color:#24292f;font-weight:600">**Hypergraph Motifs: Concepts, Algorithms, and Discoveries**</span>\\
   <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Jihoon Ko, and Kijung Shin</span>\\
   <a href="https://vldb2020.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">VLDB 2020</a> &nbsp;
@@ -144,7 +145,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
     <!-- -->
 
-* <span style="font-family:PT Sans;">
+* <span style="font-family:Open Sans;">
   <span style="color:#24292f;font-weight:600">**MEGA: Multi-View Semi-Supervised Clustering of Hypergraphs**</span>\\
   <span style="color:#8A8A8A">Joyce Jiyoung Whang, Rundong Du, Sangwon Jung,</span> <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Barry Drake, Qingqing Liu, Seonggoo Kang, and Haesun Park</span>\\
   <a href="https://vldb2020.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">VLDB 2020</a> &nbsp;
@@ -154,7 +155,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
     <!-- -->
 
-* <span style="font-family:PT Sans;">
+* <span style="font-family:Open Sans;">
   <span style="color:#24292f;font-weight:600">**Hyperlink Classification via Structured Graph Embedding**</span>\\
   <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Seonggoo Kang, and Joyce Jiyoung Whang</span>\\
   <a href="https://sigir.org/sigir2019/" style="color:#0F52BA; font-weight:600; text-decoration:none;">SIGIR 2019</a> &nbsp;
@@ -162,29 +163,29 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="https://dblp.uni-trier.de/rec/conf/sigir/LeeKW19.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
 
-<span style="font-family:PT Sans;">**Awards & Honors**</span>
+<span style="font-family:Open Sans;">**Awards & Honors**</span>
 ------
-* <span style="font-family:PT Sans;font-weight:600">**Selected as One of the Best-Ranked Papers of ICDM 2021**</span> <span style="font-family:PT Sans;color:#8A8A8A">(Dec. 2021)</span>
-* <span style="font-family:PT Sans;font-weight:600">**Sungkyunkwan Presidential Award**</span> <span style="font-family:PT Sans;color:#8A8A8A">(Aug. 2019)</span>
-* <span style="font-family:PT Sans;font-weight:600">**Dean's List**</span> <span style="font-family:PT Sans;color:#8A8A8A">(2016 - 2019)</span>
-* <span style="font-family:PT Sans;font-weight:600">**Sungkyun Software Scholarship**</span> <span style="font-family:PT Sans;color:#8A8A8A">(Full tuition for all semesters. 2016 - 2019)</span>
+* <span style="font-family:Open Sans;font-weight:600">**Selected as One of the Best-Ranked Papers of ICDM 2021**</span> <span style="font-family:Open Sans;color:#8A8A8A">(Dec. 2021)</span>
+* <span style="font-family:Open Sans;font-weight:600">**Sungkyunkwan Presidential Award**</span> <span style="font-family:Open Sans;color:#8A8A8A">(Aug. 2019)</span>
+* <span style="font-family:Open Sans;font-weight:600">**Dean's List**</span> <span style="font-family:Open Sans;color:#8A8A8A">(2016 - 2019)</span>
+* <span style="font-family:Open Sans;font-weight:600">**Sungkyun Software Scholarship**</span> <span style="font-family:Open Sans;color:#8A8A8A">(Full tuition for all semesters. 2016 - 2019)</span>
 
-<span style="font-family:PT Sans;">**Projects**</span>
+<span style="font-family:Open Sans;">**Projects**</span>
 ------
-* <span style="font-family:PT Sans;font-weight:600">**AI-based Weather Forecast Support Development** (July 2021 - )</span>\\
-  <span style="font-family:PT Sans;color:#8A8A8A">Developing a search engine that finds similar satellite images of the Korean Peninsula from the past 40 years, given a query image.</span>
-* <span style="font-family:PT Sans;font-weight:600">**COVID-19 Task Force** (Mar. 2020 - Sep. 2020)</span>\\
-  <span style="font-family:PT Sans;color:#8A8A8A">Developed a model for fitting and predicting epidemic events of COVID-19.</span>
+* <span style="font-family:Open Sans;font-weight:600">**AI-based Weather Forecast Support Development** (July 2021 - )</span>\\
+  <span style="font-family:Open Sans;color:#8A8A8A">Developing a search engine that finds similar satellite images of the Korean Peninsula from the past 40 years, given a query image.</span>
+* <span style="font-family:Open Sans;font-weight:600">**COVID-19 Task Force** (Mar. 2020 - Sep. 2020)</span>\\
+  <span style="font-family:Open Sans;color:#8A8A8A">Developed a model for fitting and predicting epidemic events of COVID-19.</span>
 
-<span style="font-family:PT Sans;">**Teaching**</span>
+<span style="font-family:Open Sans;">**Teaching**</span>
 ------
-* <span style="font-family:PT Sans;font-weight:600">**KAIST AI506 Data Mining and Search**</span>
+* <span style="font-family:Open Sans;font-weight:600">**KAIST AI506 Data Mining and Search**</span>
   [ <a href="https://sites.google.com/view/ai506-2021spring/home" style="color:#218bff; text-decoration:none;">Spring 2021</a> ]
-* <span style="font-family:PT Sans;font-weight:600">**KAIST AI607 Graph Mining and Social Network Analysis**</span>
-  [ <span style="font-family:PT Sans;color:#8A8A8A">Fall 2022</span> |
+* <span style="font-family:Open Sans;font-weight:600">**KAIST AI607 Graph Mining and Social Network Analysis**</span>
+  [ <span style="font-family:Open Sans;color:#8A8A8A">Fall 2022</span> |
   <a href="https://sites.google.com/view/ai607/home" style="color:#218bff; text-decoration:none;">Fall 2021</a> |
   <a href="https://sites.google.com/view/ai607-2020fall/home" style="color:#218bff; text-decoration:none;">Fall 2020</a> ]
-* <span style="font-family:PT Sans;font-weight:600">**KAIST AI617 Machine Learning for Robotics**</span>
-  [ <span style="font-family:PT Sans;color:#8A8A8A">Spring 2022</span> ]
-* <span style="font-family:PT Sans;font-weight:600">**SKKU CSE3036 Seminar in Computer Engineering**</span>
-  [ <span style="font-family:PT Sans;color:#8A8A8A">Fall 2019</span> ]
+* <span style="font-family:Open Sans;font-weight:600">**KAIST AI617 Machine Learning for Robotics**</span>
+  [ <span style="font-family:Open Sans;color:#8A8A8A">Spring 2022</span> ]
+* <span style="font-family:Open Sans;font-weight:600">**SKKU CSE3036 Seminar in Computer Engineering**</span>
+  [ <span style="font-family:Open Sans;color:#8A8A8A">Fall 2019</span> ]
