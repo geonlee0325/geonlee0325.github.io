@@ -32,13 +32,12 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 <span style="font-family:Source Sans Pro;">**Work Experience**</span>
 ------
 * <span style="font-family:Source Sans Pro;">**Amazon**</span>\\
-  <span style="font-family:Source Sans Pro;color:#8A8A8A;font-size:95%">Applied Scientist Intern (Expected at Sep. 2022 - Dec. 2022)</span>
+  <span style="font-family:Source Sans Pro;color:#8A8A8A">Applied Scientist Intern (Expected at Sep. 2022 - Dec. 2022)</span>
 
 <span style="font-family:Source Sans Pro;">**Tutorial**</span>
 ------
 * <span style="font-family:Source Sans Pro;">
   <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators**</span>\\
-  <span style="font-size:100%">
   <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Jaemin Yoo, and Kijung Shin</span>\\
   <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2022</a> / <a href="https://www.cikm2022.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">CIKM 2022</a> / <a href="http://dsaa2022.dsaa.co/" style="color:#0F52BA; font-weight:600; text-decoration:none;">DSAA 2022</a> &nbsp;
   [ <span style="color:#8A8A8A">proposal</span> |
@@ -46,14 +45,13 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <span style="color:#8A8A8A">video</span> |
   <span style="color:#8A8A8A">bib</span> ]
   </span>
-  </span>
 
 <span style="font-family:Source Sans Pro;">**Publications**</span>
 ------
 * <span style="font-family:Source Sans Pro;">
   <span style="font-weight:600">**Set2Box: Similarity Preserving Representation Learning of Sets**</span>\\
-  <span style="text-decoration:underline">**Geon Lee**</span><span style="color:#8A8A8A">, Chanyoung Park, and Kijung Shin</span>\\
-  <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2022</a>  &nbsp;
+  <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Chanyoung Park, and Kijung Shin</span>\\
+  <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; text-decoration:none;">ICDM 2022</a>  &nbsp;
   [ <span style="color:#8A8A8A">paper</span> |
   <span style="color:#8A8A8A">appendix</span> |
   <span style="color:#8A8A8A">video</span> |
