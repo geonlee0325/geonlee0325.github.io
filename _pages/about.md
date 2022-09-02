@@ -32,9 +32,9 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 <span style="font-family:Source Sans Pro;">**Work Experience**</span>
 ------
 * <span style="font-family:Source Sans Pro;">**Amazon**</span>\\
-  <span style="font-family:Source Sans Pro;color:#8A8A8A">Applied Scientist Intern (Expected at Sep. 2022 - Dec. 2022)</span>
+  <span style="font-family:Source Sans Pro;color:#8A8A8A">Applied Scientist Intern (Sep. 2022 - Dec. 2022, Expected)</span>
 
-<span style="font-family:Source Sans Pro;">**Tutorial**</span>
+<span style="font-family:Source Sans Pro;">**Tutorials**</span>
 ------
 * <span style="font-family:Source Sans Pro;">
   <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators**</span>\\
