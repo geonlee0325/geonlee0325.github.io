@@ -32,9 +32,9 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 <span style="font-family:Source Sans Pro;">**Work Experience**</span>
 ------
 * <span style="font-family:Source Sans Pro;">**Amazon**</span>\\
-  <span style="font-family:Source Sans Pro;color:#8A8A8A">Applied Scientist Intern (Expected at Sep. 2022 - Dec. 2022)</span>
+  <span style="font-family:Source Sans Pro;color:#8A8A8A">Applied Scientist Intern (Sep. 2022 - Dec. 2022, Expected)</span>
 
-<span style="font-family:Source Sans Pro;">**Tutorial**</span>
+<span style="font-family:Source Sans Pro;">**Tutorials**</span>
 ------
 * <span style="font-family:Source Sans Pro;">
   <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators**</span>\\
@@ -134,7 +134,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 * <span style="font-family:Source Sans Pro;">
   <span style="color:#24292f;font-weight:600">**How Do Hyperedges Overlap in Real-World Hypergraphs? - Patterns, Measures, and Generators**</span>\\
   <span style="font-size:97%">
-  <span style="text-decoration:underline">Geon Lee</span>* <span style="color:#8A8A8A">, Minyoung Choe*, and Kijung Shin</span>\\
+  <span style="text-decoration:underline">Geon Lee</span>*<span style="color:#8A8A8A">, Minyoung Choe*, and Kijung Shin</span>\\
   <a href="https://www2021.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">WWW 2021</a> &nbsp;
   [ <a href="https://arxiv.org/pdf/2101.07480.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/young917/www21-hyperlap/blob/master/online_appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
