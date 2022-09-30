@@ -19,7 +19,7 @@ redirect_from:
 ------
 -->
 <span style="font-family:Source Sans Pro; text-align:justify">
-I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#218bff; text-decoration:none;">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/kr/" style="color:#218bff; text-decoration:none;">KAIST</a>, where I am advised by <a href="https://kijungs.github.io/" style="color:#218bff; text-decoration:none;">Prof. Kijung Shin</a> at <a href="https://sites.google.com/view/kaistdata" style="color:#218bff; text-decoration:none;">Data Mining Lab</a>. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" style="color:#218bff; text-decoration:none;">Sungkyunkwan University</a>. I will join <a href="https://www.amazon.com/" style="color:#218bff; text-decoration:none;">Amazon</a> as an applied scientist intern this September. My research interests include data mining, graph mining, social network analysis, and machine learning.
+I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#218bff; text-decoration:none;">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/kr/" style="color:#218bff; text-decoration:none;">KAIST</a>, where I am advised by <a href="https://kijungs.github.io/" style="color:#218bff; text-decoration:none;">Prof. Kijung Shin</a> at <a href="https://sites.google.com/view/kaistdata" style="color:#218bff; text-decoration:none;">Data Mining Lab</a>. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" style="color:#218bff; text-decoration:none;">Sungkyunkwan University</a>. Currently, I'm working at <a href="https://www.amazon.com/" style="color:#218bff; text-decoration:none;">Amazon</a> as an Applied Scientist Intern this September. My research interests include data mining, graph mining, social network analysis, and machine learning.
 </span>
 
 <span style="font-family:Source Sans Pro;">**Education**</span>
@@ -32,7 +32,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 <span style="font-family:Source Sans Pro;">**Work Experience**</span>
 ------
 * <span style="font-family:Source Sans Pro;">**Amazon**</span>\\
-  <span style="font-family:Source Sans Pro;color:#8A8A8A">Applied Scientist Intern (Sep. 2022 - Dec. 2022, Expected)</span>
+  <span style="font-family:Source Sans Pro;color:#8A8A8A">Applied Scientist Intern (Sep. 2022 - Dec. 2022)</span>
 
 <span style="font-family:Source Sans Pro;">**Tutorials**</span>
 ------
@@ -184,6 +184,10 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="https://dblp.uni-trier.de/rec/conf/sigir/LeeKW19.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
   </span>
+
+<span style="font-family:Source Sans Pro;">**Academic Services**</span>
+------
+* Reviewer for <a href="https://logconference.org/" style="color:#218bff; text-decoration:none;">LoG</a>
 
 <span style="font-family:Source Sans Pro;">**Awards & Honors**</span>
 ------
