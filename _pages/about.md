@@ -41,10 +41,9 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Jaemin Yoo, and Kijung Shin</span>\\
   <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2022</a> / <a href="https://www.cikm2022.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">CIKM 2022</a> / <a href="http://dsaa2022.dsaa.co/" style="color:#0F52BA; font-weight:600; text-decoration:none;">DSAA 2022</a> &nbsp;
-  [ <span style="color:#8A8A8A">proposal</span> |
+  [ <a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557505" style="color:#218bff; text-decoration:none;">proposal</a> |
   <a href="https://sites.google.com/view/hypergraph-tutorial" style="color:#218bff; text-decoration:none;">slides</a> |
-  <span style="color:#8A8A8A">video</span> |
-  <span style="color:#8A8A8A">bib</span> ]
+  <a href="https://dblp.uni-trier.de/rec/conf/cikm/LeeYS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
   </span>
 
