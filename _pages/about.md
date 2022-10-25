@@ -51,6 +51,18 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 <span style="font-family:Source Sans Pro;">**Publications**</span>
 ------
 * <span style="font-family:Source Sans Pro;">
+  <span style="color:#24292f;font-weight:600">**Temporal Hypergraph Motifs**</span>\\
+  <span style="font-size:97%">
+  <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
+  <a href="https://www.springer.com/journal/10115" style="color:#BF0000; text-decoration:none;">**Knowledge and Information Systems (2023)**</a> &nbsp;
+  [ <span style="color:#8A8A8A">paper</span> |
+  <span style="color:#8A8A8A">shoerter ver.</span>
+  <span style="color:#8A8A8A">code and datasets</span> |
+  <span style="color:#8A8A8A">bib</span> ]\\
+  </span>
+  </span>
+
+* <span style="font-family:Source Sans Pro;">
   <span>**Set2Box: Similarity Preserving Representation Learning of Sets**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline; color=#000000">Geon Lee</span><span style="color:#8A8A8A">, Chanyoung Park, and Kijung Shin</span>\\
