@@ -56,8 +56,8 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
   <a href="https://www.springer.com/journal/10115" style="color:#BF0000; text-decoration:none;">**Knowledge and Information Systems (2023)**</a> &nbsp;
   [ <span style="color:#8A8A8A">paper</span> |
-  <span style="color:#8A8A8A">shoerter ver.</span>
-  <span style="color:#8A8A8A">code and datasets</span> |
+  <span style="color:#8A8A8A">shoerter ver.</span> |
+  <span style="color:#8A8A8A">code</span> |
   <span style="color:#8A8A8A">bib</span> ]\\
   </span>
   </span>
@@ -70,7 +70,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   [ <span style="color:#8A8A8A">paper</span> |
   <span style="color:#8A8A8A">appendix</span> |
   <span style="color:#8A8A8A">video</span> |
-  <span style="color:#8A8A8A">code and datasets</span> |
+  <span style="color:#8A8A8A">code</span> |
   <span style="color:#8A8A8A">bib</span> ]
   </span>
   </span>
@@ -87,7 +87,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="https://www.youtube.com/watch?v=3zdPV_HFJY0" style="color:#218bff; text-decoration:none;">video</a> |
   <a href="files/hashnwalk_ijcai2022_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="files/hashnwalk_ijcai2022_poster.pdf" style="color:#218bff; text-decoration:none;">poster</a> |
-  <a href="https://github.com/geonlee0325/HashNWalk" style="color:#218bff; text-decoration:none;">code and datasets</a> |
+  <a href="https://github.com/geonlee0325/HashNWalk" style="color:#218bff; text-decoration:none;">code</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/ijcai/LeeCS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
   </span>
@@ -103,7 +103,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="https://github.com/young917/MiDaS/blob/main/MiDaS_ONLINE_APPENDIX.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
   <a href="https://youtu.be/smNJYtQDlB4" style="color:#218bff; text-decoration:none;">video</a> |
   <a href="http://dmlab.kaist.ac.kr/~kijungs/midasWWW2022.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
-  <a href="https://github.com/young917/MiDaS" style="color:#218bff; text-decoration:none;">code and datasets</a> |
+  <a href="https://github.com/young917/MiDaS" style="color:#218bff; text-decoration:none;">code</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/www/ChoeYLBKS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
   </span>
@@ -118,7 +118,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   [ <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0262244" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://github.com/geonlee0325/covid_segmentation/blob/main/appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
   <a href="files/segmentation_epidamik2021_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
-  <a href="https://github.com/geonlee0325/covid_segmentation" style="color:#218bff; text-decoration:none;">code and datasets</a> |
+  <a href="https://github.com/geonlee0325/covid_segmentation" style="color:#218bff; text-decoration:none;">code</a> |
   <a href="https://journals.plos.org/plosone/article/citation?id=10.1371/journal.pone.0262244" style="color:#218bff; text-decoration:none;">bib</a> ]\\
   <span style="color:#8A8A8A">Oral presentation at</span> <a href="https://epidamik.github.io/2021/index.html" style="color:#fa8072; text-decoration:none;">epiDAMIK workshop in KDD 2021</a>
   </span>
@@ -135,7 +135,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="https://github.com/geonlee0325/THyMe/blob/main/supplements.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
   <a href="https://youtu.be/EJVwrT0NroI" style="color:#218bff; text-decoration:none;">video</a> |
   <a href="files/thmotif_icdm2021_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
-  <a href="https://github.com/geonlee0325/THyMe" style="color:#218bff; text-decoration:none;">code and datasets</a> |
+  <a href="https://github.com/geonlee0325/THyMe" style="color:#218bff; text-decoration:none;">code</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/icdm/LeeS21.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]\\
   <span style="color:#FF8303">Selected as one of the best-ranked papers of ICDM 2021 for fast-track journal invitation</span>
   </span>
@@ -152,7 +152,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="https://github.com/young917/www21-hyperlap/blob/master/online_appendix.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
   <a href="https://youtu.be/u7LMnuFPJpE" style="color:#218bff; text-decoration:none;">video</a> |
   <a href="files/hyperlap_www2021_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
-  <a href="https://github.com/young917/www21-hyperlap" style="color:#218bff; text-decoration:none;">code and datasets</a> |
+  <a href="https://github.com/young917/www21-hyperlap" style="color:#218bff; text-decoration:none;">code</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/www/LeeCS21.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
   </span>
@@ -168,7 +168,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="https://github.com/geonlee0325/MoCHy/blob/master/supplementary.pdf" style="color:#218bff; text-decoration:none;">appendix</a> |
   <a href="https://youtu.be/HYHkEwojfBQ" style="color:#218bff; text-decoration:none;">video</a> |
   <a href="files/hmotif_vldb2020_slide" style="color:#218bff; text-decoration:none;">slides</a> |
-  <a href="https://github.com/lg970325/MoCHy" style="color:#218bff; text-decoration:none;">code and datasets</a> |
+  <a href="https://github.com/lg970325/MoCHy" style="color:#218bff; text-decoration:none;">code</a> |
   <a href="https://dblp.uni-trier.de/rec/journals/pvldb/LeeKS20.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
   </span>
