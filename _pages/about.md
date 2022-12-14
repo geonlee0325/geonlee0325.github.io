@@ -40,8 +40,8 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Jaemin Yoo, and Kijung Shin</span>\\
-  <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2022</a> / <a href="https://www.cikm2022.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">CIKM 2022</a> / <a href="http://dsaa2022.dsaa.co/" style="color:#0F52BA; font-weight:600; text-decoration:none;">DSAA 2022</a> &nbsp;
-  [ <a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557505" style="color:#218bff; text-decoration:none;">proposal</a> |
+  <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;">ICDM 2022</a> and <a href="https://www.cikm2022.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;">CIKM 2022</a> &nbsp;
+  [ <a href="https://youtu.be/0mD7zOBx10M" style="color:#218bff; text-decoration:none;">video</a> |
   <a href="https://sites.google.com/view/hypergraph-tutorial" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/cikm/LeeYS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
@@ -66,10 +66,9 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <span style="font-size:97%">
   <span style="text-decoration:underline; color=#000000">Geon Lee</span><span style="color:#8A8A8A">, Chanyoung Park, and Kijung Shin</span>\\
   <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; text-decoration:none;">**ICDM 2022**</a>  &nbsp;
-  [ <span style="color:#8A8A8A">paper</span> |
-  <span style="color:#8A8A8A">appendix</span> |
-  <span style="color:#8A8A8A">video</span> |
-  <span style="color:#8A8A8A">code</span> |
+  [ <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/set2boxICDM2022.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
+  <a href="https://arxiv.org/pdf/2210.03282.pdf" style="color:#218bff; text-decoration:none;">longer ver.</a> |
+  <a href="https://github.com/geon0325/Set2Box" style="color:#218bff; text-decoration:none;">code</a> |
   <span style="color:#8A8A8A">bib</span> ]
   </span>
   </span>
