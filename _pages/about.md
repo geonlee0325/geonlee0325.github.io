@@ -55,7 +55,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
   <a href="https://www.springer.com/journal/10115" style="color:#BF0000; text-decoration:none;">**Knowledge and Information Systems (2023)**</a> &nbsp;
   [ <span style="color:#8A8A8A">paper</span> |
-  <span style="color:#8A8A8A">short ver.</span> |
+  <a href="https://arxiv.org/pdf/2109.08341.pdf" style="color:#218bff; text-decoration:none;">shorter ver.</a> |
   <span style="color:#8A8A8A">code</span> |
   <span style="color:#8A8A8A">bib</span> ]\\
   </span>
