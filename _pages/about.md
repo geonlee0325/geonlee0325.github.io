@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Geon Lee"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from:
@@ -19,7 +19,7 @@ redirect_from:
 ------
 -->
 <span style="font-family:Source Sans Pro; text-align:justify">
-I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#218bff; text-decoration:none;">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/kr/" style="color:#218bff; text-decoration:none;">KAIST</a>, where I am advised by <a href="https://kijungs.github.io/" style="color:#218bff; text-decoration:none;">Prof. Kijung Shin</a> at <a href="https://sites.google.com/view/kaistdata" style="color:#218bff; text-decoration:none;">Data Mining Lab</a>. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" style="color:#218bff; text-decoration:none;">Sungkyunkwan University</a>. Currently, I'm working at <a href="https://www.amazon.com/" style="color:#218bff; text-decoration:none;">Amazon</a> as an Applied Scientist Intern. My research interests include data mining, graph mining, social network analysis, and machine learning.
+I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#218bff; text-decoration:none;">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/kr/" style="color:#218bff; text-decoration:none;">KAIST</a>, where I am advised by <a href="https://kijungs.github.io/" style="color:#218bff; text-decoration:none;">Prof. Kijung Shin</a> at <a href="https://sites.google.com/view/kaistdata" style="color:#218bff; text-decoration:none;">Data Mining Lab</a>. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" style="color:#218bff; text-decoration:none;">Sungkyunkwan University</a>. I worked at <a href="https://www.amazon.com/" style="color:#218bff; text-decoration:none;">Amazon</a> as an Applied Scientist Intern in 2022. My research interests include data mining, graph mining, social network analysis, and machine learning.
 </span>
 
 <span style="font-family:Source Sans Pro;">**Education**</span>
