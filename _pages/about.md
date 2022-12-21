@@ -118,7 +118,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="files/segmentation_epidamik2021_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="https://github.com/geonlee0325/covid_segmentation" style="color:#218bff; text-decoration:none;">code</a> |
   <a href="https://journals.plos.org/plosone/article/citation?id=10.1371/journal.pone.0262244" style="color:#218bff; text-decoration:none;">bib</a> ]\\
-  <span style="color:#8A8A8A">Oral presentation at</span> <a href="https://epidamik.github.io/2021/index.html" style="color:#fa8072; text-decoration:none;">epiDAMIK workshop in KDD 2021</a>
+  <span style="color:#FF8303">Oral presentation at</span> <a href="https://epidamik.github.io/2021/index.html" style="color:#FF8303; text-decoration:none;">epiDAMIK workshop in KDD 2021</a>
   </span>
   </span>
 
@@ -135,7 +135,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <a href="files/thmotif_icdm2021_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="https://github.com/geonlee0325/THyMe" style="color:#218bff; text-decoration:none;">code</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/icdm/LeeS21.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]\\
-  <span style="color:#FF8303">Selected as one of the best-ranked papers of ICDM 2021 for fast-track journal invitation</span>
+  <span style="color:#FF8303">Selected as one of the best-ranked papers of ICDM 2021</span>
   </span>
   </span>
 
