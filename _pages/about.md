@@ -48,8 +48,8 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
-  <span style="font-family:PT Sans;">
-  <span style="color:#24292f;font-weight:600">[J1] **Temporal Hypergraph Motifs**</span>\\
+* <span style="font-family:PT Sans;">
+  <span style="color:#24292f;font-weight:600">Temporal Hypergraph Motifs</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
   <a href="https://www.springer.com/journal/10115" style="color:#BF0000; text-decoration:none; font-family:PT Sans;">**Knowledge and Information Systems (2023)**</a> &nbsp;
