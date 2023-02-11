@@ -60,11 +60,11 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   </span>
   </span>
 
-* <span style="font-family:PT Sans;">
-  <span>**Set2Box: Similarity Preserving Representation Learning for Sets**</span>\\
-  <span style="font-size:97%">
+  <span style="font-family:PT Sans;">
+  <span>**[C8] Set2Box: Similarity Preserving Representation Learning for Sets**</span>\\
+  <span style="font-size:95%">
   <span style="text-decoration:underline; color=#000000">Geon Lee</span><span style="color:#8A8A8A">, Chanyoung Park, and Kijung Shin</span>\\
-  <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; text-decoration:none;">**ICDM 2022**</a>  &nbsp;
+  <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; text-decoration:none;">**ICDM 2022**</a>  &nbsp;\\
   [ <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/set2boxICDM2022.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://arxiv.org/pdf/2210.03282.pdf" style="color:#218bff; text-decoration:none;">longer ver.</a> |
   <a href="files/set2box_icdm2022_slide.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
