@@ -36,7 +36,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 <span style="font-family:PT Sans;">**Tutorials**</span>
 ------
-* <span style="font-family:PT Sans;">
+* <span style="font-family:PT Sans; line-height:0.85">
   <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Jaemin Yoo, and Kijung Shin</span>\\
