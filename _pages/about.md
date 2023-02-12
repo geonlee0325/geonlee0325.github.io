@@ -25,9 +25,9 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 <span style="font-family:PT Sans;">**Education**</span>
 ------
 * <span style="font-family:PT Sans;font-weight:600">**Korea Advanced Institute of Science and Technology (KAIST)**</span>\\
-  <span style="font-family:PT Sans;color:#8A8A8A">M.S. & Ph.D. in Artificial Intelligence (Sep. 2020 - )</span>
+  <span style="font-family:PT Sans;color:#8A8A8A;font-size:97%">M.S. & Ph.D. in Artificial Intelligence (Sep. 2020 - )</span>
 * <span style="font-family:PT Sans;font-weight:600">**Sungkyunkwan University (SKKU)**</span>\\
-  <span style="font-family:PT Sans;color:#8A8A8A">B.S. in Computer Science and Engineering (Mar. 2016 - Aug. 2019)</span>
+  <span style="font-family:PT Sans;color:#8A8A8A;font-size:97%">B.S. in Computer Science and Engineering (Mar. 2016 - Aug. 2019)</span>
 
 <span style="font-family:PT Sans;">**Work Experience**</span>
 ------
@@ -52,7 +52,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
   <span style="color:#24292f;font-weight:600">**Temporal Hypergraph Motifs**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
-  <a href="https://www.springer.com/journal/10115" style="color:#BF0000; text-decoration:none; font-family:PT Sans;">**Knowledge and Information Systems (2023)**</a> &nbsp;
+  <a href="https://www.springer.com/journal/10115" style="color:#BF0000; text-decoration:none; font-family:PT Sans; font-size:97%">**Knowledge and Information Systems (2023)**</a> &nbsp;
   [ <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/thmotifKAIS2023.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://arxiv.org/pdf/2109.08341.pdf" style="color:#218bff; text-decoration:none;">shorter ver.</a> |
   <a href="https://github.com/geonlee0325/THyMe" style="color:#218bff; text-decoration:none;">code</a> |
