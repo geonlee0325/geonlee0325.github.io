@@ -197,7 +197,9 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 <span style="font-family:PT Sans;">**Academic Services**</span>
 ------
-* Conference reviewer for <a href="https://logconference.org/" style="color:#218bff; text-decoration:none;">LoG 2022</a>
+* Reviewer for <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none;">KDD 2023</a>
+* Reviewer for <a href="https://logconference.org/" style="color:#0F52BA; text-decoration:none;">LoG 2022</a>
+* Reviewer for <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" style="color:#BF0000; text-decoration:none;">TKDE (2023)</a>
 
 <span style="font-family:PT Sans;">**Awards & Honors**</span>
 ------
