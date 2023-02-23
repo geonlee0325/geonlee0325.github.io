@@ -19,7 +19,7 @@ redirect_from:
 ------
 -->
 <span style="font-family:PT Sans; text-align:justify">
-I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#218bff; text-decoration:none;">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/kr/" style="color:#218bff; text-decoration:none;">KAIST</a>, where I am advised by <a href="https://kijungs.github.io/" style="color:#218bff; text-decoration:none;">Prof. Kijung Shin</a> at <a href="https://sites.google.com/view/kaistdata" style="color:#218bff; text-decoration:none;">Data Mining Lab</a>. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" style="color:#218bff; text-decoration:none;">Sungkyunkwan University</a>. I worked at <a href="https://www.amazon.com/" style="color:#218bff; text-decoration:none;">Amazon</a> as an Applied Scientist Intern in 2022. My research interests include data mining, graph mining, social network analysis, and machine learning.
+I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#218bff; text-decoration:none;">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/kr/" style="color:#218bff; text-decoration:none;">KAIST</a>, where I am advised by <a href="https://kijungs.github.io/" style="color:#218bff; text-decoration:none;">Prof. Kijung Shin</a> at <a href="https://sites.google.com/view/kaistdata" style="color:#218bff; text-decoration:none;">Data Mining Lab</a>. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" style="color:#218bff; text-decoration:none;">Sungkyunkwan University</a>. I worked at <a href="https://www.amazon.com/" style="color:#218bff; text-decoration:none;">Amazon</a> as an Applied Scientist Intern in 2022. My research interests include data mining, graph mining, social network analysis, and machine learning.
 </span>
 
 <span style="font-family:PT Sans;">**Education**</span>
@@ -197,9 +197,7 @@ I am a M.S. & Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="co
 
 <span style="font-family:PT Sans;">**Academic Services**</span>
 ------
-* Reviewer for <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none;">KDD 2023</a>
-* Reviewer for <a href="https://logconference.org/" style="color:#0F52BA; text-decoration:none;">LoG 2022</a>
-* Reviewer for <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" style="color:#BF0000; text-decoration:none;">TKDE (2023)</a>
+* Reviewer for <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">KDD 2023</a> / <a href="https://logconference.org/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">LoG 2022</a> / <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">TKDE (2023)</a>
 
 <span style="font-family:PT Sans;">**Awards & Honors**</span>
 ------
