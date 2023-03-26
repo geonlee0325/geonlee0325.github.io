@@ -197,7 +197,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
 <span style="font-family:PT Sans;">**Academic Services**</span>
 ------
-* Reviewer for <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">KDD 2023</a> / <a href="https://logconference.org/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">LoG 2022</a> / <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">TKDE (2023)</a>
+* Reviewer for <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">KDD 2023</a> / <a href="https://logconference.org/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">LoG 2022</a> / <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">TKDE (2023)</a> / <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">TNNLS (2023)</a>
 
 <span style="font-family:PT Sans;">**Awards & Honors**</span>
 ------
