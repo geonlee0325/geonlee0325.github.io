@@ -58,7 +58,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
   [ <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/thmotifKAIS2023.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
   <a href="https://arxiv.org/pdf/2109.08341.pdf" style="color:#218bff; text-decoration:none;">shorter ver.</a> |
   <a href="https://github.com/geonlee0325/THyMe" style="color:#218bff; text-decoration:none;">code</a> |
-  <span style="color:#8A8A8A">bib</span> ]\\
+  <a href="https://dblp.uni-trier.de/rec/journals/kais/LeeS23.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]\\
   </span>
   </span>
 
