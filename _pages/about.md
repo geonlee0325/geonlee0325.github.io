@@ -31,6 +31,8 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
 <span style="font-family:PT Sans;">**Work Experience**</span>
 ------
+* <span style="font-family:PT Sans;">**NEC Labs America**</span>\\
+  <span style="font-family:PT Sans;color:#8A8A8A;font-size:97%">Research Intern (May 2023 - Aug. 2023, Princeton, Expected)</span>
 * <span style="font-family:PT Sans;">**Amazon**</span>\\
   <span style="font-family:PT Sans;color:#8A8A8A;font-size:97%">Applied Scientist Intern (Sep. 2022 - Dec. 2022, San Francisco)</span>
 
@@ -217,7 +219,8 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 ------
 * <span style="font-family:PT Sans;font-weight:600">**KAIST AI506 Data Mining and Search**</span>\\
   <span style="font-size:95%">
-  [ <a href="https://sites.google.com/view/ai506-2021spring/home" style="color:#218bff; text-decoration:none;">Spring 2021</a> ]
+  [ <a href="https://sites.google.com/view/ai506/home" style="color:#218bff; text-decoration:none;">Spring 2023</a> |
+  <a href="https://sites.google.com/view/ai506-2021spring/home" style="color:#218bff; text-decoration:none;">Spring 2021</a> ]
   </span>
 * <span style="font-family:PT Sans;font-weight:600">**KAIST AI607 Graph Mining and Social Network Analysis**</span>\\
   <span style="font-size:95%">
