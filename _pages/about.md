@@ -210,10 +210,8 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
 <span style="font-family:PT Sans;">**Projects**</span>
 ------
-* <span style="font-family:PT Sans">**AI-based Weather Forecast Support Development** <span style="font-family:PT Sans;color:#8A8A8A">(July 2021 - )</span></span>\\
-  <span style="font-family:PT Sans;color:#8A8A8A">Developing a search engine that finds similar satellite images of the Korean Peninsula from the past 40 years, given a query image.</span>
-* <span style="font-family:PT Sans;">**COVID-19 Task Force** <span style="font-family:PT Sans;color:#8A8A8A">(Mar. 2020 - Sep. 2020)</span></span>\\
-  <span style="font-family:PT Sans;color:#8A8A8A">Developed a model for fitting and predicting epidemic events of COVID-19.</span>
+* <span style="font-family:PT Sans">**AI-based Weather Forecast Support Development** <span style="font-family:PT Sans;color:#8A8A8A">(July 2021 - )</span></span>
+* <span style="font-family:PT Sans;">**COVID-19 Task Force** <span style="font-family:PT Sans;color:#8A8A8A">(Mar. 2020 - Sep. 2020)</span></span>
 
 <span style="font-family:PT Sans;">**Teaching**</span>
 ------
