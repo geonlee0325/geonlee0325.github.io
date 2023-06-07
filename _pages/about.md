@@ -42,7 +42,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
   <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Jaemin Yoo, and Kijung Shin</span>\\
-  <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">KDD 2023</a> & <a href="https://www2023.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">WWW 2023</a> & <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">ICDM 2022</a> & <a href="https://www.cikm2022.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">CIKM 2022</a> &nbsp;\\
+  <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">KDD 2023</a> & <a href="https://www2023.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">WWW 2023</a> & <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">ICDM 2022</a> & <a href="https://www.cikm2022.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">CIKM 2022</a> &nbsp;
   [ <a href="https://sites.google.com/view/hypergraph-tutorial" style="color:#218bff; text-decoration:none;">website</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/cikm/LeeYS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
