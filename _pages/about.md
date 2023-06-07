@@ -38,19 +38,19 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
 <span style="font-family:PT Sans;">**Tutorials**</span>
 ------
-* <span style="font-family:PT Sans; line-height:0.8">
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="font-weight:600">**Mining of Real-world Hypergraphs: Patterns, Tools, and Generators**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Jaemin Yoo, and Kijung Shin</span>\\
   <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">KDD 2023</a> & <a href="https://www2023.thewebconf.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">WWW 2023</a> & <a href="https://icdm22.cse.usf.edu/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">ICDM 2022</a> & <a href="https://www.cikm2022.org/" style="color:#0F52BA; font-weight:600; text-decoration:none;font-size:97%">CIKM 2022</a> &nbsp;\\
-  [ video (short) | <a href="https://youtu.be/0mD7zOBx10M" style="color:#218bff; text-decoration:none;">video (long)</a> | slides (short) | <a href="https://sites.google.com/view/hypergraph-tutorial" style="color:#218bff; text-decoration:none;">slides (long)</a> |
+  [ <a href="https://sites.google.com/view/hypergraph-tutorial" style="color:#218bff; text-decoration:none;">website</a> |
   <a href="https://dblp.uni-trier.de/rec/conf/cikm/LeeYS22.html?view=bibtex" style="color:#218bff; text-decoration:none;">bib</a> ]
   </span>
   </span>
 
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
-* <span style="font-family:PT Sans; line-height:0.8">
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="color:#24292f;font-weight:600">**Temporal Hypergraph Motifs**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
@@ -62,7 +62,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
   </span>
   </span>
 
-* <span style="font-family:PT Sans; line-height:0.8">
+* <span style="font-family:PT Sans; line-height:0.7">
   <span>**Set2Box: Similarity Preserving Representation Learning for Sets**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline; color=#000000">Geon Lee</span><span style="color:#8A8A8A">, Chanyoung Park, and Kijung Shin</span>\\
@@ -77,7 +77,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
   <!-- -->
 
-* <span style="font-family:PT Sans; line-height:0.8">
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="font-weight:600">**HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Minyoung Choe, and Kijung Shin</span>\\
@@ -94,7 +94,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
   <!-- -->
 
-* <span style="font-family:PT Sans; line-height:0.8">
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="color:#24292f;font-weight:600">**MiDaS: Representative Sampling from Real-World Hypergraphs**</span>\\
   <span style="font-size:97%">
   <span style="color:#8A8A8A">Minyoung Choe, Jaemin Yoo, </span><span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Woonsung Baek, U Kang, and Kijung Shin </span>\\
@@ -110,7 +110,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
     <!-- -->
 
-* <span style="font-family:PT Sans; line-height:0.8">
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="color:#24292f;font-weight:600">**Simple Epidemic Models with Segmentation Can Be Better than Complex Ones**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Se-eun Yoon, and Kijung Shin</span>\\
@@ -126,7 +126,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
     <!-- -->
 
-* <span style="font-family:PT Sans; line-height:0.8">
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="color:#24292f;font-weight:600">**THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
@@ -143,7 +143,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
     <!-- -->
 
-* <span style="font-family:PT Sans; line-height:0.8">
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="color:#24292f;font-weight:600">**How Do Hyperedges Overlap in Real-World Hypergraphs? - Patterns, Measures, and Generators**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span>*<span style="color:#8A8A8A">, Minyoung Choe*, and Kijung Shin</span>\\
@@ -159,7 +159,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
     <!-- -->
 
-* <span style="font-family:PT Sans; line-height:0.8">
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="color:#24292f;font-weight:600">**Hypergraph Motifs: Concepts, Algorithms, and Discoveries**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Jihoon Ko, and Kijung Shin</span>\\
@@ -175,7 +175,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
     <!-- -->
 
-* <span style="font-family:PT Sans; line-height:0.8">
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="color:#24292f;font-weight:600">**MEGA: Multi-View Semi-Supervised Clustering of Hypergraphs**</span>\\
   <span style="font-size:97%">
   <span style="color:#8A8A8A">Joyce Jiyoung Whang, Rundong Du, Sangwon Jung,</span> <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Barry Drake, Qingqing Liu, Seonggoo Kang, and Haesun Park</span>\\
@@ -187,7 +187,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
     <!-- -->
 
-* <span style="font-family:PT Sans; line-height:0.8">
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="color:#24292f;font-weight:600">**Hyperlink Classification via Structured Graph Embedding**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Seonggoo Kang, and Joyce Jiyoung Whang</span>\\
