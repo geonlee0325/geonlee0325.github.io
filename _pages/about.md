@@ -51,6 +51,17 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
 * <span style="font-family:PT Sans; line-height:0.7">
+  <span style="color:#24292f;font-weight:600">**Hypercore Decomposition for Non-Fragile Hyperedges: Concepts, Algorithms, Observations, and Applications**</span>\\
+  <span style="font-size:97%">
+  <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
+  <a href="https://www.springer.com/journal/10618" style="color:#BF0000; text-decoration:none; font-family:PT Sans; font-size:97%">**Data Mining and Knowledge Discvoery (2023)**</a> &nbsp;
+  [ <a href="https://arxiv.org/pdf/2301.08440.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
+  <a href="https://github.com/bokveizen/non-fragile-hypercore" style="color:#218bff; text-decoration:none;">code</a> |
+  bib ]\\
+  </span>
+  </span>
+
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="color:#24292f;font-weight:600">**Temporal Hypergraph Motifs**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A"> and Kijung Shin</span>\\
