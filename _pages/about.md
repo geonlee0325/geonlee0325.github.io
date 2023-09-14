@@ -56,6 +56,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
   <span style="color:#8A8A8A">Fanchen Bu,</span> <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, and Kijung Shin</span>\\
   <a href="https://www.springer.com/journal/10618" style="color:#BF0000; text-decoration:none; font-family:PT Sans; font-size:97%">**Data Mining and Knowledge Discovery (2023)**</a> &nbsp;
   [ <a href="https://arxiv.org/pdf/2301.08440.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
+  slide |
   <a href="https://github.com/bokveizen/non-fragile-hypercore" style="color:#218bff; text-decoration:none;">code</a> |
   bib ]\\
   </span>
@@ -211,16 +212,16 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 <span style="font-family:PT Sans;">**Academic Services**</span>
 ------
 * Program Committee
-  * <a href="https://www.siam.org/conferences/cm/conference/sdm24" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">SDM 2024</a>
-  * <a href="https://aaai.org/aaai-conference/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">AAAI 2024</a>
-  * <a href="https://logconference.org/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">LoG 2022 - 2023</a>
-  * <a href="https://uobevents.eventsair.com/cikm2023//" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">CIKM 2023 (Tutorial Track)</a>
+  * <a href="https://www.siam.org/conferences/cm/conference/sdm24" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">SDM 2024</a>
+  * <a href="https://aaai.org/aaai-conference/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">AAAI 2024</a>
+  * <a href="https://logconference.org/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">LoG 2022 - 2023</a>
+  * <a href="https://uobevents.eventsair.com/cikm2023//" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">CIKM 2023 (Tutorial Track)</a>
 * Conference Reviewer  
-  * <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">KDD 2023</a>
+  * <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">KDD 2023</a>
 * Journal Reviewer  
-  * <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">TKDE (2023)</a>  
-  * <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">TNNLS (2023)</a>
-  * <a href="https://www.springer.com/journal/778" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">The VLDB Journal (2023)</a>
+  * <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:92%;">TKDE (2023)</a>  
+  * <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:92%;">TNNLS (2023)</a>
+  * <a href="https://www.springer.com/journal/778" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:92%;">The VLDB Journal (2023)</a>
 
 <span style="font-family:PT Sans;">**Awards & Honors**</span>
 ------
