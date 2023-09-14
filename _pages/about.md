@@ -210,9 +210,17 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
 <span style="font-family:PT Sans;">**Academic Services**</span>
 ------
-* Program Committee for <a href="https://aaai.org/aaai-conference/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">AAAI 2024</a> / <a href="https://logconference.org/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">LoG 2022 - 2023</a> / <a href="https://uobevents.eventsair.com/cikm2023//" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">CIKM 2023 (Tutorial Track)</a>
-* Conference Reviewer for <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">KDD 2023</a>
-* Journal Reviewer for <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">TKDE (2023)</a> / <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">TNNLS (2023)</a> / <a href="https://www.springer.com/journal/778" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">The VLDB Journal (2023)</a>
+* Program Committee
+  * <a href="https://www.siam.org/conferences/cm/conference/sdm24" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">SDM 2024</a>
+  * <a href="https://aaai.org/aaai-conference/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">AAAI 2024</a>
+  * <a href="https://logconference.org/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">LoG 2022 - 2023</a>
+  * <a href="https://uobevents.eventsair.com/cikm2023//" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">CIKM 2023 (Tutorial Track)</a>
+* Conference Reviewer  
+  * <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:97%;">KDD 2023</a>
+* Journal Reviewer  
+  * <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">TKDE (2023)</a>  
+  * <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">TNNLS (2023)</a>
+  * <a href="https://www.springer.com/journal/778" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:97%;">The VLDB Journal (2023)</a>
 
 <span style="font-family:PT Sans;">**Awards & Honors**</span>
 ------
@@ -235,8 +243,8 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
   </span>
 * <span style="font-family:PT Sans;font-weight:600">**KAIST AI607 Graph Mining and Social Network Analysis**</span>\\
   <span style="font-size:95%">
-  [ Fall 2023 |
-  <a href="https://sites.google.com/view/ai607/home" style="color:#218bff; text-decoration:none;">Fall 2022</a> |
+  [ <a href="https://sites.google.com/view/ai607/home" style="color:#218bff; text-decoration:none;">Fall 2023</a> |
+  <a href="https://sites.google.com/view/ai607-2022fall/home" style="color:#218bff; text-decoration:none;">Fall 2022</a> |
   <a href="https://sites.google.com/view/ai607-2021fall/home" style="color:#218bff; text-decoration:none;">Fall 2021</a> |
   <a href="https://sites.google.com/view/ai607-2020fall/home" style="color:#218bff; text-decoration:none;">Fall 2020</a> ]
   </span>
