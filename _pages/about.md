@@ -56,7 +56,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
   <span style="color:#8A8A8A">Fanchen Bu,</span> <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, and Kijung Shin</span>\\
   <a href="https://www.springer.com/journal/10618" style="color:#BF0000; text-decoration:none; font-family:PT Sans; font-size:97%">**Data Mining and Knowledge Discovery (2023)**</a> &nbsp;
   [ <a href="https://arxiv.org/pdf/2301.08440.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
-  slide |
+  <a href="https://bokveizen.github.io/slides/hypercore_dami23.pdf" style="color:#218bff; text-decoration:none;">slides</a> |
   <a href="https://github.com/bokveizen/non-fragile-hypercore" style="color:#218bff; text-decoration:none;">code</a> |
   bib ]\\
   </span>
