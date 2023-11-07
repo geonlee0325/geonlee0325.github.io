@@ -217,6 +217,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
   * <a href="https://logconference.org/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">LoG 2022 - 2023</a>
   * <a href="https://uobevents.eventsair.com/cikm2023//" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">CIKM 2023 (Tutorial Track)</a>
 * Conference Reviewer  
+  * <a href="https://www2024.thewebconf.org/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">WWW 2024</a>
   * <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">KDD 2023</a>
 * Journal Reviewer  
   * <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:92%;">TKDE (2023)</a>  
