@@ -50,6 +50,19 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
+
+* <span style="font-family:PT Sans; line-height:0.7">
+  <span style="color:#24292f;font-weight:600">**Hypergraph Motifs and Their Extensions Beyond Binary**</span>\\
+  <span style="font-size:97%">
+  <span style="text-decoration:underline">Geon Lee</span>*<span style="color:#8A8A8A">, Seokbum Yoon*, Jihoon Ko, Hyunju Kim, and Kijung Shin</span>\\
+  <a href="https://www.springer.com/journal/778" style="color:#BF0000; text-decoration:none; font-family:PT Sans; font-size:97%">**The VLDB Journal (2023)**</a> &nbsp;
+  [ <a href="https://arxiv.org/pdf/2310.15668.pdf" style="color:#218bff; text-decoration:none;">paper</a> |
+  <a href="http://www.vldb.org/pvldb/vol13/p2256-lee.pdf" style="color:#218bff; text-decoration:none;">shorter ver.</a> |
+  <a href="https://github.com/jing9044/MoCHy-with-3h-motif" style="color:#218bff; text-decoration:none;">code</a> |
+  bib ]\\
+  </span>
+  </span>
+
 * <span style="font-family:PT Sans; line-height:0.7">
   <span style="color:#24292f;font-weight:600">**Hypercore Decomposition for Non-Fragile Hyperedges: Concepts, Algorithms, Observations, and Applications**</span>\\
   <span style="font-size:97%">
