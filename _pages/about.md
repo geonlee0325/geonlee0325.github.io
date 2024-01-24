@@ -51,6 +51,18 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
 * <span style="font-family:PT Sans; line-height:0.7">
+  <span>**VilLain: Self-Supervised Learning on Hypergraphs without Features via Virtual Label Propagation**</span>\\
+  <span style="font-size:97%">
+  <span style="text-decoration:underline; color=#000000">Geon Lee</span><span style="color:#8A8A8A">, Soo Yong Lee, and Kijung Shin</span>\\
+  <a href="https://www2024.thewebconf.org/" style="color:#0F52BA; text-decoration:none;font-size:97%">**WWW 2024**</a>  &nbsp;
+  [ paper |
+  slides |
+  code |
+  bib ]
+  </span>
+  </span>
+
+* <span style="font-family:PT Sans; line-height:0.7">
   <span style="color:#24292f;font-weight:600">**Random Walk with Restart on Hypergraphs: Fast Computation and an Application to Anomaly Detection**</span>\\
   <span style="font-size:97%">
   <span style="color:#8A8A8A">Jaewan Chun,</span> <span style="text-decoration:underline">Geon Lee</span><span style="color:#8A8A8A">, Kijung Shin, and Jinhong Jung</span>\\
@@ -242,8 +254,9 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
   * <a href="https://uobevents.eventsair.com/cikm2023//" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">CIKM 2023 (Tutorial Track)</a>
 * Conference Reviewer  
   * <a href="https://www2024.thewebconf.org/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">WWW 2024</a>
-  * <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">KDD 2023</a>
+  * <a href="https://kdd.org/kdd2023/" style="color:#0F52BA; text-decoration:none; font-weight:600; font-size:92%;">KDD 2023 - 2024</a>
 * Journal Reviewer  
+  * <a href="https://www.sciencedirect.com/journal/big-data-research" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:92%;">Big Data Research (2024)</a>  
   * <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:92%;">TKDE (2023)</a>  
   * <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:92%;">TNNLS (2023)</a>
   * <a href="https://www.springer.com/journal/778" style="color:#BF0000; text-decoration:none; font-weight:600; font-size:92%;">The VLDB Journal (2023)</a>
