@@ -51,7 +51,7 @@ I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" style="color:#21
 <span style="font-family:PT Sans;">**Publications**</span>
 ------
 * <span style="font-family:PT Sans; line-height:0.7">
-  <span>**VilLain: Self-Supervised Learning on Hypergraphs without Features via Virtual Label Propagation**</span>\\
+  <span>**VilLain: Self-Supervised Learning on Homogeneous Hypergraphs without Features via Virtual Label Propagation**</span>\\
   <span style="font-size:97%">
   <span style="text-decoration:underline; color=#000000">Geon Lee</span><span style="color:#8A8A8A">, Soo Yong Lee, and Kijung Shin</span>\\
   <a href="https://www2024.thewebconf.org/" style="color:#0F52BA; text-decoration:none;font-size:97%">**WWW 2024**</a>  &nbsp;
