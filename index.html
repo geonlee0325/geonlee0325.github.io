@@ -106,6 +106,32 @@
             font-size: 16px;
             color: #777;
         }
+        @media (max-width: 768px) { /* Adjusts for tablets and below */
+            body {
+                padding: 10px;
+            }
+            .title-container h1 {
+                font-size: 18px;
+            }
+            .section-title {
+                font-size: 20px;
+            }
+            .details {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) { /* Adjusts for small smartphones */
+            .title-container h1, .section-title {
+                font-size: 16px;
+            }
+            .details {
+                font-size: 12px;
+            }
+            ul li, .education li, .work-experience li, .publications li, .projects li, .teaching li, .academic-services li, .awards li {
+                margin-bottom: 8px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -167,6 +193,14 @@
       <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span>*, Fanchen Bu*, Tina Eliassi-Rad, and Kijung Shin</span><br/>
       <a target="_blank" class="arxiv">arXiv (2024)</a>&nbsp &nbsp
       [ <a href="https://arxiv.org/pdf/2401.08878.pdf">pdf</a> ]
+    </li>
+    <li class="paper-entry" style="margin-bottom: 15px;">
+      <span class="paper">Representative and Back-in-Time Sampling from Real-World Hypergraphs</span><br/>
+      <span class="author">Minyoung Choe, Jaemin Yoo, <span style='color:black;text-decoration:underline'>Geon Lee</span>, Woonsung Baek, U Kang, and Kijung Shin</span><br/>
+      <a href="https://www2024.thewebconf.org/" target="_blank" class="journal">Transaction on Knowledge Discovery from Data (2024)</a>&nbsp &nbsp
+      [ pdf |
+      <a href="https://arxiv.org/pdf/2202.01587.pdf">shorter ver.</a> |
+      code ]
     </li>
     <li class="paper-entry" style="margin-bottom: 15px;">
       <span class="paper">VilLain: Self-Supervised Learning on Homogeneous Hypergraphs without Features via Virtual Label Propagation</span><br/>
