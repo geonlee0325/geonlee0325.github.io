@@ -1,382 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure proper mobile scaling -->
-    <title>Geon Lee @ KAIST</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Noto+Sans|Open+Sans|Source+Sans+Pro|Noto+Sans+KR" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geon Lee @ KAIST</title>
+<style>
+  body {
+    font-family: 'Georgia', serif;
+    line-height: 1.75;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
 
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            color: #333;
-            max-width: 900px;
-            margin: auto;
-            padding: 30px;
-        }
-        .title-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-        h1 {
-            font-size: 24px;
-        }
-        ul {
-          padding: 0; /* Removes the default padding */
-        }
-        ul li {
-          margin-bottom: 10px; /* Adds space below each list item */
-        }
-        ul li:not(:last-child) {
-          margin-bottom: 10px; /* Or use padding-bottom for inside space */
-        }
-        a {
-          color: #007BFF; /* Deep blue */
-          text-decoration: none; /* Optional: removes the underline */
-          transition: color 0.3s ease; /* Smooth transition for hover effect */
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 10px;
+  }
 
-        }
-        .arxiv {
-          color: gray; /* Deep blue */
-          text-decoration: none; /* Optional: removes the underline */
-          transition: color 0.3s ease; /* Smooth transition for hover effect */
-          font-weight: 1000;
-        }
-        .arxiv:hover {
-          color: #FFA500;
-          font-weight: 900;
-        }
-        .conf {
-          color: #0F52BA; /* Deep blue */
-          text-decoration: none; /* Optional: removes the underline */
-          transition: color 0.3s ease; /* Smooth transition for hover effect */
-          font-weight: 1000;
-        }
-        .conf:hover {
-          color: #FFA500;
-          font-weight: 900;
-        }
-        .journal {
-          color: #BF0000; /* Deep blue */
-          text-decoration: none; /* Optional: removes the underline */
-          transition: color 0.3s ease; /* Smooth transition for hover effect */
-          font-weight: 900;
-        }
-        .journal:hover {
-          color: #FFA500; /* Lighter blue for hover state */
-          font-weight: 900;
-        }
-        .section-title {
-            color: #333;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 24px;
-            margin-top: 20px;
-            margin-bottom: 2px;
-            border-bottom: 2px solid #0066cc;
-            display: inline-block;
-        }
-        .education, .work-experience, .publications, .projects, .teaching, .academic-services, .awards {
-            margin-bottom: 20px;
-        }
-        .education li, .work-experience li, .publications li, .projects li, .teaching li, .academic-services li, .awards li {
-            margin-bottom: 10px;
-        }
-        .institution, .position {
-            font-weight: bold;
-        }
-        .date {
-            float: right;
-            color: #777;
-        }
-        .paper {
-            color: black;
-            font-weight: 900;
-        }
-        .venue {
-            font-weight: 1000;
-            color:red;
-        }
-        .award {
-            font-weight: 600;
-            color:#FF8303;
-        }
-        .author {
-            color: #777;
-        }
-        .details {
-            font-size: 16px;
-            color: #777;
-        }
-        @media (max-width: 768px) { /* Adjusts for tablets and below */
-            body {
-                padding: 10px;
-            }
-            .title-container h1 {
-                font-size: 18px;
-            }
-            .section-title {
-                font-size: 20px;
-            }
-            .details {
-                font-size: 14px;
-            }
-        }
+  header {
+    background: white;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+  }
 
-        @media (max-width: 480px) { /* Adjusts for small smartphones */
-            .title-container h1, .section-title {
-                font-size: 16px;
-            }
-            .details {
-                font-size: 12px;
-            }
-            ul li, .education li, .work-experience li, .publications li, .projects li, .teaching li, .academic-services li, .awards li {
-                margin-bottom: 8px;
-            }
-        }
-    </style>
+  header a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  header a:hover {
+    color: #FFA500;
+  }
+
+  strong + ul {
+    margin-top: 0px; /* Adjust this value as needed to reduce the space */
+  }
+
+  .header-title {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+  }
+
+  .header-links {
+    margin: 10px 0;
+  }
+
+  .content {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 0px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+
+  .section-title {
+    font-size: 1.6em;
+    color: #333;
+    padding-bottom: 5px;
+    margin: 20px 0 20px;
+    border-bottom: 4px solid #5cb85c;
+    font-family: 'Georgia', serif;
+  }
+
+  .education {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: 'Georgia', serif;
+  }
+
+  .publication {
+    margin: 8px 0;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: 'Georgia', serif;
+    background: #f9f9f9;
+  }
+
+  .publication ul {
+    margin-top: 0; /* Removes the top margin of the list */
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .publication ul li {
+    margin-bottom: 0px; /* Reduces space between items by removing bottom margin */
+    padding-top: 0; /* Optional: Adjust as needed to reduce space at the top of each item */
+    padding-bottom: 0; /* Optional: Adjust as needed to reduce space at the bottom of each item */
+  }
+
+  .date {
+      float: right;
+      color: #777;
+  }
+
+  .highlight {
+    color: black;
+    font-weight: bold;
+  }
+
+  .institution {
+    font-style: italic;
+    color: #555;
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .profile-pic {
+    width: 185px; /* Adjust as needed */
+    height: 185px; /* Adjust as needed */
+    border-radius: 10%;
+    object-fit: cover;
+  }
+
+  .fancy-link {
+    color: #2596be;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .fancy-link:hover, .fancy-link:focus {
+    color: #FFA500; /* Change color on hover/focus */
+  }
+
+  p {
+    font-size: 1.1em;
+    position: relative;
+  }
+
+  @media (max-width: 768px) {
+    .header-title,
+    .section-title,
+    p {
+      font-size: 1em;
+    }
+  }
+</style>
 </head>
 <body>
 
-
-<div class="about-me">
-    <img src="files/geonlee_picture.jpg" alt="Your Name" style="width:150px;height:auto;float:left;margin-right:20px;border-radius:10%;">
-    <div class="title-container">
-        <h1>Geon Lee @ KAIST</h1>
+  <header>
+    <div class="container">
+      <h1 class="header-title">Geon Lee</h1>
+      <div class="header-links">
+        <a href="geonlee@0325@kaist.ac.kr" title="email">Email</a> |
+        <a href="files/geonlee_cv.pdf" title="CV">CV</a> |
+        <a href="https://www.linkedin.com/in/geon-lee-70322a161" title="LinkedIn">LinkedIn</a> |
+        <a href="https://github.com/geon0325" title="Github">Github</a> |
+        <a href="https://scholar.google.co.kr/citations?user=2g2psXcAAAAJ&hl=en" title="Google Scholar">Google Scholar</a>
+      </div>
     </div>
-    <p>I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/">KAIST</a>, where I am advised by <a href="https://kijungs.github.io/">Prof. Kijung Shin</a> at <a href="https://sites.google.com/view/kaistdata">Data Mining Lab</a>. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do">Sungkyunkwan University</a>. I worked at <a href="https://www.amazon.com/">Amazon</a> as an Applied Scientist Intern in 2022 and at <a href="https://www.nec-labs.com/">NEC Labs America</a> as a Research Intern in 2023. My research interests include data mining, machine learning, and social network analysis.</p>
-  <p style="text-align:center">
-    <a href="geonlee@0325@kaist.ac.kr" title="email">Email</a> |
-    <a href="files/geonlee_cv.pdf" title="CV">CV</a> |
-    <a href="https://www.linkedin.com/in/geon-lee-70322a161" title="LinkedIn">LinkedIn</a> |
-    <a href="https://github.com/geon0325" title="GitHub">GitHub</a> |
-    <a href="https://scholar.google.co.kr/citations?user=2g2psXcAAAAJ&hl=en" title="Google Scholar">Google Scholar</a>
-</p>
+  </header>
+
+
+<div class="container content">
+  <div class="profile-header">
+    <img src="files/geonlee_picture.jpg" alt="Geon Lee" class="profile-pic">
+    <div>
+      <p>
+        I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" class="fancy-link">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/" class="fancy-link">KAIST</a>, where I am advised by <a href="https://kijungs.github.io/" class="fancy-link">Prof. Kijung Shin</a> at <a href="https://sites.google.com/view/kaistdata" class="fancy-link">Data Mining Lab</a>.
+        I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" class="fancy-link">Sungkyunkwan University</a>.
+        I worked at <a href="https://www.amazon.com/" class="fancy-link">Amazon</a> as an Applied Scientist Intern in 2022 and at <a href="https://www.nec-labs.com/" class="fancy-link">NEC Labs America</a> as a Research Intern in 2023.
+        My research interests include data mining, machine learning, and social network analysis.
+      </p>
+    </div>
+  </div>
+
+  <div class="section-title">Education</div>
+  <div class="education">
+    <strong>Korea Advanced Institute of Science and Technology (KAIST)</strong> <span class="date">Sep. 2020 - Present (Seoul, South Korea)</span><br>
+    M.S. & Ph.D. in Artificial Intelligence
+  </div>
+  <div class="education">
+    <strong>Sungkyunkwan University (SKKU)</strong> <span class="date">Mar. 2016 - Aug. 2019 (Suwon, South Korea)</span><br>
+    B.S. in Computer Science and Engineering
+  </div>
+
+  <div class="section-title">Work Experience</div>
+  <div class="education">
+    <strong>NEC Labs America</strong> <span class="date">May 2023 - Aug. 2023 (Princeton, USA)</span><br>
+    Research Intern
+  </div>
+  <div class="education">
+    <strong>Amazon</strong> <span class="date">Sep. 2022 - Dec. 2022 (San Francisco, USA)</span><br>
+    Applied Scientist Intern
+  </div>
+
+
+  <div class="section-title">Publications</div>
+
+  <div class="publication">
+  <strong>[P1]</strong> A Survey on Hypergraph Mining: Patterns, Tools, and Generators
+  <ul>
+    <li><span class="highlight">Geon Lee*</span>, Fanchen Bu*, Tina Eliassi-Rad, and Kijung Shin
+    <li>arXiv (2024)
+    <li><a href="https://arxiv.org/pdf/2401.08878.pdf" class="fancy-link">pdf</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[J6]</strong> Representative and Back-in-Time Sampling from Real-World Hypergraphs
+  <ul>
+    <li>Minyoung Choe, Jaemin Yoo, <span class="highlight">Geon Lee</span>, Woonsung Baek, U Kang, and Kijung Shin
+    <li>Transaction on Knowledge Discovery from Data (<strong>TKDD</strong>) (2024)
+    <li> pdf |
+      <a href="https://arxiv.org/pdf/2202.01587.pdf" class="fancy-link">shorter ver.</a> |
+      <a href="https://github.com/young917/MiDaS-B" class="fancy-link">code</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[C9]</strong> VilLain: Self-Supervised Learning on Homogeneous Hypergraphs without Features via Virtual Label Propagation
+  <ul>
+    <li><span class="highlight">Geon Lee</span>, Soo Yong Lee, and Kijung Shin
+    <li>The Web Conference (<strong>WWW</strong>), 2024
+    <li> pdf |
+      code
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[T2]</strong> Mining of Real-World Hypergraphs: Patterns, Tools, and Generators
+  <ul>
+    <li><span class="highlight">Geon Lee</span>, Jaemin Yoo, and Kijung Shin
+    <li>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD</strong>), 2023
+    <li>The Web Conference (<strong>WWW</strong>), 2023
+    <li><a href="https://sites.google.com/view/hypergraph-tutorial" class="fancy-link">website</a> |
+      <a href="https://www.youtube.com/watch?v=0mD7zOBx10M" class="fancy-link">video</a> |
+      <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/tutorialKDD2023.pdf" class="fancy-link">proposal</a> |
+      <a href="https://arxiv.org/pdf/2401.08878.pdf" class="fancy-link">survey</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[J5]</strong> Random Walk with Restart on Hypergraphs: Fast Computation and an Application to Anomaly Detection
+  <ul>
+    <li>Jaewan Chun, <span class="highlight">Geon Lee</span>, Kijung Shin, and Jinhong Jung
+    <li>Data Mining and Knowledge Discovery (<strong>DMKD</strong>) (2023)
+    <li> <a href="https://arxiv.org/pdf/2310.15668.pdf" class="fancy-link">pdf</a> |
+      slides |
+      <a href="https://github.com/jaewan01/ARCHER" class="fancy-link">code</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[J4]</strong> Hypergraph Motifs and Their Extensions Beyond Binary
+  <ul>
+    <li><span class="highlight">Geon Lee*</span>, Seokbum Yoon*, Jihoon Ko, Hyunju Kim, and Kijung Shin
+    <li><strong>The VLDB Journal</strong> (2023)
+    <li> <a href="https://arxiv.org/pdf/2310.15668.pdf" class="fancy-link">pdf</a> |
+      <a href="https://www.vldb.org/pvldb/vol13/p2256-lee.pdf" class="fancy-link">shorter ver.</a> |
+      <a href="https://github.com/jing9044/MoCHy-with-3h-motif" class="fancy-link">code</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[J3]</strong> Hypercore Decomposition for Non-Fragile Hyperedges: Concepts, Algorithms, Observations, and Applications
+  <ul>
+    <li>Fanchen Bu, <span class="highlight">Geon Lee</span>, and Kijung Shin
+    <li>Data Mining and Knowledge Discovery (<strong>DMKD</strong>) (2023)
+    <li> <a href="https://arxiv.org/pdf/2301.08440.pdf" class="fancy-link">pdf</a> |
+      <a href="https://github.com/bokveizen/non-fragile-hypercore" class="fancy-link">code</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[J2]</strong> Temporal Hypergraph Motifs
+  <ul>
+    <li><span class="highlight">Geon Lee</span> and Kijung Shin
+    <li>Knowledge and Information Systems (<strong>KAIS</strong>) (2023)
+    <li> <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/thmotifKAIS2023.pdf" class="fancy-link">pdf</a> |
+      <a href="https://arxiv.org/pdf/2109.08341.pdf" class="fancy-link">shorter ver.</a> |
+      <a href="https://github.com/geonlee0325/THyMe" class="fancy-link">code</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[T1]</strong> Mining of Real-World Hypergraphs: Patterns, Tools, and Generators
+  <ul>
+    <li><span class="highlight">Geon Lee</span>, Jaemin Yoo, and Kijung Shin
+    <li>IEEE International Conference on Data Mining (<strong>ICDM</strong>), 2022
+    <li>ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2022
+    <li><a href="https://sites.google.com/view/hypergraph-tutorial" class="fancy-link">website</a> |
+      <a href="https://www.youtube.com/watch?v=0mD7zOBx10M" class="fancy-link">video</a> |
+      <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/tutorialCIKM2022.pdf" class="fancy-link">proposal</a> |
+      <a href="https://arxiv.org/pdf/2401.08878.pdf" class="fancy-link">survey</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[C8]</strong> Set2Box: Similarity Preserving Representation Learning for Sets
+  <ul>
+    <li><span class="highlight">Geon Lee</span>, Chanyoung Park, and Kijung Shin
+    <li>IEEE International Conference on Data Mining (<strong>ICDM</strong>), 2022
+    <li> <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/set2boxICDM2022.pdf" class="fancy-link">pdf</a> |
+      <a href="https://arxiv.org/pdf/2210.03282.pdf" class="fancy-link">longer ver.</a> |
+      <a href="http://dmlab.kaist.ac.kr/~kijungs/set2boxICDM2022.pdf" class="fancy-link">slides</a> |
+      <a href="https://github.com/geon0325/Set2Box" class="fancy-link">code</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[C7]</strong> HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams
+  <ul>
+    <li><span class="highlight">Geon Lee</span>, Minyoung Choe, and Kijung Shin
+    <li>International Joint Conference on Artificial Intelligence (<strong>IJCAI</strong>), 2022
+    <li> <a href="https://www.ijcai.org/proceedings/2022/0296.pdf" class="fancy-link">pdf</a> |
+      <a href="https://github.com/geonlee0325/HashNWalk/blob/main/online_appendix.pdf" class="fancy-link">appendix</a> |
+      <a href="http://dmlab.kaist.ac.kr/~kijungs/hashnwalkIJCAI2022.pdf" class="fancy-link">slides</a> |
+      <a href="https://github.com/geonlee0325/HashNWalk" class="fancy-link">code</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[C6]</strong> MiDaS: Representative Sampling from Real-World Hypergraphs
+  <ul>
+    <li>Minyoung Choe, Jaemin Yoo, <span class="highlight">Geon Lee</span>, Woonsung Baek, U Kang, and Kijung Shin
+    <li>The Web Conference (<strong>WWW</strong>), 2022
+    <li> <a href="https://arxiv.org/pdf/2202.01587.pdf" class="fancy-link">pdf</a> |
+      <a href="https://github.com/young917/MiDaS/blob/main/MiDaS_ONLINE_APPENDIX.pdf" class="fancy-link">appendix</a> |
+      longer ver. |
+      <a href="http://dmlab.kaist.ac.kr/~kijungs/midasWWW2022.pdf" class="fancy-link">slides</a> |
+      <a href="https://github.com/young917/MiDaS" class="fancy-link">code</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[J1/W1]</strong> Simple Epidemic Models with Segmentation Can Be Better than Complex Ones
+  <ul>
+    <li><span class="highlight">Geon Lee</span>, Se-eun Yoon, and Kijung Shin
+    <li><strong>PLOS ONE</strong> (2022)
+    <li>International Workshop on Epidemiology meets Data Mining and Knowledge Discovery (<strong>epiDAMIK@KDD</strong>) (2021)
+    <li> <a href="https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0262244&type=printable" class="fancy-link">pdf</a> |
+      <a href="https://github.com/geonlee0325/covid_segmentation/blob/main/appendix.pdf" class="fancy-link">appendix</a> |
+      <a href="https://geonlee0325.github.io/papers/segmentation_epidamik2021.pdf" class="fancy-link">slides</a> |
+      <a href="https://github.com/geonlee0325/covid_segmentation" class="fancy-link">code</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[C5]</strong> THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting
+  <ul>
+    <li><span class="highlight">Geon Lee</span> and Kijung Shin
+    <li>IEEE International Conference on Data Mining (<strong>ICDM</strong>), 2021
+    <li> <a href="https://arxiv.org/pdf/2109.08341.pdf" class="fancy-link">pdf</a> |
+      <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/thmotifKAIS2023.pdf" class="fancy-link">longer ver.</a> |
+      <a href="https://geonlee0325.github.io/papers/thmotif_icdm2021_slide.pdf" class="fancy-link">slides</a> |
+      <a href="https://github.com/geonlee0325/THyMe" class="fancy-link">code</a>
+    <li><span style="color:#FF8303;">Selected as one of the best-ranked papers of ICDM 2021</span>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[C4]</strong> How Do Hyperedges Overlap in Real-World Hypergraphs? - Patterns, Measures, and Generators
+  <ul>
+    <li><span class="highlight">Geon Lee*</span>, Minyoung Choe*, and Kijung Shin
+    <li>The Web Conference (<strong>WWW</strong>), 2021
+    <li> <a href="https://arxiv.org/pdf/2101.07480.pdf" class="fancy-link">pdf</a> |
+      <a href="https://github.com/young917/www21-hyperlap/blob/master/online_appendix.pdf" class="fancy-link">appendix</a> |
+      <a href="http://dmlab.kaist.ac.kr/~kijungs/hyperlapWWW2021.pdf" class="fancy-link">slides</a> |
+      <a href="https://github.com/young917/www21-hyperlap" class="fancy-link">code</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[C3]</strong> Hypergraph Motifs: Concepts, Algorithms, and Discoveries
+  <ul>
+    <li><span class="highlight">Geon Lee</span>, Jihoon Ko, and Kijung Shin
+    <li>International Conference on Very Large Data Bases (<strong>VLDB</strong>), 2020
+    <li> <a href="http://www.vldb.org/pvldb/vol13/p2256-lee.pdf" class="fancy-link">pdf</a> |
+      <a href="https://github.com/geonlee0325/MoCHy/blob/master/supplementary.pdf" class="fancy-link">appendix</a> |
+      <a href="https://www.slideshare.net/GeonLee9/hmotif-vldb2020-slide" class="fancy-link">longer ver.</a> |
+      <a href="https://arxiv.org/pdf/2310.15668.pdf" class="fancy-link">slides</a> |
+      <a href="https://github.com/lg970325/MoCHy" class="fancy-link">code</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[C2]</strong> MEGA: Multi-View Semi-Supervised Clustering of Hypergraphs
+  <ul>
+    <li>Joyce Jiyoung Whang, Rundong Du, Sangwon Jung, <span class="highlight">Geon Lee</span>, Barry Drake, Qingqing Liu, Seonggoo Kang, and Haesun Park
+    <li>International Conference on Very Large Data Bases (<strong>VLDB</strong>), 2020
+    <li><a href="http://www.vldb.org/pvldb/vol13/p698-whang.pdf" class="fancy-link">pdf</a>
+  </ul>
+  </div>
+
+  <div class="publication">
+  <strong>[C1]</strong> Hyperlink Classification via Structured Graph Embedding
+  <ul>
+    <li><span class="highlight">Geon Lee</span>, Seonggoo Kang, and Joyce Jiyoung Whang
+    <li>ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR</strong>), 2019
+    <li><a href="https://geonlee0325.github.io/files/hyperlink_sigir2019_paper.pdf" class="fancy-link">pdf</a>
+  </ul>
+  </div>
+
+  <div class="section-title">Academic Services</div>
+    <strong>Program Committee</strong>
+    <ul>
+      <li> SIAM International Conference on Data Mining (<strong>SDM</strong>), 2024
+      <li> AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>), 2024
+      <li> Learning on Graphs Conference (<strong>LoG</strong>), 2022 - 2023
+      <li> ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2022
+    </ul>
+    <strong>Conference Reviewer</strong>
+    <ul>
+      <li> The Web Conference (<strong>WWW</strong>), 2024
+      <li> ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD</strong>), 2023 - 2024
+    </ul>
+    <strong>Journal Reviewer</strong>
+    <ul>
+      <li> Big Data Research (2024)
+      <li> IEEE Transactions on Knowledge and Data Engineering (<strong>TKDE</strong>) (2023)
+      <li> IEEE Transactions on Neural Networks and Learning Systems (<strong>TNNLS</strong>) (2023)
+      <li> The VLDB Journal (2023)
+    </ul>
+
+  <div class="section-title">Awards & Honors</div>
+  Selected as One of the Best-Ranked Papers of ICDM 2021 <span class="date">Dec. 2021</span><br>
+  Sungkyunkwan Presidential Award<span class="date">Aug. 2019</span><br>
+  Dean's List<span class="date">2016 - 2019</span><br>
+  Sungkyun Software Scholarship (Full tuition for all semesters)<span class="date">2016 - 2019</span>
+
+  <div class="section-title">Projects</div>
+  AI-Based Weather Forecast Support Development<span class="date">July 2021 - Present</span><br>
+  COVID-19 Task Force<span class="date">Mar. 2020 - Sep. 2020</span>
+
+  <div class="section-title">Teaching</div>
+  KAIST AI506 Data Mining and Search<span class="date">Spring 2021, Spring 2023</span><br>
+  KAIST AI607 Graph Mining and Social Network Analysis<span class="date">Fall 2020, Fall 2021, Fall 2022, Fall 2023</span><br>
+  KAIST AI617 Machine Learning for Robotics<span class="date">Spring 2022</span><br>
+  SKKU CSE3036 Seminar in Computer Engineering<span class="date">Fall 2019</span>
 </div>
-<div style="clear:both;"></div>
 
 
-<h2 class="section-title">Education</h2>
-<ul class="education">
-    <li><span class="institution">Korea Advanced Institute of Science and Technology (KAIST)</span> <span class="date">Sep. 2020 - Present</span><br>
-        <span class="details">M.S. & Ph.D. in Artificial Intelligence</span>
-    </li>
-    <li><span class="institution">Sungkyunkwan University (SKKU)</span> <span class="date">Mar. 2016 - Aug. 2019</span><br>
-        <span class="details">B.S. in Computer Science and Engineering</span>
-    </li>
-</ul>
 
-<h2 class="section-title">Work Experience</h2>
-<ul class="education">
-    <li><span class="institution">NEC Labs America</span> <span class="date">May 2023 - Aug. 2023, Princeton</span><br>
-        <span class="details">Research Intern</span>
-    </li>
-    <li><span class="institution">Amazon</span> <span class="date">Sep. 2022 - Dec. 2022, San Francisco</span><br>
-        <span class="details">Applied Scientist Intern</span>
-    </li>
-</ul>
-
-<!-- Add sections for Tutorials, Publications, Academic Services, Awards & Honors, Projects, Teaching as per the original format, following the new style guide -->
-<h2 class="section-title">Tutorials</h2>
-<ul class="publications">
-    <li><span class="paper">Mining of Real-world Hypergraphs: Patterns, Tools, and Generators</span></br>
-        <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span>, Jaemin Yoo, and Kijung Shin</span></br>
-      <a href="https://kdd.org/kdd2023/" class="conf">KDD 2023</a> & <a href="https://www2023.thewebconf.org/" class="conf">WWW 2023</a> & <a href="https://icdm22.cse.usf.edu/" class="conf">ICDM 2022</a> & <a href="https://www.cikm2022.org/" class="conf">CIKM 2022</a>&nbsp &nbsp
-      [
-      <a href="https://sites.google.com/view/hypergraph-tutorial">website</a>
-      ]
-    </li>
-</ul>
-
-<h2 class="section-title">Publications</h2>
-<ul class="publications">
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">A Survey on Hypergraph Mining: Patterns, Tools, and Generators</span><br/>
-      <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span>*, Fanchen Bu*, Tina Eliassi-Rad, and Kijung Shin</span><br/>
-      <a target="_blank" class="arxiv">arXiv (2024)</a>&nbsp &nbsp
-      [ <a href="https://arxiv.org/pdf/2401.08878.pdf">pdf</a> ]
-    </li>
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">Representative and Back-in-Time Sampling from Real-World Hypergraphs</span><br/>
-      <span class="author">Minyoung Choe, Jaemin Yoo, <span style='color:black;text-decoration:underline'>Geon Lee</span>, Woonsung Baek, U Kang, and Kijung Shin</span><br/>
-      <a href="https://www2024.thewebconf.org/" target="_blank" class="journal">Transaction on Knowledge Discovery from Data (2024)</a>&nbsp &nbsp
-      [ pdf |
-      <a href="https://arxiv.org/pdf/2202.01587.pdf">shorter ver.</a> |
-      code ]
-    </li>
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">VilLain: Self-Supervised Learning on Homogeneous Hypergraphs without Features via Virtual Label Propagation</span><br/>
-      <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span>, Soo Yong Lee, and Kijung Shin</span><br/>
-      <a href="https://www2024.thewebconf.org/" target="_blank" class="conf">WWW 2024</a>&nbsp &nbsp
-      [ pdf | code ]
-    </li>
-    <li style="margin-bottom: 15px;">
-      <span class="paper">Random Walk with Restart on Hypergraphs: Fast Computation and an Application to Anomaly Detection</span></br>
-      <span class="author">Jaewan Chun, <span style='color:black;text-decoration:underline'>Geon Lee</span>, Kijung Shin, and Jinhong Jung</span></br>
-      <a href="https://www.springer.com/journal/10618" class="journal">Data Mining and Knowledge Discovery (2023)</a>&nbsp &nbsp
-      [
-      <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/archerDAMI2024.pdf">pdf</a> |
-      <a href="https://github.com/jaewan01/ARCHER">code</a>
-      ]
-    </li>
-    <li style="margin-bottom: 15px;">
-      <span class="paper">Hypergraph Motifs and Their Extensions Beyond Binary</span></br>
-      <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span>*, Seokbum Yoon*, Jihoon Ko, Hyunju Kim, and Kijung Shin</span></br>
-      <a href="https://link.springer.com/journal/778" class="journal">The VLDB Journal (2023)</a>&nbsp &nbsp
-      [
-      <a href="https://arxiv.org/pdf/2310.15668.pdf">pdf</a> |
-      <a href="https://www.vldb.org/pvldb/vol13/p2256-lee.pdf">shorter ver.</a> |
-      <a href="https://github.com/jing9044/MoCHy-with-3h-motif">code</a>
-      ]
-    </li>
-    <li style="margin-bottom: 15px;">
-      <span class="paper">Hypercore Decomposition for Non-Fragile Hyperedges: Concepts, Algorithms, Observations, and Applications</span></br>
-      <span class="author">Fanchen Bu, <span style='color:black;text-decoration:underline'>Geon Lee</span>, and Kijung Shin</span></br>
-      <a href="https://www.springer.com/journal/10618" class="journal">Data Mining and Knowledge Discovery (2023)</a>&nbsp &nbsp
-      [
-      <a href="https://arxiv.org/pdf/2301.08440.pdf">pdf</a> |
-      <a href="https://github.com/bokveizen/non-fragile-hypercore">code</a>
-      ]
-    </li>
-    <li style="margin-bottom: 15px;">
-      <span class="paper">Temporal Hypergraph Motifs</span></br>
-      <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span> and Kijung Shin</span></br>
-      <a href="https://www.springer.com/journal/10115" class="journal">Knowledge and Information Systems (2023)</a>&nbsp &nbsp
-      [
-      <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/thmotifKAIS2023.pdf">pdf</a> |
-      <a href="https://arxiv.org/pdf/2109.08341.pdf">shorter ver.</a> |
-      <a href="https://github.com/geonlee0325/THyMe">code</a>
-      ]
-    </li>
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">Set2Box: Similarity Preserving Representation Learning for Sets</span><br/>
-      <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span>, Chanyoung Park, and Kijung Shin</span><br/>
-      <a href="https://icdm22.cse.usf.edu/" target="_blank" class="conf">ICDM 2022</a>&nbsp &nbsp
-      [
-      <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/set2boxICDM2022.pdf">pdf</a> |
-      <a href="https://arxiv.org/pdf/2210.03282.pdf">longer ver.</a> |
-      <a href="https://github.com/geon0325/Set2Box">code</a>
-      ]
-    </li>
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams</span><br/>
-      <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span>, Minyoung Choe, and Kijung Shin</span><br/>
-      <a href="https://ijcai-22.org/" target="_blank" class="conf">IJCAI 2022</a>&nbsp &nbsp
-      [
-      <a href="https://www.ijcai.org/proceedings/2022/0296.pdf">pdf</a> |
-      <a href="https://github.com/geonlee0325/HashNWalk/blob/main/online_appendix.pdf">appendix</a> |
-      <a href="https://github.com/geonlee0325/HashNWalk">code</a>
-      ]
-    </li>
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">MiDaS: Representative Sampling from Real-World Hypergraphs</span><br/>
-      <span class="author">Minyoung Choe, Jaemin Yoo, <span style='color:black;text-decoration:underline'>Geon Lee</span>, Woonsung Baek, U Kang, and Kijung Shin</span><br/>
-      <a href="https://www2022.thewebconf.org/" target="_blank" class="conf">WWW 2022</a>&nbsp &nbsp
-      [
-      <a href="https://arxiv.org/pdf/2202.01587.pdf">pdf</a> |
-      <a href="https://github.com/young917/MiDaS/blob/main/MiDaS_ONLINE_APPENDIX.pdf">appendix</a> |
-      <a href="https://github.com/young917/MiDaS">code</a>
-      ]
-    </li>
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">Simple Epidemic Models with Segmentation Can Be Better than Complex Ones</span><br/>
-      <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span>, Se-eun Yoon, and Kijung Shin</span><br/>
-      <a href="https://journals.plos.org/plosone/" target="_blank" class="journal">PLOS ONE (2022)</a>&nbsp &nbsp
-      [
-      <a href="https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0262244&type=printable">pdf</a> |
-      <a href="https://github.com/geonlee0325/covid_segmentation">code</a>
-      ]</br>
-      <span class="award">Oral presentation at epiDAMIK workshop in KDD 2021</span>
-    </li>
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting</span><br/>
-      <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span> and Kijung Shin</span><br/>
-      <a href="https://icdm2021.auckland.ac.nz/" target="_blank" class="conf">ICDM 2021</a>&nbsp &nbsp
-      [
-      <a href="https://arxiv.org/pdf/2109.08341.pdf">pdf</a> |
-      <a href="https://github.com/geonlee0325/THyMe">code</a>
-      ]</br>
-      <span class="award">Selected as one of the best-ranked papers of ICDM 2021</span>
-    </li>
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">How Do Hyperedges Overlap in Real-World Hypergraphs? - Patterns, Measures, and Generators</span><br/>
-      <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span>*, Minyoung Choe*, and Kijung Shin</span><br/>
-      <a href="https://www2021.thewebconf.org/" target="_blank" class="conf">WWW 2021</a>&nbsp &nbsp
-      [
-      <a href="https://arxiv.org/pdf/2101.07480.pdf">pdf</a> |
-      <a href="https://github.com/young917/www21-hyperlap/blob/master/online_appendix.pdf">appendix</a> |
-      <a href="https://github.com/young917/www21-hyperlap">code</a>
-      ]
-    </li>
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">Hypergraph Motifs: Concepts, Algorithms, and Discoveries</span><br/>
-      <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span>, Jihoon Ko, and Kijung Shin</span><br/>
-      <a href="https://vldb2020.org/" target="_blank" class="conf">VLDB 2020</a>&nbsp &nbsp
-      [
-      <a href="http://www.vldb.org/pvldb/vol13/p2256-lee.pdf">pdf</a> |
-      <a href="https://github.com/geonlee0325/MoCHy/blob/master/supplementary.pdf">appendix</a> |
-      <a href="https://github.com/lg970325/MoCHy">code</a>
-      ]
-    </li>
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">MEGA: Multi-View Semi-Supervised Clustering of Hypergraphs</span><br/>
-      <span class="author">Joyce Jiyoung Whang, Rundong Du, Sangwon Jung, <span style='color:black;text-decoration:underline'>Geon Lee</span>, Barry Drake, Qingqing Liu, Seonggoo Kang, and Haesun Park</span><br/>
-      <a href="https://vldb2020.org/" target="_blank" class="conf">VLDB 2020</a>&nbsp &nbsp
-      [
-      <a href="http://www.vldb.org/pvldb/vol13/p698-whang.pdf">pdf</a>
-      ]
-    </li>
-    <li class="paper-entry" style="margin-bottom: 15px;">
-      <span class="paper">Hyperlink Classification via Structured Graph Embedding</span><br/>
-      <span class="author"><span style='color:black;text-decoration:underline'>Geon Lee</span>, Seonggoo Kang, and Joyce Jiyoung Whang</span><br/>
-      <a href="https://sigir.org/sigir2019/" target="_blank" class="conf">SIGIR 2019</a>&nbsp &nbsp
-      [
-      <a href="https://geonlee0325.github.io/files/hyperlink_sigir2019_paper.pdf">pdf</a>
-      ]
-    </li>
-</ul>
-
-<h2 class="section-title">Academic Services</h2>
-<ul class="academic-services">
-    <li>Program Committee</br>
-      <a href="https://www.siam.org/conferences/cm/conference/sdm24" class="conf">SDM 2024</a> |
-      <a href="https://aaai.org/aaai-conference/" class="conf">AAAI 2024</a> |
-      <a href="https://logconference.org/" class="conf">LoG 2022 - 2023</a> |
-      <a href="https://uobevents.eventsair.com/cikm2023/" class="conf">CIKM 2023 (Tutorial Track)</a>
-    </li>
-    <li>Conference Reviewer</br>
-      <a href="https://www2024.thewebconf.org/" class="conf">WWW 2024</a> |
-      <a href="https://kdd2024.kdd.org/" class="conf">KDD 2023 - 2024</a>
-    </li>
-    <li>Journal Reviewer</br>
-      <a href="https://www.sciencedirect.com/journal/big-data-research" class="journal">Big Data Research (2024)</a> |
-      <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" class="journal">TKDE (2023)</a> |
-      <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" class="journal">TNNLS (2023)</a> |
-      <a href="https://www.springer.com/journal/778" class="journal">The VLDB Journal (2023)</a>
-    </li>
-</ul>
-
-<h2 class="section-title">Awards & Honors</h2>
-<ul class="awards">
-    <li>Selected as One of the Best-Ranked Papers of ICDM 2021 <span class="date">Dec. 2021</span></li>
-    <li>Sungkyunkwan Presidential Award <span class="date">Aug. 2019</span> </li>
-    <li>Dean's List <span class="date">2016 - 2019</span></li>
-    <li>Sungkyun Software Scholarship (Full tuition for all semesters) <span class="date">2016 - 2019</span></li>
-</ul>
-
-<h2 class="section-title">Projects</h2>
-<ul class="projects">
-    <li>AI-based Weather Forecast Support Development <span class="date">July 2021 - Present</span> </li>
-    <li>COVID-19 Task Force <span class="date">Mar. 2020 - Sep. 2020</span> </li>
-</ul>
-
-
-<h2 class="section-title">Teaching</h2>
-<ul class="teaching">
-    <li>KAIST AI506 Data Mining and Search <span class="date"><a href="https://sites.google.com/view/ai506/home">Spring 2023</a>, <a href="https://sites.google.com/view/ai506-2021spring/home">Spring 2021</a></span></li>
-    <li>KAIST AI607 Graph Mining and Social Network Analysis <span class="date"><a href="https://sites.google.com/view/ai607/home">Fall 2023</a>, <a href="https://sites.google.com/view/ai607-2022fall/home">Fall 2022</a>, <a href="https://sites.google.com/view/ai607-2021fall/home">Fall 2021</a>, <a href="https://sites.google.com/view/ai607-2020fall/home">Fall 2020</a></span></li>
-    <li>KAIST AI617 Machine Learning for Robotics <span class="date">Spring 2022</span></li>
-    <li>SKKU CSE3036 Seminar in Computer Engineering <span class="date">Fall 2019</span></li>
-</ul>
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Geon Lee. All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>
