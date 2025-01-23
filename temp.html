@@ -9,190 +9,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Great+Vibes&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Raleway', sans-serif;
-            color: #333;
-            background-color: #fcfcfc;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0px;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            margin: 50px auto;
-            max-width: 800px;
-            padding: 0 20px;
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-        .header-info {
-            text-align: center;
-            flex-grow: 1;
-        }
-        .header-info h1 {
-            font-size: 2.4rem;
-            color: #2c3e50;
-            margin: 0 0 10px;
-        }
-        .header-info p {
-            font-size: 1rem;
-            color: #555;
-            margin: 5px 0;
-        }
-        .header-info nav {
-            margin-top: 15px;
-        }
-        .header-info nav a {
-            color: #3570CA;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .header-info nav a:hover {
-            color: #E67E22; 
-            font-weight: 600;
-        }
-        .section {
-            margin-bottom: 40px;
-            padding: 0 20px;
-        }
-        .section h2 {
-            font-size: 1.5rem;
-            color: #2c3e50;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-        .section p {
-            margin: 10px 0;
-        }
-        .author-highlight {
-          color: #2C3E50;
-          text-decoration: underline;
-        }
-        .publication-item {
-            margin-bottom: 15px;
-        }
-        .publication-title {
-            font-weight: 600;
-            font-size: 1.0rem;
-            color: #2c3e50;
-            margin-bottom: -1px;
-        }
-        .publication-authors {
-            font-size: 0.975rem;
-            color: #555;
-            margin-bottom: -1px;
-        }
-        .publication-links {
-            text-decoration: none;
-            color: #3570CA;
-            font-weight: 600;
-            margin-right: 0px;
-            font-size: 0.975rem;
-        }
-        .publication-links:hover {
-            color: #E67E22; /* Slightly darker blue for hover effect */
-            font-weight: 600;
-        }
-        .fancy-link {
-            background-color: #f2f8fc; /* Softer light blue */
-            color: #3570CA; /* Matching the publication links */
-            border: 1px solid #3570CA;
-            border-radius: 3px;
-            padding: 1px 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin: 2px;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.2s ease;
-        }
-        .fancy-link:hover {
-            background-color: #578dd2; /* Slightly darker blue for hover effect */
-            color: #fff; /* White text for contrast */
-            transform: scale(1.05); /* Slight zoom on hover */
-        }
-        .links {
-            text-decoration: none;
-            color: #3570CA;
-            font-weight: 600;
-            margin-right: 0px;
-            font-size: 1.0rem;
-        }
-        .links:hover {
-            color: #E67E22; /* Slightly darker blue for hover effect */
-            font-weight: 600;
-        }
-        .conference-list {
-          padding: 0;       /* Remove padding */
-          margin: 0;        /* Remove margin */
-        }
+<style>
+    /* Base Styles */
+    body {
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        color: #333;
+        background-color: #FAFBFC;
+        line-height: 1.6;
+    }
 
-        .conference-list li {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 0px 0; /* Add some space between items */
-        }
+    /* Header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    header img {
+        border: 3px solid #0056D2; /* Updated border color */
+    }
+    .header-info h1 {
+        color: #2C3E50; /* Deep gray for titles */
+    }
+    .header-info p {
+        color: #555; /* Slightly darker gray */
+    }
+    .header-info nav a {
+        color: #0056D2; /* Rich blue for links */
+        transition: color 0.3s ease;
+    }
+    .header-info nav a:hover {
+        color: #FF6600; /* Warm orange for hover */
+    }
 
-        .conference-name {
-          flex: 1; /* Takes up the remaining space */
-        }
+    /* Section Titles */
+    .section h2 {
+        color: #2C3E50; /* Deep gray for section titles */
+    }
 
-        .date {
-          flex-shrink: 0; /* Prevent the date from shrinking */
-          text-align: right; /* Align dates to the right */
-          margin-left: 20px; /* Add spacing between text and date */
-        }
-        .degree-row {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
+    /* Links */
+    .fancy-link {
+        background-color: #E8F0FE; /* Light blue background */
+        color: #0056D2; /* Rich blue for text */
+        border-color: #0056D2;
+        transition: all 0.2s ease;
+    }
+    .fancy-link:hover {
+        background-color: #0056D2; /* Blue hover background */
+        color: #FFFFFF; /* White text */
+    }
 
-        .degree-title {
-          flex: 1; /* Use remaining space */
-        }
+    /* Publications */
+    .publication-title {
+        color: #2C3E50; /* Deep gray for titles */
+    }
+    .publication-authors {
+        color: #555; /* Slightly darker gray */
+    }
+    .publication-links {
+        color: #0056D2; /* Rich blue */
+        transition: color 0.3s ease;
+    }
+    .publication-links:hover {
+        color: #FF6600; /* Warm orange */
+    }
 
-        .degree-date {
-          flex-shrink: 0; /* Prevent the date from shrinking */
-          text-align: right; /* Align the date to the right */
-          margin-left: 20px; /* Add some spacing between text and date */
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #f9f9f9;
-            margin-top: 40px;
-        }
-        footer p {
-            font-size: 0.9rem;
-            color: #555;
-        }
-        footer .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #2c3e50;
-            font-size: 1.rem;
-        }
-        footer .social-links a:hover {
-            color: #4682b4;
-        }
-    </style>
+    /* Footer */
+    footer {
+        background-color: #F3F4F6; /* Light neutral background */
+    }
+    footer p {
+        color: #777; /* Medium gray */
+    }
+    footer .social-links a {
+        color: #0056D2; /* Rich blue */
+        transition: color 0.3s ease;
+    }
+    footer .social-links a:hover {
+        color: #FF6600; /* Warm orange */
+    }
+</style>
+
+
 </head>
 <body>
     <header>
@@ -212,7 +111,7 @@
     <div class="container">
         <section class="section">
             <p style="font-size: 1.1rem">
-            I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" class="links">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/" class="links">KAIST</a>, advised by <a href="https://kijungs.github.io/" class="links">Prof. Kijung Shin</a> at the <a href="https://sites.google.com/view/kaistdata" class="links">Data Mining Lab</a>. I obtained my B.S. degree in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" class="links">Sungkyunkwan University</a>. I interned at <a href="https://www.nec-labs.com/" class="links">NEC Labs America</a> and <a href="https://www.amazon.com/" class="links">Amazon</a>. My research interests include data mining, machine learning, recommender systems, and social network analysis.
+            I am a Ph.D. student in the <a href="https://gsai.kaist.ac.kr/" class="links">Kim Jaechul Graduate School of AI</a> at <a href="https://www.kaist.ac.kr/" class="links">KAIST</a>, advised by <a href="https://kijungs.github.io/" class="links">Prof. Kijung Shin</a> at the <a href="https://sites.google.com/view/kaistdata" class="links">Data Mining Lab</a>. I obtained my B.S. degree in Computer Science and Engineering from <a href="https://www.skku.edu/skku/index.do" class="links">Sungkyunkwan University</a>. Previously, I interned at <a href="https://www.nec-labs.com/" class="links">NEC Labs America</a> and <a href="https://www.amazon.com/" class="links">Amazon</a>. My research interests include data mining, machine learning, recommender systems, and social network analysis.
             </p>
         </section>
         <section class="section">
@@ -253,7 +152,7 @@
             <h2>Publications</h2>
             <div class="publication-item">
                 <div class="publication-title">[P1] A Survey on Hypergraph Mining: Patterns, Tools, and Generators</div>
-                <div class="publication-authors"><span class="author-highlight">Geon Lee*</span>, Fanchen Bu*, Tina Eliassi-Rad, and Kijung Shin</div>
+                <div class="publication-authors"><span class="author-highlight">Geon Lee<span style="font-family: sans-serif;">*</span></span>, Fanchen Bu<span style="font-family: sans-serif;">*</span>, Tina Eliassi-Rad, and Kijung Shin</div>
                 <a class="publication-links">arXiv (2024)</a> &nbsp; <a href="https://arxiv.org/pdf/2401.08878.pdf" class="fancy-link">PDF</a>
             </div>
             <div class="publication-item">
@@ -263,7 +162,7 @@
                 <a href="" class="fancy-link">PDF</a> 
                 <a href="" class="fancy-link">Appendix</a> 
                 <a href="" class="fancy-link">Poster</a>
-                <a href="" class="fancy-link">Code</a> 
+                <a href="https://github.com/geon0325/TimeCAP" class="fancy-link">Code</a> 
             </div>
             <div class="publication-item">
                 <div class="publication-title">[C13] Resource2Box: Learning to Rank Resources in Distributed Search Using Box Embedding</div>
@@ -335,7 +234,7 @@
             </div>
             <div class="publication-item">
                 <div class="publication-title">[J4] Hypergraph Motifs and Their Extensions Beyond Binary</div>
-                <div class="publication-authors"><span class="author-highlight">Geon Lee*</span>, Seokbum Yoon*, Jihoon Ko, Hyunju Kim, and Kijung Shin</div>
+                <div class="publication-authors"><span class="author-highlight">Geon Lee<span style="font-family: sans-serif;">*</span></span>, Seokbum Yoon<span style="font-family: sans-serif;">*</span>, Jihoon Ko, Hyunju Kim, and Kijung Shin</div>
                 <a href="https://www.springer.com/journal/778" class="publication-links">The VLDB Journal (2023)</a>  &nbsp;
                 <a href="https://arxiv.org/pdf/2310.15668.pdf" class="fancy-link">PDF</a>
                 <a href="https://www.vldb.org/pvldb/vol13/p2256-lee.pdf" class="fancy-link">Short Ver.</a>
@@ -416,7 +315,7 @@
             </div>
             <div class="publication-item">
                 <div class="publication-title">[C4] How Do Hyperedges Overlap in Real-World Hypergraphs? - Patterns, Measures, and Generators</div>
-                <div class="publication-authors"><span class="author-highlight">Geon Lee*</span>, Minyoung Choe*, and Kijung Shin</div>
+                <div class="publication-authors"><span class="author-highlight">Geon Lee<span style="font-family: sans-serif;">*</span></span>, Minyoung Choe<span style="font-family: sans-serif;">*</span>, and Kijung Shin</div>
                 <a href="https://www2021.thewebconf.org/" class="publication-links">WWW 2021</a>  &nbsp;
                 <a href="https://arxiv.org/pdf/2101.07480.pdf" class="fancy-link">PDF</a> 
                 <a href="https://github.com/young917/www21-hyperlap/blob/master/online_appendix.pdf" class="fancy-link">Appendix</a> 
