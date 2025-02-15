@@ -80,28 +80,38 @@
             margin: 10px 0;
         }
         .author-highlight {
-          color: #2C3E50;
+          color: var(--heading-color);
           text-decoration: underline;
         }
+        .publication-year {
+          margin-top: 40px;
+          margin-bottom: 10px;
+          font-size: 1.3rem;
+          color: var(--heading-color);
+          border-bottom: 1px solid #ddd;
+          padding-bottom: 3px;
+        }
         .publication-item {
-            margin-bottom: 15px;
+          margin-bottom: 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px dashed #ddd;
         }
         .publication-title {
-            font-weight: 600;
-            font-size: 1.0rem;
-            color: #2c3e50;
-            margin-bottom: -1px;
+          font-weight: 600;
+          font-size: 1rem;
+          color: var(--heading-color);
+          margin-bottom: 2px;
         }
         .publication-authors {
-            font-size: 0.975rem;
-            color: #555;
-            margin-bottom: -1px;
+          font-size: 0.975rem;
+          color: var(--text-color);
+          margin-bottom: 2px;
         }
         .publication-links {
             text-decoration: none;
             color: #3570CA;
             font-weight: 600;
-            margin-right: 0px;
+            margin-right: 10px;
             font-size: 0.975rem;
         }
         .publication-links:hover {
@@ -109,23 +119,30 @@
             font-weight: 600;
         }
         .fancy-link {
-            background-color: #f2f8fc; /* Softer light blue */
-            color: #3570CA; /* Matching the publication links */
-            border: 1px solid #3570CA;
-            border-radius: 3px;
-            padding: 1px 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin: 2px;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.2s ease;
+          /* Soft gradient background for a subtle effect */
+          background: linear-gradient(135deg, #edf7ff, #f9fcff);
+          /* Slightly darker text and border color for contrast */
+          color: #3570CA;
+          border: 1px solid #3570CA;
+          /* Rounded corners and smaller padding for a neat, compact look */
+          border-radius: 4px;
+          padding: 2px 4px;
+          font-size: 0.8rem;
+          font-weight: 600;
+          margin: 1px;
+          display: inline-block;
+          /* Gentle transition and a little box-shadow for depth */
+          transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
         }
+
         .fancy-link:hover {
-            background-color: #578dd2; /* Slightly darker blue for hover effect */
-            color: #fff; /* White text for contrast */
-            transform: scale(1.05); /* Slight zoom on hover */
+          /* Darker hover background for strong contrast */
+          background-color: #E67E22;
+          color: #E67E22;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
         }
+
         .links {
             text-decoration: none;
             color: #3570CA;
@@ -251,10 +268,20 @@
         </section>
         <section class="section">
             <h2>Publications</h2>
+
+            <!-- 2025 -->
+            <h3 class="publication-year">2025</h3>
             <div class="publication-item">
-                <div class="publication-title">[P1] A Survey on Hypergraph Mining: Patterns, Tools, and Generators</div>
+                <div class="publication-title">[J7] A Survey on Hypergraph Mining: Patterns, Tools, and Generators</div>
                 <div class="publication-authors"><span class="author-highlight">Geon Lee<span style="font-family: sans-serif;">*</span></span>, Fanchen Bu<span style="font-family: sans-serif;">*</span>, Tina Eliassi-Rad, and Kijung Shin</div>
-                <a class="publication-links">arXiv (2024)</a> &nbsp; <a href="https://arxiv.org/pdf/2401.08878.pdf" class="fancy-link">PDF</a>
+                <a href="https://dl.acm.org/journal/csur" class="publication-links">ACM Computing Surveys (2025)</a>  &nbsp;
+                <a href="https://arxiv.org/pdf/2401.08878.pdf" class="fancy-link">PDF</a>
+            </div>
+            <div class="publication-item">
+                <div class="publication-title">[C16] Multi-Behavior Recommender Systems: A Survey</div>
+                <div class="publication-authors">Kyungho Kim, Sunwoo Kim, <span class="author-highlight">Geon Lee</span>, Jinhong Jung, and Kijung Shin</div>
+                <a href="https://pakdd2025.org/" class="publication-links">PAKDD 2025 (Survey)</a>  &nbsp;
+                <a href="" class="fancy-link">PDF</a>  
             </div>
             <div class="publication-item">
                 <div class="publication-title">[C15] Beyond Neighbors: Distance-Generalized Graphlets for Enhanced Graph Characterization</div>
@@ -274,6 +301,9 @@
                 <a href="" class="fancy-link">Poster</a>
                 <a href="https://github.com/geon0325/TimeCAP" class="fancy-link">Code</a> 
             </div>
+
+            <!-- 2024 -->
+            <h3 class="publication-year">2024</h3>
             <div class="publication-item">
                 <div class="publication-title">[C13] Resource2Box: Learning to Rank Resources in Distributed Search Using Box Embedding</div>
                 <div class="publication-authors">Ulugbek Ergashev, <span class="author-highlight">Geon Lee</span>, Kijung Shin, Eduard Dragut, and Weiyi Meng</div>
@@ -324,6 +354,9 @@
                 <a href="http://dmlab.kaist.ac.kr/~kijungs/posters/villainWWW2024.pdf" class="fancy-link">Poster</a> 
                 <a href="https://github.com/geon0325/VilLain" class="fancy-link">Code</a> 
             </div>
+
+            <!-- 2023 -->
+            <h3 class="publication-year">2023</h3>
             <div class="publication-item">
                 <div class="publication-title">[T2] Mining of Real-World Hypergraphs: Patterns, Tools, and Generators</div>
                 <div class="publication-authors"><span class="author-highlight">Geon Lee</span>, Jaemin Yoo, and Kijung Shin</div>
@@ -368,6 +401,9 @@
                 <a href="https://arxiv.org/pdf/2109.08341.pdf" class="fancy-link">Short Ver.</a>
                 <a href="https://github.com/geonlee0325/THyMe" class="fancy-link">Code</a> 
             </div>
+
+            <!-- 2022 -->
+            <h3 class="publication-year">2022</h3>
             <div class="publication-item">
                 <div class="publication-title">[T1] Mining of Real-World Hypergraphs: Patterns, Tools, and Generators</div>
                 <div class="publication-authors"><span class="author-highlight">Geon Lee</span>, Jaemin Yoo, and Kijung Shin</div>
@@ -413,6 +449,9 @@
                 <a href="https://geonlee0325.github.io/files/segmentation_epidamik2021.pdf" class="fancy-link">Slides</a>
                 <a href="https://github.com/geonlee0325/covid_segmentation" class="fancy-link">Code</a> 
             </div>
+
+            <!-- 2021 -->
+            <h3 class="publication-year">2021</h3>
             <div class="publication-item">
                 <div class="publication-title">[C5] THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting</div>
                 <div class="publication-authors"><span class="author-highlight">Geon Lee</span> and Kijung Shin</div>
@@ -432,6 +471,9 @@
                 <a href="http://dmlab.kaist.ac.kr/~kijungs/hyperlapWWW2021.pdf" class="fancy-link">Slides</a>
                 <a href="https://github.com/young917/www21-hyperlap" class="fancy-link">Code</a> 
             </div>
+
+            <!-- 2020 -->
+            <h3 class="publication-year">2020</h3>
             <div class="publication-item">
                 <div class="publication-title">[C3] Hypergraph Motifs: Concepts, Algorithms, and Discoveries</div>
                 <div class="publication-authors"><span class="author-highlight">Geon Lee</span>, Jihoon Ko, and Kijung Shin</div>
@@ -447,6 +489,9 @@
                 <a href="https://vldb2020.org/" class="publication-links">VLDB 2020</a>  &nbsp;
                 <a href="http://www.vldb.org/pvldb/vol13/p698-whang.pdf" class="fancy-link">PDF</a> 
             </div>
+
+            <!-- 2019 -->
+            <h3 class="publication-year">2019</h3>
             <div class="publication-item">
                 <div class="publication-title">[C1] Hyperlink Classification via Structured Graph Embedding</div>
                 <div class="publication-authors"><span class="author-highlight">Geon Lee</span>, Seonggoo Kang, and Joyce Jiyoung Whang</div>
@@ -635,7 +680,7 @@
         </section>
     </div>
     <footer>
-        <p>&copy; 2024 Geon Lee. All rights reserved.</p>
+        <p>&copy; 2025 Geon Lee. All rights reserved.</p>
     </footer>
 </body>
 </html>
