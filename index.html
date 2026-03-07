@@ -196,9 +196,7 @@
       margin-bottom: 16px;
     }
 
-    .section-icon {
-      font-size: 1.1rem;
-    }
+    .section-icon { font-size: 1.1rem; }
 
     .section-title {
       font-family: 'DM Serif Display', serif;
@@ -227,13 +225,10 @@
       color: var(--accent);
       text-decoration: none;
       font-weight: 500;
-      text-decoration: none;
       transition: color 0.2s;
     }
 
-    .bio-text a:hover {
-      color: var(--accent-bright);
-    }
+    .bio-text a:hover { color: var(--accent-bright); }
 
     /* ─── TIMELINE ROWS ─── */
     .timeline { display: flex; flex-direction: column; }
@@ -281,11 +276,7 @@
       margin-bottom: 4px;
     }
 
-    .card-role {
-      font-size: 0.9rem;
-      color: var(--ink-light);
-      margin-bottom: 2px;
-    }
+    .card-role { font-size: 0.9rem; color: var(--ink-light); margin-bottom: 2px; }
 
     .card-meta {
       display: flex;
@@ -397,20 +388,14 @@
       transition: background 0.2s, color 0.2s;
     }
 
-    .venue-tag:hover {
-      background: var(--accent);
-      color: white;
-    }
+    .venue-tag:hover { background: var(--accent); color: white; }
 
     .venue-tag.journal {
       color: var(--teal);
       background: rgba(26,122,106,0.08);
     }
 
-    .venue-tag.journal:hover {
-      background: var(--teal);
-      color: white;
-    }
+    .venue-tag.journal:hover { background: var(--teal); color: white; }
 
     .pub-sep { color: var(--border-strong); font-size: 0.75rem; }
 
@@ -467,16 +452,11 @@
       line-height: 1.7;
     }
 
-    /* remove old tag styles */
     .tag-cloud { display: none; }
     .tag { display: none; }
 
     /* ─── AWARDS ─── */
-    .awards-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
+    .awards-list { display: flex; flex-direction: column; gap: 0; }
 
     .award-row {
       display: flex;
@@ -488,17 +468,9 @@
 
     .award-row:last-child { padding-bottom: 0; }
 
-    .award-text {
-      font-size: 1.0rem;
-      color: var(--ink-light);
-      flex: 1;
-    }
+    .award-text { font-size: 1.0rem; color: var(--ink-light); flex: 1; }
 
-    .award-star {
-      color: var(--gold);
-      margin-right: 7px;
-      font-size: 1.0rem;
-    }
+    .award-star { color: var(--gold); margin-right: 7px; font-size: 1.0rem; }
 
     .award-date {
       font-size: 0.95rem;
@@ -563,21 +535,7 @@
       transition: opacity 0.5s ease, transform 0.5s ease;
     }
 
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* ─── RESPONSIVE ─── */
-    @media (max-width: 640px) {
-      .hero { flex-direction: column; gap: 20px; padding: 36px 20px 40px; }
-      .hero-text h1 { font-size: 2.2rem; }
-      .topnav-links { display: none; }
-      .topnav { padding: 0 20px; }
-      .main { padding: 0 20px; }
-      .timeline-row { grid-template-columns: 1fr; }
-      .timeline-right { text-align: left; }
-    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
 
     /* ═══ DARK MODE TOGGLE ═══ */
     .theme-toggle {
@@ -602,6 +560,94 @@
     [data-theme="dark"] .theme-toggle .icon-sun  { display: inline; }
     [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
+    /* ═══ MOBILE ═══ */
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-strong);
+      border-radius: 8px;
+      padding: 5px 9px;
+      cursor: pointer;
+      color: var(--ink-light);
+      font-size: 1rem;
+      line-height: 1;
+      transition: border-color 0.2s, color 0.2s;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .nav-hamburger:hover { border-color: var(--accent); color: var(--accent); }
+
+    .mobile-nav-drawer {
+      display: none;
+      position: fixed;
+      top: 52px;
+      left: 0; right: 0;
+      background: var(--nav-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      z-index: 99;
+      padding: 12px 20px 16px;
+      flex-direction: column;
+    }
+    .mobile-nav-drawer.open { display: flex; }
+    .mobile-nav-drawer a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      text-decoration: none;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+    .mobile-nav-drawer a:last-child { border-bottom: none; }
+    .mobile-nav-drawer a:hover { color: var(--accent-bright); }
+
+    @media (max-width: 640px) {
+      .topnav { padding: 0 16px; }
+      .topnav-links { display: none; }
+      .nav-hamburger { display: flex; align-items: center; justify-content: center; }
+
+      .hero { flex-direction: column; align-items: flex-start; gap: 16px; padding: 28px 16px 8px; }
+      .hero-photo { width: 88px; height: 88px; }
+      .hero-text h1 { font-size: 2rem; }
+      .hero-subline, .hero-email { font-size: 0.97rem; }
+      .hero-links { gap: 14px; }
+
+      .main { padding: 0 16px; }
+      .section { padding: 28px 0 0; }
+      .section-title { font-size: 1.45rem; }
+
+      .timeline-row { grid-template-columns: 1fr; gap: 2px; }
+      .timeline-right { text-align: left; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+      .timeline-loc-right { margin-top: 0; }
+      .timeline-loc-right::before { content: '·'; margin-right: 6px; color: var(--ink-faint); }
+
+      .pub-year-header { font-size: 1.3rem; }
+      .pub-title { font-size: 0.95rem; }
+      .pub-authors { font-size: 0.93rem; }
+      .pub-item:hover { margin: 0; padding-left: 0; padding-right: 0; border-radius: 0; }
+
+      .service-block { grid-template-columns: 1fr; gap: 4px 0; padding: 12px 0; }
+      .service-label { font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-faint); }
+      .service-text { font-size: 0.93rem; }
+
+      .award-text { font-size: 0.95rem; }
+      .award-date { font-size: 0.88rem; }
+
+      .teaching-row { flex-direction: column; gap: 1px; align-items: flex-start; }
+      .teaching-term { text-align: left; font-size: 0.88rem; }
+      .teaching-course { font-size: 0.93rem; }
+
+      footer { padding: 24px 16px; flex-direction: column; align-items: flex-start; gap: 6px; margin-top: 48px; }
+    }
+
+    @media (max-width: 380px) {
+      .hero-text h1 { font-size: 1.75rem; }
+      .hero-links { flex-direction: column; gap: 10px; }
+    }
+
   </style>
 </head>
 <body>
@@ -622,7 +668,19 @@
     <span class="icon-moon">☾ Dark</span>
     <span class="icon-sun">☀ Light</span>
   </button>
+  <button class="nav-hamburger" onclick="toggleMobileNav()" id="hamburger" aria-label="Toggle menu">☰</button>
 </nav>
+
+<!-- ─── MOBILE NAV DRAWER ─── -->
+<div class="mobile-nav-drawer" id="mobileNav">
+  <a href="#bio" onclick="closeMobileNav()">About</a>
+  <a href="#experience" onclick="closeMobileNav()">Experience</a>
+  <a href="#education" onclick="closeMobileNav()">Education</a>
+  <a href="#publications" onclick="closeMobileNav()">Publications</a>
+  <a href="#service" onclick="closeMobileNav()">Service</a>
+  <a href="#awards" onclick="closeMobileNav()">Awards</a>
+  <a href="#teaching" onclick="closeMobileNav()">Teaching</a>
+</div>
 
 <!-- ─── HERO ─── -->
 <div class="hero">
@@ -653,7 +711,6 @@
     <p class="bio-text">
     I am a Postdoctoral Researcher at the Information & Electronics Research Institute, <a href="https://www.kaist.ac.kr/">KAIST</a>, working with <a href="https://kijungs.github.io/">Prof. Kijung Shin</a> at the <a href="https://sites.google.com/view/kaistdata">Data Mining Lab</a>. I received a Ph.D. degree in Artificial Intelligence at KAIST in 2026, advised by <a href="https://kijungs.github.io/">Prof. Kijung Shin</a>, and won the <a href="https://engineering.kaist.ac.kr/student/thesisaward">Ph.D. Dissertation Award</a> from the KAIST College of Engineering. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/">Sungkyunkwan University</a>. During my Ph.D., I interned at <a href="https://research.snap.com/">Snap Research</a>, <a href="https://www.nec-labs.com/">NEC Labs America</a>, and <a href="https://www.amazon.com/">Amazon</a>.
     </p>
-
     <p class="bio-text">
     My research focuses on mining and learning on relational data (e.g., graphs, hypergraphs, and relational databases) as well as sequential data (e.g., time-series and user interaction sequences) and multi-modal data (e.g., text, visual, and tabular data). I am broadly interested in recommender systems, retrieval systems, and social network analysis. Recently, I have been interested in leveraging large language models (LLMs) to enhance learning and inference on relational and structured data, with a focus on developing frameworks that support complex and autonomous reasoning over real-world data.
     </p>
@@ -1341,22 +1398,38 @@
 </footer>
 
 <script>
-  // Scroll reveal
+  function toggleMobileNav() {
+    const drawer = document.getElementById('mobileNav');
+    const btn = document.getElementById('hamburger');
+    const open = drawer.classList.toggle('open');
+    btn.textContent = open ? '✕' : '☰';
+  }
+  function closeMobileNav() {
+    document.getElementById('mobileNav').classList.remove('open');
+    document.getElementById('hamburger').textContent = '☰';
+  }
+  document.addEventListener('click', function(e) {
+    const drawer = document.getElementById('mobileNav');
+    const btn = document.getElementById('hamburger');
+    if (!drawer.contains(e.target) && !btn.contains(e.target)) {
+      drawer.classList.remove('open');
+      btn.textContent = '☰';
+    }
+  });
+</script>
+
+<script>
   const reveals = document.querySelectorAll('.reveal');
   const obs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        obs.unobserve(e.target);
-      }
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
     });
   }, { threshold: 0.06 });
   reveals.forEach(el => obs.observe(el));
 
-  // Stagger pub items on scroll
   const pubItems = document.querySelectorAll('.pub-item');
   const pubObs = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
+    entries.forEach(e => {
       if (e.isIntersecting) {
         e.target.style.transitionDelay = '0ms';
         e.target.style.opacity = '1';
@@ -1373,16 +1446,13 @@
   });
 </script>
 
-
 <script>
   function toggleTheme() {
     const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    const next = current === 'dark' ? 'light' : 'dark';
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     html.setAttribute('data-theme', next);
     localStorage.setItem('theme', next);
   }
-  // Restore saved theme
   const saved = localStorage.getItem('theme');
   if (saved) document.documentElement.setAttribute('data-theme', saved);
   else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
