@@ -1,0 +1,311 @@
+:root{
+  --bg: #ffffff;
+  --ink: #0f172a;            /* slate-900 */
+  --muted: #64748b;          /* slate-500 */
+
+  /* Academic fancy: deep navy + subtle cyan glow */
+  --accent: #1f3a8a;         /* indigo-900-ish */
+  --accent-dark: #172554;    /* deeper */
+  --glow: rgba(14, 165, 233, 0.22);
+
+  --rule: rgba(148,163,184,0.35);
+  --soft: rgba(31,58,138,0.06);
+
+  --wrap: 900px;
+
+  --sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --serif: "Source Serif 4", ui-serif, Georgia, "Times New Roman", serif;
+}
+
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* subtle top accent strip (not a box) */
+.top-accent{
+  height: 6px;
+  background: linear-gradient(90deg, var(--accent), rgba(14,165,233,0.9), rgba(31,58,138,0.6));
+}
+
+.wrap{
+  width: min(var(--wrap), calc(100% - 44px));
+  margin: 0 auto;
+  padding: 42px 0 34px;
+}
+
+/* Links: elegant underline + hover glow */
+a{
+  color: var(--accent);
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+a:hover{
+  color: var(--accent-dark);
+  background-size: 100% 1px;
+}
+
+/* Header */
+.header{
+  margin-bottom: 22px;
+}
+
+.header-top{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.title{
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 2.35rem;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--ink);
+}
+
+/* Tiny nav: clean, not sidebar */
+.mini-nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.mini-nav a{
+  color: var(--muted);
+  text-decoration: none;
+  background-image: none;
+  padding: 2px 0;
+}
+.mini-nav a:hover{
+  color: var(--accent);
+  background-image: none;
+}
+.mini-nav a.active{
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Photo floats right like Minkai, but refined */
+.photo{
+  float: right;
+  width: 155px;
+  height: 155px;
+  object-fit: cover;
+  margin: 10px 0 12px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(148,163,184,0.35);
+  box-shadow: 0 10px 28px rgba(2, 6, 23, 0.08);
+}
+
+/* Lead text */
+.lead{
+  margin-top: 14px;
+}
+
+/* subtle highlight for key topics */
+.hl{
+  background: linear-gradient(180deg, transparent 62%, var(--soft) 62%);
+  padding: 0 2px;
+  border-radius: 4px;
+}
+
+/* Meta block: not a box, just aligned rows */
+.meta{
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+}
+.meta-row{
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 14px;
+  padding: 6px 0;
+}
+.meta-k{
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.meta-v{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.meta-hint{
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* chips: subtle fancy */
+.chip{
+  color: var(--accent);
+  background: rgba(31,58,138,0.07);
+  border: 1px solid rgba(31,58,138,0.16);
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  background-image: none;
+}
+.chip:hover{
+  color: var(--accent-dark);
+  border-color: rgba(23,37,84,0.22);
+  box-shadow: 0 0 0 3px var(--glow);
+}
+
+/* Sections */
+.section{
+  margin: 18px 0 22px;
+}
+
+.section h2{
+  font-weight: 650;
+  font-size: 1.12rem;
+  margin: 0 0 10px;
+  color: var(--ink);
+  padding-bottom: 8px;
+  position: relative;
+}
+.section h2::after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(148,163,184,0.45), transparent);
+  margin-top: 10px;
+}
+
+p{ margin: 10px 0; }
+.compact{ margin: 6px 0 10px; }
+.muted{ color: var(--muted); }
+.small{ font-size: 0.95rem; }
+
+/* Lists */
+ul{
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+li{ margin: 6px 0; }
+
+/* Publications: no cards, but cleaner rhythm */
+.pub{
+  margin: 12px 0 16px;
+}
+.pub-title{
+  font-weight: 650;
+  color: var(--ink);
+}
+.pub-authors{
+  color: var(--muted);
+  margin-top: 3px;
+}
+.pub-venue{
+  color: var(--muted);
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.venue{
+  color: var(--muted);
+}
+
+/* Pub links: fancy but subtle */
+.pub-link{
+  color: var(--accent);
+  background: rgba(31,58,138,0.07);
+  border: 1px solid rgba(31,58,138,0.16);
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  background-image: none;
+}
+.pub-link:hover{
+  color: var(--accent-dark);
+  box-shadow: 0 0 0 3px var(--glow);
+}
+
+.dot{
+  margin: 0 2px;
+  color: rgba(148,163,184,0.9);
+}
+
+/* details */
+.more{
+  margin-top: 8px;
+}
+.more summary{
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+  list-style: none;
+}
+.more summary::-webkit-details-marker{ display: none; }
+.more summary:hover{
+  color: var(--accent-dark);
+}
+
+/* Footer */
+.footer{
+  margin-top: 28px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  clear: both;
+}
+
+/* Toast */
+.toast{
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.92);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+.toast.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 720px){
+  .meta-row{
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .photo{
+    float: none;
+    display: block;
+    margin: 8px 0 12px;
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  *{ transition: none !important; }
+}
