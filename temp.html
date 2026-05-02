@@ -1,248 +1,1631 @@
-<!doctype html>
-<html lang="en" id="top">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Geon Lee — Ph.D. Student at KAIST. Graph mining & learning, recommender systems, retrieval systems." />
-  <title>Geon Lee</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geon Lee @ KAIST</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <style>
+    /* ═══ DESIGN TOKENS ═══ */
+    :root {
+      --ink:          #18181f;
+      --ink-mid:      #3a3a4a;
+      --ink-light:    #5c5c72;
+      --ink-faint:    #9090a8;
+      --paper:        #fafaf8;
+      --paper-warm:   #f5f4f0;
+      --paper-card:   #ffffff;
+      --paper-mid:    #ededea;
+      --nav-bg:       rgba(250,250,248,0.93);
+      --accent:       #1a56db;
+      --accent-soft:  rgba(26,86,219,0.09);
+      --accent-hover: #1344b0;
+      --teal:         #0e7a6a;
+      --teal-soft:    rgba(14,122,106,0.09);
+      --red-arxiv:    #b31b1b;
+      --red-soft:     rgba(179,27,27,0.09);
+      --gold:         #a0720a;
+      --gold-soft:    rgba(160,114,10,0.1);
+      --border:       rgba(24,24,31,0.08);
+      --border-mid:   rgba(24,24,31,0.14);
+      --border-strong:rgba(24,24,31,0.22);
+      --shadow-xs:    0 1px 3px rgba(0,0,0,0.05);
+      --shadow-sm:    0 2px 8px rgba(0,0,0,0.07);
+      --shadow-md:    0 6px 20px rgba(0,0,0,0.09);
+      --sidebar-w:    230px;
+      --content-max:  780px;
+    }
 
-  <link rel="stylesheet" href="assets/style.css" />
-  <script defer src="assets/main.js"></script>
+    [data-theme="dark"] {
+      --ink:          #e6e6f0;
+      --ink-mid:      #c0c0d4;
+      --ink-light:    #9898b4;
+      --ink-faint:    #64647e;
+      --paper:        #141419;
+      --paper-warm:   #1c1c24;
+      --paper-card:   #1e1e28;
+      --paper-mid:    #28283a;
+      --nav-bg:       rgba(20,20,25,0.95);
+      --accent:       #5d8ef0;
+      --accent-soft:  rgba(93,142,240,0.1);
+      --accent-hover: #7ea8f8;
+      --teal:         #3abba0;
+      --teal-soft:    rgba(58,187,160,0.1);
+      --red-arxiv:    #e06060;
+      --red-soft:     rgba(224,96,96,0.1);
+      --gold:         #d4a832;
+      --gold-soft:    rgba(212,168,50,0.12);
+      --border:       rgba(230,230,240,0.07);
+      --border-mid:   rgba(230,230,240,0.12);
+      --border-strong:rgba(230,230,240,0.2);
+      --shadow-xs:    0 1px 3px rgba(0,0,0,0.3);
+      --shadow-sm:    0 2px 8px rgba(0,0,0,0.35);
+      --shadow-md:    0 6px 20px rgba(0,0,0,0.45);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 17px; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ─── NAV ─── */
+    nav.topnav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--nav-bg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-mid);
+      padding: 0 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+
+    .topnav-name {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+
+    .topnav-links {
+      display: flex;
+      gap: 6px;
+      list-style: none;
+    }
+
+    .topnav-links a {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 6px;
+      transition: color 0.18s, background 0.18s;
+    }
+
+    .topnav-links a:hover {
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      max-width: calc(var(--sidebar-w) + var(--content-max) + 40px + 96px);
+      margin: 0 auto;
+      padding: 60px 48px 0;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .hero-photo {
+      width: 118px;
+      height: 118px;
+      border-radius: 12px;
+      object-fit: cover;
+      display: block;
+      flex-shrink: 0;
+      border: 1px solid var(--border-mid);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-text h1 {
+      font-family: 'Lora', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .hero-subline {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--ink-light);
+      margin-bottom: 2px;
+    }
+
+    .hero-email {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--ink-faint);
+      margin-bottom: 16px;
+    }
+
+    .hero-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .hero-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      color: var(--ink-mid);
+      background: var(--paper-warm);
+      border: 1px solid var(--border-mid);
+      padding: 5px 12px;
+      border-radius: 7px;
+      transition: all 0.18s;
+    }
+
+    .hero-link:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .hero-link i { font-size: 0.75rem; }
+
+    /* ─── TWO-COLUMN LAYOUT ─── */
+    .page-body {
+      max-width: calc(var(--sidebar-w) + var(--content-max) + 40px + 96px);
+      margin: 0 auto;
+      padding: 40px 48px 80px;
+      display: grid;
+      grid-template-columns: var(--sidebar-w) 1fr;
+      gap: 0 40px;
+    }
+
+    /* ─── SIDEBAR ─── */
+    .sidebar {
+      grid-column: 1;
+      padding-top: 2px;
+    }
+
+    .sidebar-sticky {
+      position: sticky;
+      top: 72px;
+    }
+
+    .sidebar-nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .sidebar-nav a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--ink-light);
+      text-decoration: none;
+      padding: 7px 10px;
+      border-radius: 7px;
+      transition: color 0.18s, background 0.18s;
+    }
+
+    .sidebar-nav a:hover,
+    .sidebar-nav a.active {
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .sidebar-nav a i {
+      width: 16px;
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      transition: color 0.18s;
+    }
+
+    .sidebar-nav a:hover i,
+    .sidebar-nav a.active i {
+      color: var(--accent);
+    }
+
+    .sidebar-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 12px 10px;
+    }
+
+    /* ─── MAIN CONTENT ─── */
+    .content { grid-column: 2; }
+
+    /* ─── SECTION ─── */
+    .section {
+      padding: 0 0 52px;
+    }
+
+    .section-title {
+      font-family: 'Lora', serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border-mid);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title i {
+      font-size: 0.9rem;
+      color: var(--accent);
+    }
+
+    /* ─── BIO ─── */
+    .bio-text {
+      font-size: 1.0rem;
+      color: var(--ink-mid);
+      line-height: 1.78;
+      margin-bottom: 14px;
+    }
+
+    .bio-text:last-child { margin-bottom: 0; }
+
+    .bio-text a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .bio-text a:hover {
+      color: var(--accent-hover);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ─── TIMELINE ─── */
+    .timeline { display: flex; flex-direction: column; gap: 0; }
+
+    .timeline-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2px 32px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+
+    .timeline-row:last-child { border-bottom: none; }
+
+    .timeline-institution {
+      font-size: 1.0rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 1px;
+    }
+
+    .timeline-role {
+      font-size: 0.92rem;
+      color: var(--ink-light);
+    }
+
+    .timeline-right { text-align: right; padding-top: 2px; }
+
+    .timeline-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--ink-faint);
+      white-space: nowrap;
+    }
+
+    .timeline-loc-right {
+      font-size: 0.82rem;
+      color: var(--ink-faint);
+      margin-top: 3px;
+    }
+
+    /* ─── PUBLICATIONS ─── */
+    .pub-year-group { margin-bottom: 36px; }
+    .pub-year-group:last-child { margin-bottom: 0; }
+
+    .pub-year-label {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      margin-bottom: 0;
+      padding: 10px 16px;
+      background: var(--paper-warm);
+      border: 1px solid var(--border-mid);
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+
+    .pub-year-label::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: block;
+    }
+
+    .pub-item {
+      padding: 16px 16px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+      border-radius: 0;
+      margin: 0 -16px;
+    }
+
+    .pub-item:last-child { border-bottom: none; }
+
+    .pub-item:hover {
+      background: var(--paper-warm);
+      border-radius: 10px;
+    }
+
+    .pub-title {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.5;
+      margin-bottom: 5px;
+    }
+
+    .pub-authors {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      margin-bottom: 10px;
+      line-height: 1.55;
+    }
+
+    .pub-self {
+      color: var(--ink-mid);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: var(--border-strong);
+      text-underline-offset: 2px;
+    }
+
+    .pub-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+
+    .venue-tag {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 3px 8px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.18s, color 0.18s;
+      white-space: nowrap;
+    }
+
+    .venue-tag:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    .venue-tag.journal {
+      color: var(--teal);
+      background: var(--teal-soft);
+    }
+
+    .venue-tag.journal:hover {
+      background: var(--teal);
+      color: white;
+    }
+
+    .venue-tag.arxiv {
+      color: var(--red-arxiv);
+      background: var(--red-soft);
+    }
+
+    .venue-tag.arxiv:hover {
+      background: var(--red-arxiv);
+      color: white;
+    }
+
+    .pub-sep {
+      color: var(--border-strong);
+      font-size: 0.7rem;
+    }
+
+    .pub-link {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--ink-faint);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.18s;
+    }
+
+    .pub-link:hover { color: var(--accent); }
+
+    .award-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--gold);
+      background: var(--gold-soft);
+      padding: 3px 8px;
+      border-radius: 5px;
+      margin-top: 8px;
+    }
+
+    .award-badge i { font-size: 0.65rem; }
+
+    /* ─── SERVICE ─── */
+    .service-block {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .service-block:last-child { border-bottom: none; }
+
+    .service-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 5px;
+    }
+
+    .service-text {
+      font-size: 0.92rem;
+      color: var(--ink-mid);
+      line-height: 1.65;
+    }
+
+    /* ─── AWARDS ─── */
+    .awards-list { display: flex; flex-direction: column; }
+
+    .award-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 10px 0;
+      gap: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .award-row:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .award-star {
+      color: var(--gold);
+      margin-right: 8px;
+      font-size: 0.85rem;
+    }
+
+    .award-text {
+      font-size: 0.97rem;
+      color: var(--ink-mid);
+      flex: 1;
+    }
+
+    .award-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    /* ─── TEACHING ─── */
+    .teaching-block { margin-bottom: 24px; }
+    .teaching-block:last-child { margin-bottom: 0; }
+
+    .teaching-sublabel {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 10px;
+    }
+
+    .teaching-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding: 8px 0;
+      font-size: 0.92rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .teaching-row:last-child { border-bottom: none; }
+
+    .teaching-course { color: var(--ink-mid); }
+
+    .teaching-term {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      text-align: right;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    /* ─── THEME TOGGLE ─── */
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--border-mid);
+      border-radius: 20px;
+      cursor: pointer;
+      padding: 5px 13px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--ink-light);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.18s;
+      font-family: 'Source Sans 3', sans-serif;
+      letter-spacing: 0.03em;
+    }
+
+    .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+    .theme-toggle .icon-sun  { display: none; }
+    .theme-toggle .icon-moon { display: inline; }
+    [data-theme="dark"] .theme-toggle .icon-sun  { display: inline; }
+    [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      padding: 28px 48px;
+      border-top: 1px solid var(--border-mid);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      max-width: calc(var(--sidebar-w) + var(--content-max) + 40px + 96px);
+      margin: 0 auto;
+    }
+
+    footer p {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+    }
+
+    /* ─── MOBILE NAV ─── */
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-mid);
+      border-radius: 7px;
+      padding: 5px 9px;
+      cursor: pointer;
+      color: var(--ink-light);
+      font-size: 1rem;
+      line-height: 1;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .nav-hamburger:hover { border-color: var(--accent); color: var(--accent); }
+
+    .mobile-nav-drawer {
+      display: none;
+      position: fixed;
+      top: 56px;
+      left: 0; right: 0;
+      background: var(--nav-bg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-mid);
+      z-index: 99;
+      padding: 12px 20px 16px;
+      flex-direction: column;
+    }
+
+    .mobile-nav-drawer.open { display: flex; }
+
+    .mobile-nav-drawer a {
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      text-decoration: none;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+
+    .mobile-nav-drawer a:last-child { border-bottom: none; }
+    .mobile-nav-drawer a:hover { color: var(--accent); }
+
+    /* ─── ANIMATIONS ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── MOBILE ─── */
+    @media (max-width: 900px) {
+      .page-body {
+        grid-template-columns: 1fr;
+        padding: 28px 20px 60px;
+      }
+
+      .sidebar { display: none; }
+      .content { grid-column: 1; }
+    }
+
+    @media (max-width: 640px) {
+      .topnav { padding: 0 16px; }
+      .topnav-links { display: none; }
+      .nav-hamburger { display: flex; align-items: center; }
+
+      .hero { flex-direction: column; gap: 16px; padding: 28px 20px 0; }
+      .hero-photo { width: 84px; height: 84px; border-radius: 10px; }
+      .hero-text h1 { font-size: 2rem; }
+
+      .page-body { padding: 24px 16px 60px; }
+
+      .timeline-row { grid-template-columns: 1fr; }
+      .timeline-right { text-align: left; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding-top: 2px; }
+      .timeline-loc-right::before { content: '·'; margin-right: 6px; color: var(--ink-faint); }
+      .timeline-loc-right { margin-top: 0; }
+
+      .pub-item { margin: 0 -8px; padding-left: 8px; padding-right: 8px; }
+      .pub-item:hover { border-radius: 8px; }
+
+      .teaching-row { flex-direction: column; gap: 2px; align-items: flex-start; }
+      .teaching-term { text-align: left; }
+
+      footer { padding: 20px 16px; flex-direction: column; align-items: flex-start; }
+    }
+  </style>
 </head>
-
 <body>
-  <!-- subtle top accent -->
-  <div class="top-accent" aria-hidden="true"></div>
 
-  <main class="wrap">
-    <header class="header">
-      <div class="header-top">
-        <h1 class="title">Geon Lee</h1>
+<!-- ─── NAV ─── -->
+<nav class="topnav">
+  <span class="topnav-name">Geon Lee</span>
+  <ul class="topnav-links">
+    <li><a href="#bio">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+  </ul>
+  <div style="display:flex;gap:8px;align-items:center;">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+      <span class="icon-moon">☾ Dark</span>
+      <span class="icon-sun">☀ Light</span>
+    </button>
+    <button class="nav-hamburger" onclick="toggleMobileNav()" id="hamburger" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
 
-        <!-- minimal nav (no sidebar, no box) -->
-        <nav class="mini-nav" aria-label="Primary">
-          <a href="#publications">Publications</a>
-          <a href="#experience">Experience</a>
-          <a href="#service">Service</a>
-          <a href="#awards">Awards</a>
-          <a href="#teaching">Teaching</a>
-        </nav>
-      </div>
+<!-- ─── MOBILE DRAWER ─── -->
+<div class="mobile-nav-drawer" id="mobileNav">
+  <a href="#bio" onclick="closeMobileNav()">About</a>
+  <a href="#experience" onclick="closeMobileNav()">Experience</a>
+  <a href="#education" onclick="closeMobileNav()">Education</a>
+  <a href="#publications" onclick="closeMobileNav()">Publications</a>
+  <a href="#service" onclick="closeMobileNav()">Service</a>
+  <a href="#awards" onclick="closeMobileNav()">Awards</a>
+  <a href="#teaching" onclick="closeMobileNav()">Teaching</a>
+</div>
 
-      <!-- photo floats right (Minkai-like) -->
-      <img class="photo" src="files/geonlee_picture.jpg" alt="Geon Lee" />
+<!-- ─── HERO ─── -->
+<div class="hero">
+  <img src="files/geonlee_picture.jpg" alt="Geon Lee" class="hero-photo">
+  <div class="hero-text">
+    <h1>Geon Lee</h1>
+    <div class="hero-subline">Postdoctoral Researcher · KAIST</div>
+    <div class="hero-email">geonlee0325 [at] kaist.ac.kr</div>
+    <div class="hero-links">
+      <a href="files/geonlee_cv.pdf" class="hero-link"><i class="fas fa-file-alt"></i> CV</a>
+      <a href="https://scholar.google.co.kr/citations?user=2g2psXcAAAAJ&hl=en" class="hero-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+      <a href="https://github.com/geon0325" class="hero-link"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/geon-lee-70322a161" class="hero-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+</div>
 
-      <p class="lead">
-        I am a Ph.D. student in the
-        <a href="https://gsai.kaist.ac.kr/" target="_blank" rel="noopener noreferrer">Kim Jaechul Graduate School of AI</a>
-        at <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener noreferrer">KAIST</a>,
-        advised by <a href="https://kijungs.github.io/" target="_blank" rel="noopener noreferrer">Prof. Kijung Shin</a>
-        at the <a href="https://sites.google.com/view/kaistdata" target="_blank" rel="noopener noreferrer">Data Mining Lab</a>.
-        I received my B.S. in Computer Science and Engineering from
-        <a href="https://www.skku.edu/skku/index.do" target="_blank" rel="noopener noreferrer">Sungkyunkwan University</a>.
+<!-- ─── PAGE BODY ─── -->
+<div class="page-body">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-sticky">
+      <ul class="sidebar-nav">
+        <li><a href="#bio"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+        <li><a href="#education"><i class="fas fa-university"></i> Education</a></li>
+        <div class="sidebar-divider"></div>
+        <li><a href="#publications"><i class="fas fa-book-open"></i> Publications</a></li>
+        <div class="sidebar-divider"></div>
+        <li><a href="#service"><i class="fas fa-hands-helping"></i> Service</a></li>
+        <li><a href="#awards"><i class="fas fa-trophy"></i> Awards</a></li>
+        <li><a href="#teaching"><i class="fas fa-chalkboard-teacher"></i> Teaching</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- BIO -->
+    <section class="section reveal" id="bio">
+      <h2 class="section-title"><i class="fas fa-user"></i> About</h2>
+      <p class="bio-text">
+        I am a Postdoctoral Researcher at the Information &amp; Electronics Research Institute, <a href="https://www.kaist.ac.kr/">KAIST</a>, working with <a href="https://kijungs.github.io/">Prof. Kijung Shin</a> at the <a href="https://sites.google.com/view/kaistdata">Data Mining Lab</a>. I received a Ph.D. degree in Artificial Intelligence at KAIST in 2026, advised by <a href="https://kijungs.github.io/">Prof. Kijung Shin</a>, and won the <a href="https://engineering.kaist.ac.kr/student/thesisaward">Ph.D. Dissertation Award</a> from the KAIST College of Engineering. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/">Sungkyunkwan University</a>. During my Ph.D., I interned at <a href="https://research.snap.com/">Snap Research</a>, <a href="https://www.nec-labs.com/">NEC Labs America</a>, and <a href="https://www.amazon.com/">Amazon</a>.
       </p>
-
-      <p>
-        My research interests include <span class="hl">graph mining & learning</span>,
-        <span class="hl">recommender systems</span>, <span class="hl">retrieval systems</span>,
-        time series analysis, multi-modal learning, and social network analysis.
-      </p>
-
-      <div class="meta">
-        <div class="meta-row">
-          <span class="meta-k">Email</span>
-          <span class="meta-v">
-            <a href="#" id="email" data-email="geonlee0325@kaist.ac.kr">geonlee0325 (at) kaist.ac.kr</a>
-            <span class="meta-hint">(click to copy)</span>
-          </span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-k">Links</span>
-          <span class="meta-v">
-            <a class="chip" href="files/geonlee_cv.pdf">CV</a>
-            <a class="chip" href="https://scholar.google.co.kr/citations?user=2g2psXcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-            <a class="chip" href="https://github.com/geon0325" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="chip" href="https://www.linkedin.com/in/geon-lee-70322a161" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </span>
-        </div>
-      </div>
-    </header>
-
-    <section class="section" id="research">
-      <h2>Research</h2>
-      <p>
-        I work on graph mining & learning, recommender systems, and retrieval.
-        I am also interested in time series and multi-modal learning.
+      <p class="bio-text">
+        My research focuses on mining and learning on relational data (e.g., graphs, hypergraphs, and relational databases) as well as sequential data (e.g., time-series and user interaction sequences) and multi-modal data (e.g., text, visual, and tabular data). I am broadly interested in recommender systems, retrieval systems, and social network analysis. Recently, I have been interested in leveraging large language models (LLMs) to enhance learning and inference on relational and structured data, with a focus on developing frameworks that support complex and autonomous reasoning over real-world data.
       </p>
     </section>
 
-    <section class="section" id="publications">
-      <h2>Selected Publications</h2>
-      <p class="muted">
-        Full list on
-        <a href="https://scholar.google.co.kr/citations?user=2g2psXcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
-      </p>
-
-      <div class="pub">
-        <div class="pub-title">ReFuGe: Feature Generation for Prediction Tasks on Relational Databases with LLM Agents</div>
-        <div class="pub-authors">Kyungho Kim, <b>Geon Lee</b>, Juyeon Kim, Dongwon Choi, Shinhwan Kang, and Kijung Shin</div>
-        <div class="pub-venue">
-          <span class="venue">WWW 2026 (Short)</span>
-          <span class="dot">·</span>
-          <a href="#" class="pub-link">PDF</a>
-          <a href="#" class="pub-link">Slides</a>
-          <a href="#" class="pub-link">Code</a>
-        </div>
-      </div>
-
-      <div class="pub">
-        <div class="pub-title">
-          <a href="https://arxiv.org/pdf/2509.13648" target="_blank" rel="noopener noreferrer">
-            Sequential Data Augmentation for Generative Recommendation
-          </a>
-        </div>
-        <div class="pub-authors"><b>Geon Lee</b>, Bhuvesh Kumar, Clark Mingxuan Ju, Tong Zhao, Kijung Shin, Neil Shah, and Liam Collins</div>
-        <div class="pub-venue">
-          <span class="venue">WSDM 2026</span>
-          <span class="dot">·</span>
-          <a href="https://arxiv.org/pdf/2509.13648" target="_blank" rel="noopener noreferrer" class="pub-link">PDF</a>
-        </div>
-      </div>
-
-      <div class="pub">
-        <div class="pub-title">
-          <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/skysearchKDD2025.pdf" target="_blank" rel="noopener noreferrer">
-            SkySearch: Satellite Video Search at Scale
-          </a>
-        </div>
-        <div class="pub-authors">Minyoung Choe*, <b>Geon Lee*</b>, Changhun Han*, Suji Kim, Woong Hu, Hyebeen Hwang, Geunseok Park, Byeongyeon Kim, Hyesook Lee, Ha-Myung Park, and Kijung Shin</div>
-        <div class="pub-venue">
-          <span class="venue">KDD 2025 (Applied Data Science)</span>
-          <span class="dot">·</span>
-          <a href="https://github.com/geon0325/skysearch" target="_blank" rel="noopener noreferrer" class="pub-link">Code</a>
-        </div>
-      </div>
-
-      <div class="pub">
-        <div class="pub-title">
-          <a href="https://arxiv.org/pdf/2401.08878.pdf" target="_blank" rel="noopener noreferrer">
-            A Survey on Hypergraph Mining: Patterns, Tools, and Generators
-          </a>
-        </div>
-        <div class="pub-authors"><b>Geon Lee*</b>, Fanchen Bu*, Tina Eliassi-Rad, and Kijung Shin</div>
-        <div class="pub-venue"><span class="venue">ACM Computing Surveys</span></div>
-      </div>
-
-      <div class="pub">
-        <div class="pub-title">
-          <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/lightgcnppRecSys2024.pdf" target="_blank" rel="noopener noreferrer">
-            Revisiting LightGCN: Unexpected Inflexibility, Inconsistency, and A Remedy Towards Improved Recommendation
-          </a>
-        </div>
-        <div class="pub-authors"><b>Geon Lee</b>, Kyungho Kim, and Kijung Shin</div>
-        <div class="pub-venue">
-          <span class="venue">RecSys 2024 (Short)</span>
-          <span class="dot">·</span>
-          <a href="https://github.com/geon0325/LightGCNpp" target="_blank" rel="noopener noreferrer" class="pub-link">Code</a>
-        </div>
-      </div>
-
-      <details class="more">
-        <summary>Show more</summary>
-
-        <div class="pub">
-          <div class="pub-title">
-            <a href="http://www.vldb.org/pvldb/vol13/p2256-lee.pdf" target="_blank" rel="noopener noreferrer">
-              Hypergraph Motifs: Concepts, Algorithms, and Discoveries
-            </a>
+    <!-- EXPERIENCE -->
+    <section class="section reveal" id="experience">
+      <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-row">
+          <div>
+            <div class="timeline-institution">KAIST</div>
+            <div class="timeline-role">Postdoctoral Researcher</div>
           </div>
-          <div class="pub-authors"><b>Geon Lee</b>, Jihoon Ko, and Kijung Shin</div>
-          <div class="pub-venue"><span class="venue">VLDB 2020</span></div>
+          <div class="timeline-right">
+            <div class="timeline-date">Mar 2026 – Present</div>
+            <div class="timeline-loc-right">Seoul, South Korea</div>
+          </div>
+        </div>
+        <div class="timeline-row">
+          <div>
+            <div class="timeline-institution">Snap Research</div>
+            <div class="timeline-role">Research Intern</div>
+          </div>
+          <div class="timeline-right">
+            <div class="timeline-date">Apr – Jun 2025</div>
+            <div class="timeline-loc-right">Bellevue, WA, USA</div>
+          </div>
+        </div>
+        <div class="timeline-row">
+          <div>
+            <div class="timeline-institution">NEC Labs America</div>
+            <div class="timeline-role">Research Intern</div>
+          </div>
+          <div class="timeline-right">
+            <div class="timeline-date">May – Aug 2023</div>
+            <div class="timeline-loc-right">Princeton, NJ, USA</div>
+          </div>
+        </div>
+        <div class="timeline-row">
+          <div>
+            <div class="timeline-institution">Amazon</div>
+            <div class="timeline-role">Applied Scientist Intern</div>
+          </div>
+          <div class="timeline-right">
+            <div class="timeline-date">Sep – Dec 2022</div>
+            <div class="timeline-loc-right">San Francisco, CA, USA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section reveal" id="education">
+      <h2 class="section-title"><i class="fas fa-university"></i> Education</h2>
+      <div class="timeline">
+        <div class="timeline-row">
+          <div>
+            <div class="timeline-institution">KAIST</div>
+            <div class="timeline-role">M.S. &amp; Ph.D. in Artificial Intelligence</div>
+          </div>
+          <div class="timeline-right">
+            <div class="timeline-date">Sep 2020 – Feb 2026</div>
+            <div class="timeline-loc-right">Seoul, South Korea</div>
+          </div>
+        </div>
+        <div class="timeline-row">
+          <div>
+            <div class="timeline-institution">Sungkyunkwan University</div>
+            <div class="timeline-role">B.S. in Computer Science and Engineering</div>
+          </div>
+          <div class="timeline-right">
+            <div class="timeline-date">Mar 2016 – Aug 2019</div>
+            <div class="timeline-loc-right">Suwon, South Korea</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section reveal" id="publications">
+      <h2 class="section-title"><i class="fas fa-book-open"></i> Publications</h2>
+
+      <!-- 2026 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2026</div>
+
+        <div class="pub-item">
+          <div class="pub-title">[P2] Toward the Science of AI Agent Societies</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee*</span>, Fanchen Bu*, Soo Yong Lee*, Sunwoo Kim, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="#" class="venue-tag arxiv">Preprint</a>
+            <span class="pub-sep">·</span>
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+          </div>
         </div>
 
-      </details>
+        <div class="pub-item">
+          <div class="pub-title">[P1] Retrieval-Augmented Generation for LLM-based Recommender Systems: A Comprehensive Survey</div>
+          <div class="pub-authors">Sunwoo Kim*, <span class="pub-self">Geon Lee*</span>, Kyungho Kim*, Liam Collins, Neil Shah, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="#" class="venue-tag arxiv">Preprint</a>
+            <span class="pub-sep">·</span>
+            <a href="https://hal.science/hal-05561909" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C29] Rethinking Contrastive Learning for Graph Collaborative Filtering: Limitations and A Simple Remedy</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Sunwoo Kim, Kyungho Kim, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://icml.cc/" class="venue-tag">ICML 2026</a>
+            <span class="pub-sep">·</span>
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C28] Hybrid-Vector Retrieval for Visually Rich Documents: Combining Single-Vector Efficiency and Multi-Vector Accuracy</div>
+          <div class="pub-authors">Juyeon Kim, <span class="pub-self">Geon Lee</span>, Dongwon Choi, Taeuk Kim, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://2026.aclweb.org/" class="venue-tag">ACL 2026 (Findings)</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2510.22215" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/juyeonnn/HEAVEN" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C27] ItemRAG: Item-Based Retrieval-Augmented Generation for LLM-Based Recommendation</div>
+          <div class="pub-authors">Sunwoo Kim, <span class="pub-self">Geon Lee</span>, Kyungho Kim, Jaemin Yoo, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://sigir2026.org/en-AU" class="venue-tag">SIGIR 2026 (Short)</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2511.15141" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C26] ReFuGe: Feature Generation for Prediction Tasks on Relational Databases with LLM Agents</div>
+          <div class="pub-authors">Kyungho Kim, <span class="pub-self">Geon Lee</span>, Juyeon Kim, Dongwon Choi, Shinhwan Kang, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://www2026.thewebconf.org/" class="venue-tag">WWW 2026 (Short)</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2601.17735" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="#" class="pub-link"><i class="fas fa-tv"></i> Slides</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/K-Kyungho/REFUGE" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C25] Sequential Data Augmentation for Generative Recommendation</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Bhuvesh Kumar, Clark Mingxuan Ju, Tong Zhao, Kijung Shin, Neil Shah, and Liam Collins</div>
+          <div class="pub-meta-row">
+            <a href="https://wsdm-conference.org/2026/" class="venue-tag">WSDM 2026</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2509.13648" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="#" class="pub-link"><i class="fas fa-tv"></i> Slides</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/snap-research/GenPAS" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[J9] A Comprehensive Survey on Multi-Behavior Recommender Systems: Extended Taxonomy and Recent Advances</div>
+          <div class="pub-authors">Kyungho Kim, Sunwoo Kim, <span class="pub-self">Geon Lee</span>, Jinhong Jung, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://link.springer.com/journal/41060" class="venue-tag journal">Int'l Journal of Data Science and Analytics</a>
+            <span class="pub-sep">·</span>
+            <a href="https://link.springer.com/article/10.1007/s41060-025-01019-z" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2025 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2025</div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C24] RDB2G-Bench: A Comprehensive Benchmark for Automatic Graph Modeling of Relational Databases</div>
+          <div class="pub-authors">Dongwon Choi, Sunwoo Kim, Juyeon Kim, Kyungho Kim, <span class="pub-self">Geon Lee</span>, Shinhwan Kang, Myunghwan Kim, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://neurips.cc/Conferences/2025" class="venue-tag">NeurIPS 2025 (D&amp;B)</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2506.01360" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/chlehdwon/RDB2G-Bench" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C23] TimeXL: Explainable Multi-modal Time Series Prediction with LLM-in-the-Loop</div>
+          <div class="pub-authors">Yushan Jiang, Wenchao Yu, <span class="pub-self">Geon Lee</span>, Dongjin Song, Kijung Shin, Wei Cheng, Yanchi Liu, and Haifeng Chen</div>
+          <div class="pub-meta-row">
+            <a href="https://neurips.cc/Conferences/2025" class="venue-tag">NeurIPS 2025</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2503.01013" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C22] Attributed Hypergraph Generation with Realistic Interplay Between Structure and Attributes</div>
+          <div class="pub-authors">Jaewan Chun, Seokbum Yoon, Minyoung Choe, <span class="pub-self">Geon Lee</span>, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://www3.cs.stonybrook.edu/~icdm2025/" class="venue-tag">ICDM 2025</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2509.21838" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/jaewan01/NoAH" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div><div class="award-badge"><i class="fas fa-trophy"></i> Best Paper Award</div></div>
+          <div><div class="award-badge"><i class="fas fa-star"></i> One of the Best-Ranked Papers</div></div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C21] Identifying Group Anchors in Real-World Group Interactions Under Label Scarcity</div>
+          <div class="pub-authors">Fanchen Bu, <span class="pub-self">Geon Lee</span>, Minyoung Choe, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://www3.cs.stonybrook.edu/~icdm2025/" class="venue-tag">ICDM 2025</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2509.20762" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://bokveizen.github.io/slides/anchor_icdm25.pdf" class="pub-link"><i class="fas fa-tv"></i> Slides</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/bokveizen/anchor_radar" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C20] A Self-Supervised Mixture-of-Experts Framework for Multi-behavior Recommendation</div>
+          <div class="pub-authors">Kyungho Kim, Sunwoo Kim, <span class="pub-self">Geon Lee</span>, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://cikm2025.org/" class="venue-tag">CIKM 2025</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2508.19507" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/K-Kyungho/MEMBER" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[J8] Revisiting LightGCN: Unexpected Inflexibility, Inconsistency, and A Remedy Towards Improved Recommendation</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Kyungho Kim, Fanchen Bu, Langzhang Liang, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://dl.acm.org/journal/tors" class="venue-tag journal">Transactions on Recommender Systems</a>
+            <span class="pub-sep">·</span>
+            <a href="https://dl.acm.org/doi/10.1145/3760763" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/geon0325/LightGCNpp" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C19] SkySearch: Satellite Video Search at Scale</div>
+          <div class="pub-authors">Minyoung Choe*, <span class="pub-self">Geon Lee*</span>, Changhun Han*, Suji Kim, Woong Hu, Hyebeen Hwang, Geunseok Park, Byeongyeon Kim, Hyesook Lee, Ha-Myung Park, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://kdd2025.kdd.org/" class="venue-tag">KDD 2025 (ADS)</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/skysearchKDD2025.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/skysearchKDD2025.pdf" class="pub-link"><i class="fas fa-tv"></i> Slides</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/geon0325/skysearch" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C18] KGMEL: Knowledge Graph-Enhanced Multimodal Entity Linking</div>
+          <div class="pub-authors">Juyeon Kim, <span class="pub-self">Geon Lee</span>, Taeuk Kim, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://sigir2025.dei.unipd.it/" class="venue-tag">SIGIR 2025 (Short)</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2504.15135" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/juyeonnn/KGMEL" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C17] MARIOH: Multiplicity-Aware Hypergraph Reconstruction</div>
+          <div class="pub-authors">Kyuhan Lee, <span class="pub-self">Geon Lee</span>, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://ieee-icde.org/2025/" class="venue-tag">ICDE 2025</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2504.00522" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/KyuhanLee/MARIOH" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[J7] A Survey on Hypergraph Mining: Patterns, Tools, and Generators</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee*</span>, Fanchen Bu*, Tina Eliassi-Rad, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://dl.acm.org/journal/csur" class="venue-tag journal">ACM Computing Surveys</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2401.08878.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/hypergraph_survey_supp.pdf" class="pub-link">Appendix</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C16] Multi-Behavior Recommender Systems: A Survey</div>
+          <div class="pub-authors">Kyungho Kim, Sunwoo Kim, <span class="pub-self">Geon Lee</span>, Jinhong Jung, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://pakdd2025.org/" class="venue-tag">PAKDD 2025 (Survey)</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2503.06963" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+          </div>
+          <div><div class="award-badge"><i class="fas fa-trophy"></i> Best Survey Paper Award</div></div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C15] Beyond Neighbors: Distance-Generalized Graphlets for Enhanced Graph Characterization</div>
+          <div class="pub-authors">Yeongho Kim, Yuyeong Kim, <span class="pub-self">Geon Lee</span>, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://www2025.thewebconf.org/" class="venue-tag">WWW 2025</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/edgeWWW2025.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/thisis05/EDGE" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C14] TimeCAP: Learning to Contextualize, Augment, and Predict Time Series Events with Large Language Model Agents</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Wenchao Yu, Kijung Shin, Wei Cheng, and Haifeng Chen</div>
+          <div class="pub-meta-row">
+            <a href="https://aaai.org/conference/aaai/aaai-25/" class="venue-tag">AAAI 2025</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2502.11418" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/geon0325/TimeCAP" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2024</div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C13] Resource2Box: Learning to Rank Resources in Distributed Search Using Box Embedding</div>
+          <div class="pub-authors">Ulugbek Ergashev, <span class="pub-self">Geon Lee</span>, Kijung Shin, Eduard Dragut, and Weiyi Meng</div>
+          <div class="pub-meta-row">
+            <a href="https://icdm2024.org/" class="venue-tag">ICDM 2024</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/resource2boxICDM2024.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C12] Revisiting LightGCN: Unexpected Inflexibility, Inconsistency, and A Remedy Towards Improved Recommendation</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Kyungho Kim, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://recsys.acm.org/recsys24/" class="venue-tag">RecSys 2024 (Short)</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/lightgcnppRecSys2024.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/geon0325/LightGCNpp" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div><div class="award-badge"><i class="fas fa-star"></i> Best Short Paper Candidate</div></div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C11] Post-Training Embedding Enhancement for Long-Tail Recommendation</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Kyungho Kim, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://cikm2024.org/" class="venue-tag">CIKM 2024 (Short)</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/edgeCIKM2024.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/geon0325/EDGE" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C10] Towards Better Utilization of Multiple Views for Bundle Recommendation</div>
+          <div class="pub-authors">Kyungho Kim, Sunwoo Kim, <span class="pub-self">Geon Lee</span>, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://cikm2024.org/" class="venue-tag">CIKM 2024 (Short)</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/petCIKM2024.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/K-Kyungho/PET" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[J6] Representative and Back-in-Time Sampling from Real-World Hypergraphs</div>
+          <div class="pub-authors">Minyoung Choe, Jaemin Yoo, <span class="pub-self">Geon Lee</span>, Woonsung Baek, U Kang, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://dl.acm.org/journal/tkdd" class="venue-tag journal">Trans. on Knowledge Discovery from Data</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/midasTKDD2024.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/young917/MiDaS-B" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C9] VilLain: Self-Supervised Learning on Homogeneous Hypergraphs without Features via Virtual Label Propagation</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Soo Yong Lee, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://www2024.thewebconf.org/" class="venue-tag">WWW 2024</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/villainWWW2024.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/geon0325/VilLain" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2023 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2023</div>
+
+        <div class="pub-item">
+          <div class="pub-title">[T2] Mining of Real-World Hypergraphs: Patterns, Tools, and Generators</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Jaemin Yoo, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://kdd.org/kdd2023/" class="venue-tag">KDD 2023</a>
+            <a href="https://archives.iw3c2.org/www2023/" class="venue-tag">WWW 2023</a>
+            <span class="pub-sep">·</span>
+            <a href="https://sites.google.com/view/hypergraph-tutorial" class="pub-link"><i class="fas fa-globe"></i> Website</a>
+            <span class="pub-sep">·</span>
+            <a href="https://www.youtube.com/watch?v=0mD7zOBx10M" class="pub-link"><i class="fab fa-youtube"></i> Video</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2401.08878.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> Survey</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[J5] Random Walk with Restart on Hypergraphs: Fast Computation and an Application to Anomaly Detection</div>
+          <div class="pub-authors">Jaewan Chun, <span class="pub-self">Geon Lee</span>, Kijung Shin, and Jinhong Jung</div>
+          <div class="pub-meta-row">
+            <a href="https://www.springer.com/journal/10618" class="venue-tag journal">Data Mining and Knowledge Discovery</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/archerDAMI2024.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/jaewan01/ARCHER" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[J4] Hypergraph Motifs and Their Extensions Beyond Binary</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee*</span>, Seokbum Yoon*, Jihoon Ko, Hyunju Kim, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://www.springer.com/journal/778" class="venue-tag journal">The VLDB Journal</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2310.15668.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/jing9044/MoCHy-with-3h-motif" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div><div class="award-badge"><i class="fas fa-award"></i> KAIST Outstanding Paper Award</div></div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[J3] Hypercore Decomposition for Non-Fragile Hyperedges: Concepts, Algorithms, Observations, and Applications</div>
+          <div class="pub-authors">Fanchen Bu, <span class="pub-self">Geon Lee</span>, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://www.springer.com/journal/10618" class="venue-tag journal">Data Mining and Knowledge Discovery</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2301.08440.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/bokveizen/non-fragile-hypercore" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[J2] Temporal Hypergraph Motifs</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span> and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://www.springer.com/journal/10115" class="venue-tag journal">Knowledge and Information Systems</a>
+            <span class="pub-sep">·</span>
+            <a href="http://dmlab.kaist.ac.kr/~kijungs/papers/thmotifKAIS2023.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/geonlee0325/THyMe" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2022 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2022</div>
+
+        <div class="pub-item">
+          <div class="pub-title">[T1] Mining of Real-World Hypergraphs: Patterns, Tools, and Generators</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Jaemin Yoo, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://icdm22.cse.usf.edu/" class="venue-tag">ICDM 2022</a>
+            <a href="https://www.cikm2022.org/" class="venue-tag">CIKM 2022</a>
+            <span class="pub-sep">·</span>
+            <a href="https://sites.google.com/view/hypergraph-tutorial" class="pub-link"><i class="fas fa-globe"></i> Website</a>
+            <span class="pub-sep">·</span>
+            <a href="https://www.youtube.com/watch?v=0mD7zOBx10M" class="pub-link"><i class="fab fa-youtube"></i> Video</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C8] Set2Box: Similarity Preserving Representation Learning for Sets</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Chanyoung Park, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://icdm22.cse.usf.edu/" class="venue-tag">ICDM 2022</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2210.03282.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/geon0325/Set2Box" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C7] HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Minyoung Choe, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://ijcai-22.org/" class="venue-tag">IJCAI 2022</a>
+            <span class="pub-sep">·</span>
+            <a href="https://www.ijcai.org/proceedings/2022/0296.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/geonlee0325/HashNWalk" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C6] MiDaS: Representative Sampling from Real-World Hypergraphs</div>
+          <div class="pub-authors">Minyoung Choe, Jaemin Yoo, <span class="pub-self">Geon Lee</span>, Woonsung Baek, U Kang, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://www2022.thewebconf.org/" class="venue-tag">WWW 2022</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2202.01587.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/young917/MiDaS" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[J1/W1] Simple Epidemic Models with Segmentation Can Be Better than Complex Ones</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Se-eun Yoon, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://journals.plos.org/plosone/" class="venue-tag journal">PLOS ONE</a>
+            <a href="https://epidamik.github.io/2021/index.html" class="venue-tag">epiDAMIK @ KDD 2021</a>
+            <span class="pub-sep">·</span>
+            <a href="https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0262244&type=printable" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/geonlee0325/covid_segmentation" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2021 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2021</div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C5] THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span> and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://icdm2021.auckland.ac.nz/" class="venue-tag">ICDM 2021</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2109.08341.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/geonlee0325/THyMe" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div><div class="award-badge"><i class="fas fa-star"></i> One of the Best-Ranked Papers</div></div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C4] How Do Hyperedges Overlap in Real-World Hypergraphs? — Patterns, Measures, and Generators</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee*</span>, Minyoung Choe*, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://www2021.thewebconf.org/" class="venue-tag">WWW 2021</a>
+            <span class="pub-sep">·</span>
+            <a href="https://arxiv.org/pdf/2101.07480.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/young917/www21-hyperlap" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2020 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2020</div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C3] Hypergraph Motifs: Concepts, Algorithms, and Discoveries</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Jihoon Ko, and Kijung Shin</div>
+          <div class="pub-meta-row">
+            <a href="https://vldb2020.org/" class="venue-tag">VLDB 2020</a>
+            <span class="pub-sep">·</span>
+            <a href="http://www.vldb.org/pvldb/vol13/p2256-lee.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            <span class="pub-sep">·</span>
+            <a href="https://github.com/lg970325/MoCHy" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C2] MEGA: Multi-View Semi-Supervised Clustering of Hypergraphs</div>
+          <div class="pub-authors">Joyce Jiyoung Whang, Rundong Du, Sangwon Jung, <span class="pub-self">Geon Lee</span>, Barry Drake, Qingqing Liu, Seonggoo Kang, and Haesun Park</div>
+          <div class="pub-meta-row">
+            <a href="https://vldb2020.org/" class="venue-tag">VLDB 2020</a>
+            <span class="pub-sep">·</span>
+            <a href="http://www.vldb.org/pvldb/vol13/p698-whang.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2019 -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2019</div>
+
+        <div class="pub-item">
+          <div class="pub-title">[C1] Hyperlink Classification via Structured Graph Embedding</div>
+          <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Seonggoo Kang, and Joyce Jiyoung Whang</div>
+          <div class="pub-meta-row">
+            <a href="https://sigir.org/sigir2019/" class="venue-tag">SIGIR 2019 (Short)</a>
+            <span class="pub-sep">·</span>
+            <a href="https://geonlee0325.github.io/files/hyperlink_sigir2019_paper.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="experience">
-      <h2>Work Experience</h2>
-      <ul>
-        <li>Snap Research — Research Intern (Bellevue, WA, USA), Apr 2025 – Jun 2025</li>
-        <li>NEC Labs America — Research Intern (Princeton, NJ, USA), May 2023 – Aug 2023</li>
-        <li>Amazon — Applied Scientist Intern (San Francisco, CA, USA), Sep 2022 – Dec 2022</li>
-      </ul>
+    <!-- SERVICE -->
+    <section class="section reveal" id="service">
+      <h2 class="section-title"><i class="fas fa-hands-helping"></i> Academic Service</h2>
+
+      <div class="service-block">
+        <div class="service-label">Conference Reviewer</div>
+        <div class="service-text">CIKM (2022–2026), KDD (2023–2026), AAAI (2024–2026), WWW (2024–2026), RecSys (2025–2026), ICLR (2025–2026), AISTATS (2025–2026), ICML (2025–2026), NeurIPS (2024–2025), LoG (2022–2025), ACML (2025), SDM (2024)</div>
+      </div>
+
+      <div class="service-block">
+        <div class="service-label">Journal Reviewer</div>
+        <div class="service-text">TKDE (2023–2026), Information Sciences (2024–2026), TPAMI (2025–2026), IP&amp;M (2025–2026), Scientific Reports (2025–2026), TNNLS (2023–2025), VLDBJ (2023–2025), PLOS ONE (2024–2025), DMKD (2024–2025), Expert Systems With Applications (2026), Knowledge-Based Systems (2026), Neurocomputing (2026), Journal of Neuroscience Methods (2026), TOIS (2025), Neural Networks (2025), Machine Learning (2025), Patterns (2025), TNSE (2024), Big Data Research (2024)</div>
+      </div>
+
+      <div class="service-block">
+        <div class="service-label">Session Chair</div>
+        <div class="service-text">CIKM (2024)</div>
+      </div>
     </section>
 
-    <section class="section" id="education">
-      <h2>Education</h2>
-      <ul>
-        <li>KAIST — M.S. & Ph.D. in Artificial Intelligence, Sep 2020 – Present</li>
-        <li>Sungkyunkwan University — B.S. in Computer Science and Engineering, Mar 2016 – Aug 2019</li>
-      </ul>
+    <!-- AWARDS -->
+    <section class="section reveal" id="awards">
+      <h2 class="section-title"><i class="fas fa-trophy"></i> Awards &amp; Honors</h2>
+      <div class="awards-list">
+        <div class="award-row">
+          <span class="award-text"><span class="award-star">★</span>PhD Dissertation Award</span>
+          <span class="award-date">Feb 2026</span>
+        </div>
+        <div class="award-row">
+          <span class="award-text"><span class="award-star">★</span>Best Paper Award at ICDM 2025</span>
+          <span class="award-date">Dec 2025</span>
+        </div>
+        <div class="award-row">
+          <span class="award-text"><span class="award-star">★</span>One of the Best-Ranked Papers of ICDM 2025</span>
+          <span class="award-date">Dec 2025</span>
+        </div>
+        <div class="award-row">
+          <span class="award-text"><span class="award-star">★</span>Best Survey Paper Award at PAKDD 2025</span>
+          <span class="award-date">Jun 2025</span>
+        </div>
+        <div class="award-row">
+          <span class="award-text"><span class="award-star">★</span>Outstanding Reviewer of KDD 2025</span>
+          <span class="award-date">Dec 2024</span>
+        </div>
+        <div class="award-row">
+          <span class="award-text"><span class="award-star">★</span>KAIST Outstanding Paper Award</span>
+          <span class="award-date">Nov 2024</span>
+        </div>
+        <div class="award-row">
+          <span class="award-text"><span class="award-star">★</span>Best Short Paper Candidate at RecSys 2024</span>
+          <span class="award-date">Oct 2024</span>
+        </div>
+        <div class="award-row">
+          <span class="award-text"><span class="award-star">★</span>One of the Best-Ranked Papers of ICDM 2021</span>
+          <span class="award-date">Dec 2021</span>
+        </div>
+        <div class="award-row">
+          <span class="award-text"><span class="award-star">★</span>Sungkyunkwan Presidential Award</span>
+          <span class="award-date">Aug 2019</span>
+        </div>
+        <div class="award-row">
+          <span class="award-text"><span class="award-star">★</span>Sungkyunkwan Software Scholarship (Full tuition, all semesters)</span>
+          <span class="award-date">2016–2019</span>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="service">
-      <h2>Academic Service</h2>
+    <!-- TEACHING -->
+    <section class="section reveal" id="teaching">
+      <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
 
-      <p><b>Program Committee / Conference Reviewer</b></p>
-      <p class="compact muted">
-        KDD (2023–2026) · AAAI (2024–2026) · WWW (2024–2026) · ICLR (2025–2026) · AISTATS (2025–2026) ·
-        CIKM (2022–2025) · LoG (2022–2025) · NeurIPS (2024–2025) · RecSys (2025) · ICML (2025) · ACML (2025) · SDM (2024)
-      </p>
+      <div class="teaching-block">
+        <div class="teaching-sublabel">Teaching Assistant</div>
+        <div class="teaching-row">
+          <span class="teaching-course">KAIST AI506 — Data Mining and Search</span>
+          <span class="teaching-term">Spring 2021, 2023</span>
+        </div>
+        <div class="teaching-row">
+          <span class="teaching-course">KAIST AI607 — Graph Mining and Social Network Analysis</span>
+          <span class="teaching-term">Fall 2020, 2021, 2022, 2023</span>
+        </div>
+        <div class="teaching-row">
+          <span class="teaching-course">KAIST AI617 — Machine Learning for Robotics</span>
+          <span class="teaching-term">Spring 2022</span>
+        </div>
+        <div class="teaching-row">
+          <span class="teaching-course">SKKU CSE3036 — Seminar in Computer Engineering</span>
+          <span class="teaching-term">Fall 2019</span>
+        </div>
+      </div>
 
-      <p><b>Journal Reviewer</b></p>
-      <p class="compact muted">
-        TPAMI (2025–2026) · Information Processing and Management (2025–2026) · TNNLS (2023–2025) · The VLDB Journal (2023–2025) ·
-        Information Sciences (2024–2025) · PLOS ONE (2024–2025) · Data Mining and Knowledge Discovery (2024–2025) ·
-        Neurocomputing (2026) · Scientific Reports (2025) · Neural Networks (2025) · TOIS (2025) · The Journal of Supercomputing (2025) ·
-        Machine Learning (2025) · Patterns (2025) · TKDE (2023–2024) · TNSE (2024) · Big Data Research (2024)
-      </p>
-
-      <p><b>Session Chair</b></p>
-      <p class="compact muted">CIKM (2024)</p>
+      <div class="teaching-block">
+        <div class="teaching-sublabel">Tutorial Tutor</div>
+        <div class="teaching-row">
+          <span class="teaching-course">Mining of Real-World Hypergraphs: Patterns, Tools, and Generators</span>
+          <span class="teaching-term">CIKM 2022, ICDM 2022, WWW 2023, KDD 2023</span>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="awards">
-      <h2>Awards</h2>
-      <ul>
-        <li>Best Paper Award, ICDM 2025 (Dec 2025)</li>
-        <li>Best-Ranked Papers, ICDM 2025 (Dec 2025)</li>
-        <li>Best Survey Paper Award, PAKDD 2025 (Jun 2025)</li>
-        <li>Outstanding Reviewer, KDD 2025 (Dec 2024)</li>
-        <li>KAIST Outstanding Paper Award (Nov 2024)</li>
-        <li>Best Short Paper Candidates, RecSys 2024 (Oct 2024)</li>
-        <li>Best-Ranked Papers, ICDM 2021 (Dec 2021)</li>
-        <li>Sungkyunkwan Presidential Award (Aug 2019)</li>
-        <li>Sungkyunkwan Software Scholarship (Full tuition, 2016–2019)</li>
-      </ul>
-    </section>
-
-    <section class="section" id="teaching">
-      <h2>Teaching</h2>
-      <p><b>Teaching Assistant</b></p>
-      <ul>
-        <li>KAIST AI506 Data Mining and Search — Spring 2021, Spring 2023</li>
-        <li>KAIST AI607 Graph Mining and Social Network Analysis — Fall 2020, Fall 2021, Fall 2022, Fall 2023</li>
-        <li>KAIST AI617 Machine Learning for Robotics — Spring 2022</li>
-        <li>SKKU CSE3036 Seminar in Computer Engineering — Fall 2019</li>
-      </ul>
-
-      <p><b>Tutorial Tutor</b></p>
-      <ul>
-        <li>Mining of Real-World Hypergraphs: Patterns, Tools, and Generators — CIKM 2022, ICDM 2022, WWW 2023, KDD 2023</li>
-      </ul>
-    </section>
-
-    <footer class="footer">
-      <p>© <span id="year"></span> Geon Lee</p>
-      <p class="muted small"><a href="#top">Back to top</a></p>
-    </footer>
-
-    <!-- toast -->
-    <div class="toast" id="toast" aria-live="polite" aria-atomic="true"></div>
   </main>
+</div>
+
+<footer>
+  <p>© 2026 Geon Lee · KAIST · Information &amp; Electronics Research Institute</p>
+  <p>Last updated: March 2026</p>
+</footer>
+
+<script>
+  function toggleMobileNav() {
+    const drawer = document.getElementById('mobileNav');
+    const btn = document.getElementById('hamburger');
+    const open = drawer.classList.toggle('open');
+    btn.textContent = open ? '✕' : '☰';
+  }
+  function closeMobileNav() {
+    document.getElementById('mobileNav').classList.remove('open');
+    document.getElementById('hamburger').textContent = '☰';
+  }
+  document.addEventListener('click', function(e) {
+    const drawer = document.getElementById('mobileNav');
+    const btn = document.getElementById('hamburger');
+    if (!drawer.contains(e.target) && !btn.contains(e.target)) {
+      drawer.classList.remove('open');
+      btn.textContent = '☰';
+    }
+  });
+</script>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.04 });
+  reveals.forEach(el => obs.observe(el));
+
+  // Pub item fade-in
+  const pubItems = document.querySelectorAll('.pub-item');
+  const pubObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'none';
+        pubObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.05 });
+  pubItems.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(8px)';
+    el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    pubObs.observe(el);
+  });
+
+  // Active sidebar link
+  const sections = document.querySelectorAll('section[id]');
+  const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 80) current = s.id;
+    });
+    sidebarLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }, { passive: true });
+</script>
+
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  }
+  const saved = localStorage.getItem('theme');
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+  else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+    document.documentElement.setAttribute('data-theme', 'dark');
+</script>
+
 </body>
 </html>

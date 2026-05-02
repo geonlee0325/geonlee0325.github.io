@@ -6,6 +6,7 @@
   <title>Geon Lee @ KAIST</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
   <style>
     /* ═══ LIGHT MODE ═══ */
@@ -86,7 +87,7 @@
     }
 
     .topnav-name {
-      font-family: 'DM Serif Display', serif;
+      font-family: 'Lora', serif;
       font-size: 1.05rem;
       color: var(--ink);
       letter-spacing: -0.02em;
@@ -200,7 +201,7 @@
 
     .section-title {
       font-family: 'DM Serif Display', serif;
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       letter-spacing: -0.025em;
       color: var(--ink);
     }
@@ -213,12 +214,12 @@
     }
 
     /* ─── BIO ─── */
+
     .bio-text {
-      font-size: 1.025rem;
-      color: var(--ink-light);
-      line-height: 1.55;
-      max-width: 100%;
-      margin: 0 0 15px;
+      font-size: 1.0rem;
+      color: var(--ink-mid);
+      line-height: 1.6;
+      margin-bottom: 14px;
     }
 
     .bio-text a {
@@ -307,9 +308,9 @@
     /* ─── PUBLICATIONS ─── */
     .pub-year-header {
       font-family: 'DM Serif Display', serif;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       color: var(--ink);
-      margin: 20px 0 4px;
+      margin: 70px 0 4px;
       letter-spacing: -0.03em;
       position: relative;
       display: inline-flex;
@@ -327,10 +328,13 @@
       vertical-align: middle;
     }
 
+
     .pub-item {
-      padding: 13px 0;
+      padding: 16px 16px;
       border-bottom: 1px solid var(--border);
       transition: background 0.15s;
+      border-radius: 0;
+      margin: 0 -16px;
     }
 
     .pub-item:last-child { border-bottom: none; }
@@ -359,10 +363,11 @@
       line-height: 1.5;
     }
 
+
     .pub-self {
-      color: var(--ink);
-      font-weight: normal;
+      color: var(--ink-mid);
       text-decoration: underline;
+      text-decoration-color: var(--border-strong);
       text-underline-offset: 2px;
     }
 
@@ -719,10 +724,10 @@
       <div class="section-line"></div>
     </div>
     <p class="bio-text">
-    I am a Postdoctoral Researcher at the Information & Electronics Research Institute, <a href="https://www.kaist.ac.kr/">KAIST</a>, working with <a href="https://kijungs.github.io/">Prof. Kijung Shin</a> at the <a href="https://sites.google.com/view/kaistdata">Data Mining Lab</a>. I received a Ph.D. degree in Artificial Intelligence at KAIST in 2026, advised by <a href="https://kijungs.github.io/">Prof. Kijung Shin</a>, and won the <a href="https://engineering.kaist.ac.kr/student/thesisaward">Ph.D. Dissertation Award</a> from the KAIST College of Engineering. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/">Sungkyunkwan University</a>. During my Ph.D., I interned at <a href="https://research.snap.com/">Snap Research</a>, <a href="https://www.nec-labs.com/">NEC Labs America</a>, and <a href="https://www.amazon.com/">Amazon</a>.
+    I am a Postdoctoral Researcher at <a href="https://www.kaist.ac.kr/">KAIST</a>, working with <a href="https://kijungs.github.io/">Prof. Kijung Shin</a> at the <a href="https://sites.google.com/view/kaistdata">Data Mining Lab</a>. I received a Ph.D. degree in Artificial Intelligence at KAIST in 2026, advised by <a href="https://kijungs.github.io/">Prof. Kijung Shin</a> and received the <a href="https://engineering.kaist.ac.kr/student/thesisaward">Ph.D. Dissertation Award</a> from the KAIST College of Engineering. I received my B.S. in Computer Science and Engineering from <a href="https://www.skku.edu/">Sungkyunkwan University</a>. During my Ph.D., I interned at <a href="https://research.snap.com/">Snap Research</a>, <a href="https://www.nec-labs.com/">NEC Labs America</a>, and <a href="https://www.amazon.com/">Amazon</a>.
     </p>
     <p class="bio-text">
-    My research focuses on mining and learning on relational data (e.g., graphs, hypergraphs, and relational databases) as well as sequential data (e.g., time-series and user interaction sequences) and multi-modal data (e.g., text, visual, and tabular data). I am broadly interested in recommender systems, retrieval systems, and social network analysis. Recently, I have been interested in leveraging large language models (LLMs) to enhance learning and inference on relational and structured data, with a focus on developing frameworks that support complex and autonomous reasoning over real-world data.
+    My research develops principled methods for learning and reasoning over relational systems. I study graphs, hypergraphs, relational databases, and sequential data to understand how structure shapes representation, prediction, and decision-making, with applications in recommender systems, retrieval, and social networks. Recently, I focus on integrating large language models (LLMs) to enable reasoning over structured and multi-modal data, extending this perspective to multi-agent systems where interactions among agents shape collective behavior, and aiming to bridge relational learning and generative reasoning for reliable and autonomous systems.
     </p>
   </section>
 
@@ -813,6 +818,9 @@
       <div class="section-line"></div>
     </div>
 
+    <div style="margin-top: -60px;"></div>
+
+
     <!-- 2026 -->
     <div class="pub-year-header">2026</div>
 
@@ -833,6 +841,18 @@
         <a href="#" class="venue-tag arxiv">preprint</a>
         <span class="pub-sep">·</span>
         <a href="https://hal.science/hal-05561909" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-title">[C29] Rethinking Contrastive Learning for Graph Collaborative Filtering: Limitations and A Simple Remedy</div>
+      <div class="pub-authors"><span class="pub-self">Geon Lee</span>, Sunwoo Kim, Kyungho Kim, and Kijung Shin</div>
+      <div class="pub-meta-row">
+        <a href="https://icml.cc/" class="venue-tag">ICML 2026</a>
+        <span class="pub-sep">·</span>
+        <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+        <span class="pub-sep">·</span>
+        <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Code</a>
       </div>
     </div>
 
@@ -1349,7 +1369,7 @@
 
     <div class="service-block">
       <div class="service-label">Journal Reviewer</div>
-      <div class="service-text">TKDE (2023–2026), Information Sciences (2024–2026), TPAMI (2025–2026), IP&amp;M (2025–2026), Scientific Reports (2025-2026), TNNLS (2023–2025), VLDBJ (2023–2025), PLOS ONE (2024–2025), DMKD (2024–2025), Knowledge-Based Systems (2026), TOIS (2025), Neurocomputing (2026), Neural Networks (2025), Machine Learning (2025), TNSE (2024), Patterns (2025), Big Data Research (2024)</div>
+      <div class="service-text">TKDE (2023–2026), Information Sciences (2024–2026), TPAMI (2025–2026), IP&amp;M (2025–2026), Scientific Reports (2025-2026), TNNLS (2023–2025), VLDBJ (2023–2025), PLOS ONE (2024–2025), DMKD (2024–2025), Expert Systems With Applications (2026), Knowledge-Based Systems (2026), Neurocomputing (2026), Journal of Neuroscience Methods (2026), TOIS (2025), Neural Networks (2025), Machine Learning (2025), Patterns (2025), TNSE (2024), Big Data Research (2024)</div>
     </div>
 
     <div class="service-block">
