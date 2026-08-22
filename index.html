@@ -6,42 +6,44 @@
   <title>Geon Lee @ KAIST</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap" rel="stylesheet">
 
   <style>
     /* ═══ LIGHT MODE ═══ */
     :root {
-      --ink: #1c1c2e;
-      --ink-light: #4a4a65;
-      --ink-faint: #9494b0;
-      --paper: #ffffff;
-      --paper-warm: #ffffff;
-      --paper-mid: #f5f5f5;
-      --nav-bg: rgba(249,249,247,0.9);
-      --accent: #3060c0;
-      --accent-bright: #4a7ee0;
-      --gold: #b8860b;
-      --teal: #1a7a6a;
-      --border: rgba(28,28,46,0.09);
-      --border-strong: rgba(28,28,46,0.18);
-      --shadow-sm: 0 1px 3px rgba(28,28,46,0.06);
-      --shadow-md: 0 4px 16px rgba(28,28,46,0.08);
+      --ink: #172033;
+      --ink-light: #45566e;
+      --ink-mid: #2e3f57;
+      --ink-faint: #74849a;
+      --paper: #fbfcfe;
+      --paper-warm: #f4f7fb;
+      --paper-mid: #edf2f7;
+      --nav-bg: rgba(251,252,254,0.92);
+      --accent: #2f5f9e;
+      --accent-bright: #3f76b8;
+      --gold: #9a741e;
+      --teal: #236f70;
+      --border: rgba(23,32,51,0.10);
+      --border-strong: rgba(23,32,51,0.19);
+      --shadow-sm: 0 1px 3px rgba(23,32,51,0.06);
+      --shadow-md: 0 4px 16px rgba(23,32,51,0.08);
     }
     /* ═══ DARK MODE ═══ */
     [data-theme="dark"] {
-      --ink: #e8e8f0;
-      --ink-light: #a8a8c0;
-      --ink-faint: #68687e;
-      --paper: #141420;
-      --paper-warm: #1a1a28;
-      --paper-mid: #222234;
-      --nav-bg: rgba(20,20,32,0.92);
-      --accent: #6b9cf0;
-      --accent-bright: #88b0f8;
-      --gold: #d4a832;
-      --teal: #3abba0;
-      --border: rgba(232,232,240,0.08);
-      --border-strong: rgba(232,232,240,0.15);
+      --ink: #e8eef7;
+      --ink-light: #aebdd0;
+      --ink-mid: #d2ddea;
+      --ink-faint: #75859b;
+      --paper: #111927;
+      --paper-warm: #172234;
+      --paper-mid: #202c3e;
+      --nav-bg: rgba(17,25,39,0.92);
+      --accent: #79a9df;
+      --accent-bright: #a4c9ef;
+      --gold: #d4ae57;
+      --teal: #5cbbb3;
+      --border: rgba(232,238,247,0.09);
+      --border-strong: rgba(232,238,247,0.16);
       --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
       --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
     }
@@ -88,7 +90,8 @@
 
     .topnav-name {
       font-family: 'Lora', serif;
-      font-size: 1.05rem;
+      font-size: 1.02rem;
+      font-weight: 600;
       color: var(--ink);
       letter-spacing: -0.02em;
     }
@@ -132,24 +135,25 @@
     }
 
     .hero-text h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 2.4rem;
+      font-family: 'Lora', serif;
+      font-size: 2.55rem;
+      font-weight: 600;
       line-height: 1.15;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.035em;
       color: var(--ink);
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
 
     .hero-subline {
-      font-size: 1.07rem;
-      color: var(--ink-light);
-      margin-bottom: 0px;
+      font-size: 1.05rem;
+      color: var(--ink);
+      margin-bottom: 1px;
     }
 
     .hero-email {
-      font-size: 1.07rem;
+      font-size: 1.05rem;
       color: var(--ink-faint);
-      margin-bottom: 5px;
+      margin-bottom: 9px;
     }
 
     .hero-links {
@@ -200,9 +204,10 @@
     .section-icon { font-size: 1.1rem; }
 
     .section-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.9rem;
-      letter-spacing: -0.025em;
+      font-family: 'Lora', serif;
+      font-size: 1.78rem;
+      font-weight: 600;
+      letter-spacing: -0.035em;
       color: var(--ink);
     }
 
@@ -330,36 +335,46 @@
 
 
     .pub-item {
-      padding: 16px 16px;
+      padding: 17px 14px;
       border-bottom: 1px solid var(--border);
       transition: background 0.15s;
       border-radius: 0;
-      margin: 0 -16px;
+      margin: 0 -14px;
     }
 
     .pub-item:last-child { border-bottom: none; }
 
     .pub-item:hover {
-      background: rgba(41,82,163,0.02);
-      margin: 0 -16px;
-      padding-left: 16px;
-      padding-right: 16px;
-      border-radius: 8px;
+      background: rgba(47,95,158,0.035);
+      margin: 0 -14px;
+      padding-left: 14px;
+      padding-right: 14px;
+      border-radius: 6px;
       border-bottom: 1px solid var(--border);
     }
 
     .pub-title {
-      font-size: 1.0rem;
+      font-size: 1.03rem;
       font-weight: 600;
       color: var(--ink);
       line-height: 1.45;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
+    }
+
+    .pub-number {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--ink-faint);
+      margin-right: 5px;
+      vertical-align: 0.08em;
     }
 
     .pub-authors {
-      font-size: 1.00rem;
+      font-size: 0.95rem;
       color: var(--ink-light);
-      margin-bottom: 8px;
+      margin-bottom: 9px;
       line-height: 1.5;
     }
 
@@ -426,8 +441,8 @@
 
     .pub-link {
       font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--ink-faint);
+      font-weight: 600;
+      color: var(--ink-light);
       text-decoration: none;
       display: inline-flex;
       align-items: center;
@@ -637,7 +652,8 @@
       .hero { flex-direction: column; align-items: flex-start; gap: 16px; padding: 28px 16px 8px; }
       .hero-photo { width: 88px; height: 88px; }
       .hero-text h1 { font-size: 2rem; }
-      .hero-subline, .hero-email { font-size: 0.97rem; }
+      .hero-subline { font-size: 1.03rem; }
+      .hero-email { font-size: 0.9rem; }
       .hero-links { gap: 14px; }
 
       .main { padding: 0 16px; }
@@ -1573,22 +1589,11 @@
   }, { threshold: 0.06 });
   reveals.forEach(el => obs.observe(el));
 
-  const pubItems = document.querySelectorAll('.pub-item');
-  const pubObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.transitionDelay = '0ms';
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'none';
-        pubObs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.05 });
-  pubItems.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(10px)';
-    el.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
-    pubObs.observe(el);
+  document.querySelectorAll('.pub-title').forEach(el => {
+    el.innerHTML = el.innerHTML.replace(
+      /^(\[(?:C|J|P|T)\d+(?:\/W\d+)?\])\s*/,
+      '<span class="pub-number">$1</span>'
+    );
   });
 </script>
 
