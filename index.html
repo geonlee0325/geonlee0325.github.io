@@ -5,28 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geon Lee @ KAIST</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Lora:wght@500;600&display=swap" rel="stylesheet">
 
   <style>
     /* ═══ LIGHT MODE ═══ */
     :root {
-      --ink: #172033;
-      --ink-light: #45566e;
-      --ink-mid: #2e3f57;
-      --ink-faint: #74849a;
-      --paper: #fbfcfe;
+      --ink: #152238;
+      --ink-light: #526176;
+      --ink-mid: #2d3c52;
+      --ink-faint: #758398;
+      --paper: #fcfdff;
       --paper-warm: #f4f7fb;
-      --paper-mid: #edf2f7;
-      --nav-bg: rgba(251,252,254,0.92);
-      --accent: #2f5f9e;
-      --accent-bright: #3f76b8;
-      --gold: #9a741e;
-      --teal: #236f70;
-      --border: rgba(23,32,51,0.10);
-      --border-strong: rgba(23,32,51,0.19);
-      --shadow-sm: 0 1px 3px rgba(23,32,51,0.06);
-      --shadow-md: 0 4px 16px rgba(23,32,51,0.08);
+      --paper-mid: #eaf0f6;
+      --nav-bg: rgba(252,253,255,0.94);
+      --accent: #1f5b8f;
+      --accent-bright: #2673ae;
+      --gold: #966f19;
+      --teal: #1e6a69;
+      --border: rgba(21,34,56,0.11);
+      --border-strong: rgba(21,34,56,0.22);
+      --shadow-sm: 0 1px 2px rgba(21,34,56,0.04);
+      --shadow-md: 0 8px 22px rgba(21,34,56,0.08);
     }
     /* ═══ DARK MODE ═══ */
     [data-theme="dark"] {
@@ -57,19 +56,8 @@
       background: var(--paper);
       color: var(--ink);
       font-size: 16px;
-      line-height: 1.65;
+      line-height: 1.7;
       min-height: 100vh;
-    }
-
-    /* ─── NOISE TEXTURE ─── */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 0;
-      opacity: 0.4;
     }
 
     /* ─── NAV ─── */
@@ -81,7 +69,7 @@
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
-      padding: 0 40px;
+      padding: 0 max(28px, calc((100vw - 1080px) / 2));
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -90,7 +78,7 @@
 
     .topnav-name {
       font-family: 'Lora', serif;
-      font-size: 1.02rem;
+      font-size: 1rem;
       font-weight: 600;
       color: var(--ink);
       letter-spacing: -0.02em;
@@ -98,15 +86,15 @@
 
     .topnav-links {
       display: flex;
-      gap: 28px;
+      gap: 24px;
       list-style: none;
     }
 
     .topnav-links a {
-      font-size: 0.82rem;
+      font-size: 0.88rem;
       font-weight: 500;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      letter-spacing: 0;
+      text-transform: none;
       color: var(--ink-light);
       text-decoration: none;
       transition: color 0.2s;
@@ -116,36 +104,37 @@
 
     /* ─── HERO ─── */
     .hero {
-      padding: 52px 40px 14px;
-      max-width: 1100px;
+      padding: 66px 32px 24px;
+      max-width: 1080px;
       margin: 0 auto;
       display: flex;
       align-items: center;
-      gap: 40px;
+      gap: 32px;
     }
 
     .hero-photo-wrap { flex-shrink: 0; }
 
     .hero-photo {
-      width: 120px;
-      height: 120px;
+      width: 128px;
+      height: 128px;
       border-radius: 50%;
       object-fit: cover;
       display: block;
+      border: 3px solid var(--paper-mid);
     }
 
     .hero-text h1 {
       font-family: 'Lora', serif;
-      font-size: 2.55rem;
+      font-size: 2.72rem;
       font-weight: 600;
       line-height: 1.15;
       letter-spacing: -0.035em;
       color: var(--ink);
-      margin-bottom: 4px;
+      margin-bottom: 5px;
     }
 
     .hero-subline {
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       color: var(--ink);
       margin-bottom: 1px;
     }
@@ -153,12 +142,12 @@
     .hero-email {
       font-size: 1.05rem;
       color: var(--ink-faint);
-      margin-bottom: 9px;
+      margin-bottom: 12px;
     }
 
     .hero-links {
       display: flex;
-      gap: 20px;
+      gap: 18px;
       flex-wrap: wrap;
     }
 
@@ -166,7 +155,7 @@
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      font-size: 1.02rem;
+      font-size: 0.96rem;
       font-weight: 600;
       text-decoration: none;
       color: var(--accent);
@@ -178,14 +167,14 @@
 
     /* ─── MAIN LAYOUT ─── */
     .main {
-      max-width: 1100px;
+      max-width: 1080px;
       margin: 0 auto;
-      padding: 0 40px;
+      padding: 0 32px;
     }
 
     /* ─── SECTION ─── */
     .section {
-      padding: 36px 0 0;
+      padding: 46px 0 0;
       animation: fadeUp 0.5s ease both;
     }
 
@@ -197,17 +186,17 @@
     .section-header {
       display: flex;
       align-items: baseline;
-      gap: 12px;
-      margin-bottom: 16px;
+      gap: 14px;
+      margin-bottom: 18px;
     }
 
     .section-icon { font-size: 1.1rem; }
 
     .section-title {
-      font-family: 'Lora', serif;
-      font-size: 1.78rem;
-      font-weight: 600;
-      letter-spacing: -0.035em;
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.72rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
       color: var(--ink);
     }
 
@@ -221,7 +210,7 @@
     /* ─── BIO ─── */
 
     .bio-text {
-      font-size: 1.0rem;
+      font-size: 1.02rem;
       color: var(--ink-mid);
       line-height: 1.6;
       margin-bottom: 14px;
@@ -229,12 +218,31 @@
 
     .bio-text a {
       color: var(--accent);
+      font-weight: 600;
       text-decoration: none;
-      font-weight: 500;
       transition: color 0.2s;
     }
 
-    .bio-text a:hover { color: var(--accent-bright); }
+    .bio-text a:hover {
+      color: var(--accent-bright);
+    }
+
+    .research-focus {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      margin-top: 18px;
+    }
+
+    .research-focus span {
+      color: var(--ink-light);
+      font-size: 0.86rem;
+      font-weight: 500;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--paper-warm);
+    }
 
     /* ─── TIMELINE ROWS ─── */
     .timeline { display: flex; flex-direction: column; }
@@ -242,7 +250,7 @@
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 2px 40px;
-      padding: 10px 0;
+      padding: 12px 0;
       border-bottom: 1px solid var(--border);
       align-items: start;
     }
@@ -263,8 +271,8 @@
     .card {
       background: var(--paper);
       border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 20px 22px;
+      border-radius: 8px;
+      padding: 19px 21px;
       box-shadow: var(--shadow-sm);
       transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
     }
@@ -313,9 +321,9 @@
     /* ─── PUBLICATIONS ─── */
     .pub-year-header {
       font-family: 'DM Serif Display', serif;
-      font-size: 1.7rem;
+      font-size: 1.46rem;
       color: var(--ink);
-      margin: 70px 0 4px;
+      margin: 48px 0 6px;
       letter-spacing: -0.03em;
       position: relative;
       display: inline-flex;
@@ -326,16 +334,18 @@
     .pub-year-header::after {
       content: '';
       display: inline-block;
-      width: 40px;
-      height: 2px;
+      width: 32px;
+      height: 1px;
       background: var(--accent);
       border-radius: 2px;
       vertical-align: middle;
     }
 
+    #publications .pub-year-header:first-of-type { margin-top: 2px; }
+
 
     .pub-item {
-      padding: 17px 14px;
+      padding: 16px 12px;
       border-bottom: 1px solid var(--border);
       transition: background 0.15s;
       border-radius: 0;
@@ -345,7 +355,7 @@
     .pub-item:last-child { border-bottom: none; }
 
     .pub-item:hover {
-      background: rgba(47,95,158,0.035);
+      background: rgba(31,91,143,0.045);
       margin: 0 -14px;
       padding-left: 14px;
       padding-right: 14px;
@@ -354,27 +364,27 @@
     }
 
     .pub-title {
-      font-size: 1.03rem;
+      font-size: 1.02rem;
       font-weight: 600;
       color: var(--ink);
       line-height: 1.45;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
     }
 
     .pub-number {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
+      font-size: 0.77rem;
       font-weight: 500;
       letter-spacing: 0.02em;
-      color: var(--ink-faint);
-      margin-right: 5px;
+      color: var(--accent);
+      margin-right: 7px;
       vertical-align: 0.08em;
     }
 
     .pub-authors {
-      font-size: 0.95rem;
+      font-size: 1.00rem;
       color: var(--ink-light);
-      margin-bottom: 9px;
+      margin-bottom: 8px;
       line-height: 1.5;
     }
 
@@ -396,14 +406,14 @@
     .venue-tag {
       display: inline-flex;
       align-items: center;
-      font-size: 0.8rem;
+      font-size: 0.76rem;
       font-weight: 700;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--accent);
       background: rgba(41,82,163,0.08);
-      padding: 2px 6px;
-      border-radius: 4px;
+      padding: 2px 7px;
+      border-radius: 3px;
       text-decoration: none;
       transition: background 0.2s, color 0.2s;
     }
@@ -551,8 +561,8 @@
 
     /* ─── FOOTER ─── */
     footer {
-      margin-top: 80px;
-      padding: 32px 40px;
+      margin-top: 72px;
+      padding: 28px max(28px, calc((100vw - 1080px) / 2));
       background: var(--paper-warm);
       border-top: 1px solid var(--border);
       display: flex;
@@ -649,16 +659,19 @@
       .topnav-links { display: none; }
       .nav-hamburger { display: flex; align-items: center; justify-content: center; }
 
-      .hero { flex-direction: column; align-items: flex-start; gap: 16px; padding: 28px 16px 8px; }
+      .hero { flex-direction: column; align-items: flex-start; gap: 16px; padding: 36px 16px 8px; }
       .hero-photo { width: 88px; height: 88px; }
       .hero-text h1 { font-size: 2rem; }
       .hero-subline { font-size: 1.03rem; }
       .hero-email { font-size: 0.9rem; }
       .hero-links { gap: 14px; }
 
+      .research-focus { margin-top: 15px; }
+      .research-focus span { font-size: 0.82rem; }
+
       .main { padding: 0 16px; }
       .section { padding: 28px 0 0; }
-      .section-title { font-size: 1.45rem; }
+      .section-title { font-size: 1.48rem; }
 
       .timeline-row { grid-template-columns: 1fr; gap: 2px; }
       .timeline-right { text-align: left; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
@@ -760,7 +773,7 @@
   <!-- ─── EXPERIENCE ─── -->
   <section class="section reveal" id="experience">
     <div class="section-header">
-      <span class="section-title">Work Experience</span>
+      <span class="section-title">Experience</span>
       <div class="section-line"></div>
     </div>
     <div class="timeline">
@@ -843,9 +856,6 @@
       <span class="section-title">Publications</span>
       <div class="section-line"></div>
     </div>
-
-    <div style="margin-top: -60px;"></div>
-
 
     <!-- 2026 -->
     <div class="pub-year-header">2026</div>
