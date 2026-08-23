@@ -187,7 +187,7 @@
       display: flex;
       align-items: baseline;
       gap: 14px;
-      margin-bottom: 18px;
+      margin-bottom: 10px;
     }
 
     .section-icon { font-size: 1.1rem; }
@@ -341,7 +341,8 @@
       vertical-align: middle;
     }
 
-    #publications .pub-year-header:first-of-type { margin-top: 2px; }
+    /* The section header is also a div, so :first-of-type never matched here. */
+    #publications .section-header + .pub-year-header { margin-top: 8px; }
 
 
     .pub-item {
@@ -856,6 +857,7 @@
       <span class="section-title">Publications</span>
       <div class="section-line"></div>
     </div>
+
 
     <!-- 2026 -->
     <div class="pub-year-header">2026</div>
