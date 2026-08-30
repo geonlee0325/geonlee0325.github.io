@@ -20,9 +20,9 @@
       --nav-bg: rgba(252,253,255,0.94);
       --accent: #1f5b8f;
       --accent-bright: #2673ae;
-      --link-accent: #3c82c1;
+      --link-accent: #2864D7;
       --gold: #966f19;
-      --teal: #1e6a69;
+      --teal: #1e7773;
       --border: rgba(21,34,56,0.11);
       --border-strong: rgba(21,34,56,0.22);
       --shadow-sm: 0 1px 2px rgba(21,34,56,0.04);
@@ -360,8 +360,7 @@
     .pub-item:hover {
       background: rgba(31,91,143,0.045);
       margin: 0 -14px;
-      padding-left: 14px;
-      padding-right: 14px;
+      padding: 16px 12px;
       border-radius: 6px;
       border-bottom: 1px solid var(--border);
     }
@@ -414,7 +413,7 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--accent);
-      background: rgba(41,82,163,0.08);
+      background: rgba(40,100,215,0.16);
       padding: 2px 7px;
       border-radius: 3px;
       text-decoration: none;
@@ -425,14 +424,14 @@
 
     .venue-tag.journal {
       color: var(--teal);
-      background: rgba(26,122,106,0.08);
+      background: rgba(20,125,112,0.16);
     }
 
     .venue-tag.journal:hover { background: var(--teal); color: white; }
 
     .venue-tag.arxiv {
       color: #B31B1B; /* ArXiv Brand Red */
-      background: rgba(179, 27, 27, 0.08);
+      background: rgba(179, 27, 27, 0.10);
     }
 
     .venue-tag.arxiv:hover {
@@ -442,7 +441,7 @@
 
     .venue-tag.tutorial {
       color: #7B3FA1; /* Purple */
-      background: rgba(123, 63, 161, 0.08);
+      background: rgba(123, 63, 161, 0.10);
     }
 
     .venue-tag.tutorial:hover {
@@ -455,7 +454,7 @@
     .pub-link {
       font-size: 0.82rem;
       font-weight: 600;
-      color: var(--ink-light);
+      color: var(--ink);
       text-decoration: none;
       display: inline-flex;
       align-items: center;
@@ -463,7 +462,7 @@
       transition: color 0.2s;
     }
 
-    .pub-link:hover { color: var(--accent-bright); }
+    .pub-link:hover { color: var(--link-accent); }
 
     .award-badge {
       display: inline-flex;
@@ -704,6 +703,13 @@
       .hero-text h1 { font-size: 1.75rem; }
       .hero-links { flex-direction: column; gap: 10px; }
     }
+
+  
+    /* Stronger publication venue badge backgrounds */
+    .venue-tag { background: rgba(40,100,215,0.16); }
+    .venue-tag.journal { background: rgba(20,125,112,0.16); }
+    .venue-tag.arxiv { background: rgba(179,27,27,0.15); }
+    .venue-tag.tutorial { background: rgba(123,63,161,0.15); }
 
   </style>
 </head>
@@ -1458,7 +1464,7 @@
 
     <div class="service-block">
       <div class="service-label">Conference Reviewer</div>
-      <div class="service-text">KDD (2023–2027), AAAI (2024–2027), CIKM (2022–2026), LoG (2022–2026), WWW (2024–2026), NeurIPS (2024–2026), RecSys (2025 - 2026), ICLR (2025–2026), AISTATS (2025–2026), ICML (2025-2026), ACM MM (2025-2026), ACML (2025 - 2026), ARR (2026), SDM (2024)</div>
+      <div class="service-text">KDD (2023–2027), AAAI (2024–2027), ICLR (2025–2027), CIKM (2022–2026), LoG (2022–2026), WWW (2024–2026), NeurIPS (2024–2026), RecSys (2025 - 2026), AISTATS (2025–2026), ICML (2025-2026), ACM MM (2025-2026), ACML (2025 - 2026), ARR (2026), SDM (2024)</div>
     </div>
 
     <div class="service-block">
