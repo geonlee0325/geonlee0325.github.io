@@ -660,7 +660,12 @@ footer {
   .hero-text h1 { font-size: 31px; }
   .hero-subline { margin-top: 5px; font-size: 13px; }
   .hero-email { margin-top: 9px; font-size: 13px; }
-  .hero-links { gap: 6px; margin-top: 13px; }
+  .hero-links {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 6px;
+    margin-top: 13px;
+  }
 
   .hero-link {
     justify-content: center;
