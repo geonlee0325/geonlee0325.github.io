@@ -663,15 +663,19 @@ footer {
   .hero-links { gap: 6px; margin-top: 13px; }
 
   .hero-link {
-    min-height: auto;
-    padding: 6px 9px;
-    font-size: 11px;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    min-height: 32px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 0;
   }
 
   .hero-link i {
     width: auto;
     height: auto;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .main { display: block; padding: 0 18px; }
