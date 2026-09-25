@@ -49,7 +49,7 @@ nav.topnav {
   position: static;
   width: 100%;
   height: 60px;
-  padding: 0 max(24px, calc((100vw - 1140px) / 2));
+  padding: 0 max(24px, calc((100vw - 960px) / 2));
   border-bottom: 1px solid var(--rule);
   background: var(--bg);
   backdrop-filter: none;
@@ -104,7 +104,7 @@ nav.topnav {
   display: grid;
   grid-template-columns: 140px minmax(0, 1fr);
   gap: 38px;
-  max-width: 1188px;
+  max-width: 1008px;
   min-height: 0;
   margin: 0 auto;
   padding: 48px 24px 42px;
@@ -204,7 +204,7 @@ nav.topnav {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0 56px;
-  max-width: 1188px;
+  max-width: 1008px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -544,7 +544,7 @@ nav.topnav {
 
 footer {
   display: flex;
-  max-width: 1140px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 32px 0 52px;
   border-top: 1px solid var(--rule);
