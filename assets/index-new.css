@@ -496,11 +496,8 @@ nav.topnav {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 14px;
-  padding: 9px 0;
-  border-bottom: 1px solid var(--rule);
+  padding: 6px 0;
 }
-
-.award-row:last-child { border-bottom: 0; }
 
 .award-text { color: var(--ink-2); font-size: 14px; }
 .award-star { display: none; }
