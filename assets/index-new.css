@@ -453,15 +453,18 @@ nav.topnav {
 .pub-sep { color: var(--rule); font-size: 11px; }
 
 .award-note {
-  color: #75520b;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: rgba(176, 120, 10, 0.1);
+  color: #8a5a00;
   font-size: 12.5px;
-  font-weight: 700;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .award-note::before {
   content: "★";
-  margin-right: 5px;
-  color: #c08a12;
+  margin-right: 4px;
   font-size: 10px;
   vertical-align: 1px;
 }
@@ -598,11 +601,8 @@ footer {
 }
 
 [data-theme="dark"] .award-note {
-  color: #e1c16f;
-}
-
-[data-theme="dark"] .award-note::before {
-  color: #e7b94e;
+  background: rgba(225, 180, 80, 0.14);
+  color: #e3c170;
 }
 
 @media (max-width: 860px) {
