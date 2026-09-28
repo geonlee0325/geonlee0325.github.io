@@ -524,11 +524,8 @@ nav.topnav {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 24px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--rule);
+  padding: 6px 0;
 }
-
-.teaching-block .teaching-row:last-child { border-bottom: 0; }
 
 .teaching-course { color: var(--ink-2); font-size: 14px; }
 
