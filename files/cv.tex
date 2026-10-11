@@ -1,0 +1,496 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Geon Lee — Academic CV
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage[left=0.5in,top=0.6in,right=0.5in,bottom=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage[none]{hyphenat}
+
+\sloppy                     % ← ADD HERE
+\emergencystretch=3em       % ← (also recommended)
+
+% ── Colors ───────────────────────────────────────────────
+\definecolor{NAVY}{RGB}{0, 45, 90}
+\definecolor{ACCENT}{RGB}{25, 95, 170}
+\definecolor{MUTED}{RGB}{105, 115, 130}
+\definecolor{AWARD}{RGB}{160, 90, 0}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=ACCENT,
+    linkcolor=ACCENT,
+    pdftitle={Geon Lee - CV},
+    pdfauthor={Geon Lee}
+}
+
+
+% ── Section headers ──────────────────────────────────────
+\titleformat{\section}
+  {\large\bfseries\color{NAVY}}{}
+  {0em}{\MakeUppercase}
+  [\color{ACCENT}\titlerule]
+\titlespacing{\section}{0pt}{1.5ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+% ── Helpers ──────────────────────────────────────────────
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\newcommand{\sep}{\textcolor{MUTED}{$\,\mid\,$}}
+\newcommand{\cvdate}[1]{{\small\color{MUTED}#1}}
+\newcommand{\awardnote}[1]{\enspace{\small\itshape\color{AWARD}#1}}
+
+% ── Category label for pub groups ────────────────────────
+\newcommand{\pubcat}[1]{%
+  \vspace{0.4em}%
+  {\small\bfseries\color{ACCENT}\MakeUppercase{#1}}%
+  \vspace{0.1em}%
+  \newline\textcolor{ACCENT!40}{\hrule height 0.4pt}%
+  \vspace{0.2em}%
+}
+
+\begin{document}
+\pagestyle{empty}
+
+%──────────────────────────────────────────────────────────
+%  HEADER
+%──────────────────────────────────────────────────────────
+\begin{center}
+  {\Huge\bfseries\color{NAVY} Geon Lee}\\[0.45em]
+  {\color{MUTED}
+    \href{mailto:geonlee0325@kaist.ac.kr}{geonlee0325@kaist.ac.kr}
+    \sep
+    \href{https://geonlee0325.github.io}{geonlee0325.github.io}
+    \sep
+    Seoul, South Korea
+  }
+\end{center}
+\vspace{-0.3em}
+
+\vspace{28pt}
+
+%──────────────────────────────────────────────────────────
+%  ABOUT
+%──────────────────────────────────────────────────────────
+\section*{Research Summary}
+\vspace{5pt}
+My research explores how interactions among relational data, retrieved knowledge, and AI agents shape learning, reasoning, and behavior. By uncovering their underlying principles, I aim to develop intelligent systems that effectively leverage diverse information while remaining reliable, generalizable, and robust in real-world settings.
+
+\vspace{10pt}
+%──────────────────────────────────────────────────────────
+%  WORK EXPERIENCE
+%──────────────────────────────────────────────────────────
+\section*{Work Experience}
+\vspace{5pt}
+
+% \textbf{University of Wisconsin-Madison} \hfill \cvdate{Madison, WI, USA}\\
+% Postdoctoral Research Fellow \cvdate{(Advisor: Prof.\ Sharon Li)} \hfill \cvdate{Apr.\ 2027 (Expected) -- }
+% \vspace{7pt}
+
+\textbf{KAIST} \hfill \cvdate{Seoul, South Korea}\\
+Postdoctoral Research Fellow \cvdate{(Advisor: Prof.\ Kijung Shin)} \hfill \cvdate{Mar.\ 2026 -- Present}
+\vspace{3pt}
+
+\vspace{0.4em}
+\textbf{Snap Research} \hfill \cvdate{Bellevue, WA, USA}\\
+Research Intern \cvdate{(Mentors: Liam Collins, Clark Ju, Bhuvesh Kumar, Tong Zhao \sep\ Manager: Neil Shah)} \hfill \cvdate{Apr.\ -- Jun.\ 2025}\\
+\textit{Data Augmentation for Generative Recommendation}
+\vspace{3pt}
+
+\vspace{0.4em}
+\textbf{NEC Labs America} \hfill \cvdate{Princeton, NJ, USA}\\
+Research Intern \cvdate{(Mentor: Wenchao Yu \sep\ Manager: Haifeng Chen)} \hfill \cvdate{May -- Aug.\ 2023}\\
+\textit{Multi-Modal Time Series Forecasting}
+\vspace{3pt}
+
+\vspace{0.4em}
+\textbf{Amazon} \hfill \cvdate{San Francisco, CA, USA}\\
+Applied Scientist Intern \cvdate{(Mentor: Zhonghao Luo \sep\ Manager: Tao Ye)} \hfill \cvdate{Sep.\ -- Dec.\ 2022}\\
+\textit{Conversational Music Recommendation for Alexa AI}
+
+\vspace{10pt}
+%──────────────────────────────────────────────────────────
+%  EDUCATION
+%──────────────────────────────────────────────────────────
+\section*{Education}
+\vspace{5pt}
+
+\textbf{KAIST} \hfill \cvdate{Seoul, South Korea}\\
+M.S.\ \& Ph.D.\ in Artificial Intelligence \hfill \cvdate{Sep.\ 2020 -- Feb.\ 2026}\\
+Advisor: Prof.\ Kijung Shin\\
+\awardnote{PhD Dissertation Award, KAIST College of Engineering}
+\vspace{3pt}
+
+\vspace{0.5em}
+\textbf{Sungkyunkwan University} \hfill \cvdate{Suwon, South Korea}\\
+B.S.\ in Computer Science and Engineering \hfill \cvdate{Mar.\ 2016 -- Aug.\ 2019}\\
+GPA: 4.41/4.50; Major GPA: 4.45/4.50\\
+\awardnote{Ranked 1st in the College of CSE}
+
+\vspace{10pt}
+%──────────────────────────────────────────────────────────
+%  TUTORIALS
+%──────────────────────────────────────────────────────────
+\section*{Tutorials}
+\vspace{5pt}
+
+{\sloppy
+\begin{enumerate}[
+  label={\textcolor{ACCENT}{[\arabic*]}},
+  leftmargin=1.8em,
+  itemsep=0.7em   % ← change this
+]
+
+\item Retrieval-Augmented Generation for LLM-Based Recommender Systems\\
+Sunwoo Kim*, \underline{Geon Lee*}, Kyungho Kim*, Liam Collins, Neil Shah, and Kijung Shin\\
+\textbf{CIKM 2026} \& \textbf{KDD 2026}
+
+\item Mining of Real-World Hypergraphs: Patterns, Tools, and Generators\\
+\underline{Geon Lee}, Jaemin Yoo, and Kijung Shin\\
+\textbf{KDD 2023}, \textbf{WWW 2023}, \textbf{ICDM 2022}, \& \textbf{CIKM 2022}
+
+% 2026
+\end{enumerate}
+
+
+%\vspace{5pt}
+
+%──────────────────────────────────────────────────────────
+%  PUBLICATIONS
+%──────────────────────────────────────────────────────────
+\section*{Publications}
+\vspace{3pt}
+
+{\sloppy
+\begin{enumerate}[
+  label={\textcolor{ACCENT}{[\arabic*]}},
+  leftmargin=1.8em,
+  itemsep=0.7em   % ← change this
+]
+
+% 2026
+\item Zero-Shot Tabular Learning via Hypergraph Reasoning with LLMs\\
+\underline{Geon Lee}, Kyungho Kim, Dongwon Choi, Juyeon Kim, Shinhwan Kang, and Kijung Shin\\
+\textbf{EMNLP 2026} 
+
+\item Training-Free LLM-Based Recommendation with Post-LLM Item Refinement Using Collaborative Signals\\
+Kyungho Kim, Sunwoo Kim, \underline{Geon Lee}, Shinhwan Kang, Sojeong Kim, Liam Collins, Bhuvesh Kumar, \\Donald Loveland, and Kijung Shin\\
+\textbf{CIKM 2026} (Short Paper)
+
+\item Toward a Science of AI Agent Societies\\
+\underline{Geon Lee*}, Fanchen Bu*, Soo Yong Lee*, Sunwoo Kim, and Kijung Shin\\
+\textbf{KDD 2026} (Blue Sky)
+
+
+\item Rethinking Contrastive Learning for Graph Collaborative Filtering: Limitations and A Simple Remedy\\
+\underline{Geon Lee}, Sunwoo Kim, Kyungho Kim, and Kijung Shin\\
+\textbf{ICML 2026}
+
+\item Hybrid-Vector Retrieval for Visually Rich Documents: Combining Single-Vector Efficiency and Multi-Vector Accuracy\\
+Juyeon Kim, \underline{Geon Lee}, Dongwon Choi, Taeuk Kim, and Kijung Shin\\
+\textbf{ACL 2026} (Findings)
+
+
+\item ItemRAG: Item-Based Retrieval-Augmented Generation for LLM-Based Recommendation\\
+Sunwoo Kim, \underline{Geon Lee}, Kyungho Kim, Jaemin Yoo, and Kijung Shin\\
+\textbf{SIGIR 2026} (Short Paper)
+
+
+\item ReFuGe: Feature Generation for Prediction Tasks on Relational Databases with LLM Agents\\
+Kyungho Kim, \underline{Geon Lee}, Juyeon Kim, Dongwon Choi, Shinhwan Kang, and Kijung Shin\\
+\textbf{WWW 2026} (Short Paper)
+
+\item Sequential Data Augmentation for Generative Recommendation\\
+\underline{Geon Lee}, Bhuvesh Kumar, Clark Mingxuan Ju, Tong Zhao, Kijung Shin, Neil Shah, and Liam Collins\\
+\textbf{WSDM 2026}
+
+\item Revisiting LightGCN: Unexpected Inflexibility, Inconsistency, and A Remedy Towards Improved Recommendation\\
+\underline{Geon Lee}, Kyungho Kim, Fanchen Bu, Langzhang Liang, and Kijung Shin\\
+\textbf{Transactions on Recommender Systems} (2026) \awardnote{Invited Extended Version of the RecSys 2024 Paper}
+
+\item From Binary to General Attributes: Attributed Hypergraph Generation with Realistic Interplay \\Between Structure and Attributes\\
+Jaewan Chun, Seokbum Yoon, Minyoung Choe, \underline{Geon Lee}, and Kijung Shin\\
+\textbf{Knowledge and Information Systems} (SCIE, 2026) \awardnote{Invited Extended Version of the ICDM 2025 Paper}
+
+\item A Comprehensive Survey on Multi-Behavior Recommender Systems: Extended Taxonomy and Recent Advances\\
+Kyungho Kim, Sunwoo Kim, \underline{Geon Lee}, Jinhong Jung, and Kijung Shin\\
+\textbf{International Journal of Data Science and Analytics} (2026) \awardnote{Invited to the PAKDD 2025 Special Issue}
+
+% 2025
+\item RDB2G-Bench: A Comprehensive Benchmark for Automatic Graph Modeling of Relational Databases\\
+Dongwon Choi, Sunwoo Kim, Juyeon Kim, Kyungho Kim, \underline{Geon Lee}, Shinhwan Kang, \\Myunghwan Kim, and Kijung Shin\\
+\textbf{NeurIPS 2025} (Dataset \& Benchmark)
+
+\item TimeXL: Explainable Multi-modal Time Series Prediction with LLM-in-the-Loop\\
+Yushan Jiang, Wenchao Yu, \underline{Geon Lee}, Dongjin Song, Kijung Shin, Wei Cheng, Yanchi Liu, and Haifeng Chen\\
+\textbf{NeurIPS 2025}
+
+
+\item Attributed Hypergraph Generation with Realistic Interplay Between Structure and Attributes\\
+Jaewan Chun, Seokbum Yoon, Minyoung Choe, \underline{Geon Lee}, and Kijung Shin\\
+\textbf{ICDM 2025}\awardnote{Best Paper Award; Best-Ranked Paper}
+
+\newpage
+
+\item Identifying Group Anchors in Real-World Group Interactions Under Label Scarcity\\
+Fanchen Bu, \underline{Geon Lee}, Minyoung Choe, and Kijung Shin\\
+\textbf{ICDM 2025}
+
+\item A Self-Supervised Mixture-of-Experts Framework for Multi-behavior Recommendation\\
+Kyungho Kim, Sunwoo Kim, \underline{Geon Lee}, and Kijung Shin\\
+\textbf{CIKM 2025}
+
+
+\item SkySearch: Satellite Video Search at Scale\\
+Minyoung Choe*, \underline{Geon Lee*}, Changhun Han*, Suji Kim, Woong Hu, Hyebeen Hwang, Geunseok Park, \\Byeongyeon Kim, Hyesook Lee, Ha-Myung Park, and Kijung Shin\\
+\textbf{KDD 2025} (Applied Data Science)
+
+
+\item KGMEL: Knowledge Graph-Enhanced Multimodal Entity Linking\\
+Juyeon Kim, \underline{Geon Lee}, Taeuk Kim, and Kijung Shin\\
+\textbf{SIGIR 2025} (Short Paper)
+
+\item MARIOH: Multiplicity-Aware Hypergraph Reconstruction\\
+Kyuhan Lee, \underline{Geon Lee}, and Kijung Shin\\
+\textbf{ICDE 2025}
+
+\item Multi-Behavior Recommender Systems: A Survey\\
+Kyungho Kim, Sunwoo Kim, \underline{Geon Lee}, Jinhong Jung, and Kijung Shin\\
+\textbf{PAKDD 2025} (Survey)\awardnote{Best Survey Paper Award}
+
+\item Beyond Neighbors: Distance-Generalized Graphlets for Enhanced Graph Characterization\\
+Yeongho Kim, Yuyeong Kim, \underline{Geon Lee}, and Kijung Shin\\
+\textbf{WWW 2025}
+
+\item TimeCAP: Learning to Contextualize, Augment, and Predict Time Series Events with Large Language Model Agents\\
+\underline{Geon Lee}, Wenchao Yu, Kijung Shin, Wei Cheng, and Haifeng Chen\\
+\textbf{AAAI 2025}
+
+
+
+\item A Survey on Hypergraph Mining: Patterns, Tools, and Generators\\
+\underline{Geon Lee*}, Fanchen Bu*, Tina Eliassi-Rad, and Kijung Shin\\
+\textbf{ACM Computing Surveys} (SCI, 2025)
+
+% 2024
+\item Resource2Box: Learning to Rank Resources in Distributed Search Using Box Embedding\\
+Ulugbek Ergashev, \underline{Geon Lee}, Kijung Shin, Eduard Dragut, and Weiyi Meng\\
+\textbf{ICDM 2024}
+
+\item Revisiting LightGCN: Unexpected Inflexibility, Inconsistency, and A Remedy Towards Improved Recommendation\\
+\underline{Geon Lee}, Kyungho Kim, and Kijung Shin\\
+\textbf{RecSys 2024} (Short Paper)\awardnote{Best Short Paper Candidate}
+
+\item Post-Training Embedding Enhancement for Long-Tail Recommendation\\
+\underline{Geon Lee}, Kyungho Kim, and Kijung Shin\\
+\textbf{CIKM 2024} (Short Paper)
+
+\item Towards Better Utilization of Multiple Views for Bundle Recommendation\\
+Kyungho Kim, Sunwoo Kim, \underline{Geon Lee}, and Kijung Shin\\
+\textbf{CIKM 2024} (Short Paper)
+
+
+\item Representative and Back-in-Time Sampling from Real-World Hypergraphs\\
+Minyoung Choe, Jaemin Yoo, \underline{Geon Lee}, Woonsung Baek, U Kang, and Kijung Shin\\
+\textbf{Transactions on Knowledge Discovery from Data} (SCIE, 2024) \awardnote{Invited Extended Version of the WWW 2022 Paper}
+
+\newpage
+
+\item VilLain: Self-Supervised Learning on Homogeneous Hypergraphs without Features via Virtual Label Propagation\\
+\underline{Geon Lee}, Soo Yong Lee, and Kijung Shin\\
+\textbf{WWW 2024}
+
+% 2023
+
+
+\item Random Walk with Restart on Hypergraphs: Fast Computation and an Application to Anomaly Detection\\
+Jaewan Chun, \underline{Geon Lee}, Kijung Shin, and Jinhong Jung\\
+\textbf{Data Mining and Knowledge Discovery} (SCIE, 2023)
+
+
+\item Hypergraph Motifs and Their Extensions Beyond Binary\\
+\underline{Geon Lee*}, Seokbum Yoon*, Jihoon Ko, Hyunju Kim, and Kijung Shin\\
+\textbf{The VLDB Journal} (SCIE, 2023)\awardnote{KAIST Outstanding Paper Award}
+
+\item Hypercore Decomposition for Non-Fragile Hyperedges: Concepts, Algorithms, Observations, and Applications\\
+Fanchen Bu, \underline{Geon Lee}, and Kijung Shin\\
+\textbf{Data Mining and Knowledge Discovery} (SCIE, 2023)
+
+
+\item Temporal Hypergraph Motifs\\
+\underline{Geon Lee} and Kijung Shin\\
+\textbf{Knowledge and Information Systems} (SCIE, 2023) \awardnote{Invited Extended Version of the ICDM 2022 Paper}
+
+
+
+% 2022
+\item Set2Box: Similarity Preserving Representation Learning for Sets\\
+\underline{Geon Lee}, Chanyoung Park, and Kijung Shin\\
+\textbf{ICDM 2022}
+
+
+
+\item HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams\\
+\underline{Geon Lee}, Minyoung Choe, and Kijung Shin\\
+\textbf{IJCAI 2022}
+
+
+\item MiDaS: Representative Sampling from Real-World Hypergraphs\\
+Minyoung Choe, Jaemin Yoo, \underline{Geon Lee}, Woonsung Baek, U Kang, and Kijung Shin\\
+\textbf{WWW 2022}
+
+
+
+\item Simple Epidemic Models with Segmentation Can Be Better than Complex Ones\\
+\underline{Geon Lee}, Se-eun Yoon, and Kijung Shin\\
+\textbf{PLOS ONE} (SCIE, 2022)\enspace\textcolor{MUTED}{\small\textit{Oral, epiDAMIK @ KDD 2021}}
+
+% 2021
+\item THyMe+: Temporal Hypergraph Motifs and Fast Algorithms for Exact Counting\\
+\underline{Geon Lee} and Kijung Shin\\
+\textbf{ICDM 2021}\awardnote{Best-Ranked Paper}
+
+\item How Do Hyperedges Overlap in Real-World Hypergraphs? --- Patterns, Measures, and Generators\\
+\underline{Geon Lee*}, Minyoung Choe*, and Kijung Shin\\
+\textbf{WWW 2021}
+
+% 2020
+\item Hypergraph Motifs: Concepts, Algorithms, and Discoveries\\
+\underline{Geon Lee}, Jihoon Ko, and Kijung Shin\\
+\textbf{VLDB 2020}
+
+\item MEGA: Multi-View Semi-Supervised Clustering of Hypergraphs\\
+Joyce Jiyoung Whang, Rundong Du, Sangwon Jung, \underline{Geon Lee}, Barry Drake, Qingqing Liu, \\Seonggoo Kang, and Haesun Park\\
+\textbf{VLDB 2020}
+
+
+% 2019
+\item Hyperlink Classification via Structured Graph Embedding\\
+\underline{Geon Lee}, Seonggoo Kang, and Joyce Jiyoung Whang\\
+\textbf{SIGIR 2019} (Short Paper)
+
+\end{enumerate}
+}
+
+\normalsize
+
+\vspace{15pt}
+%──────────────────────────────────────────────────────────
+%  ACADEMIC SERVICE
+%──────────────────────────────────────────────────────────
+\section*{Academic Service}
+
+\textbf{Conference Reviewer}
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,parsep=0em,topsep=0.3em]
+    \item ACM SIGKDD (KDD) \hfill \cvdate{2023 -- 2027}
+    \item AAAI \hfill \cvdate{2024 -- 2027}
+    \item ICLR \hfill \cvdate{2025 -- 2027}
+    \item AISTATS \hfill \cvdate{2025 -- 2027}
+    \item ACM CIKM \hfill \cvdate{2022 -- 2026}
+    \item Learning on Graphs (LoG) \hfill \cvdate{2022 -- 2026}
+    \item NeurIPS \hfill \cvdate{2024 -- 2026}
+    \item The Web Conference (WWW) \hfill \cvdate{2024 -- 2026}
+    \item ACM RecSys \hfill \cvdate{2025 -- 2026}
+    \item ICML \hfill \cvdate{2025 -- 2026}
+    \item ACM MM \hfill \cvdate{2025 -- 2026}
+    \item ACML \hfill \cvdate{2025 -- 2026}
+    \item ARR \hfill \cvdate{2026}
+    \item SDM \hfill \cvdate{2024}
+\end{itemize}
+
+\vspace{0.4em}
+\textbf{Journal Reviewer}
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,parsep=0em,topsep=0.3em]
+    \item IEEE Transactions on Knowledge and Data Engineering (TKDE) \hfill \cvdate{2023 -- 2026}
+    \item Information Sciences \hfill \cvdate{2024 -- 2026}
+    \item IEEE Transactions on Network Science and Engineering (TNSE) \hfill \cvdate{2024 -- 2026}
+    \item ACM Transactions on Information Systems (TOIS) \hfill \cvdate{2025 -- 2026}
+    \item IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) \hfill \cvdate{2025 -- 2026}
+    \item Information Processing \& Management \hfill \cvdate{2025 -- 2026}
+    \item Scientific Reports \hfill \cvdate{2025 -- 2026}
+    \item Machine Learning \hfill \cvdate{2025 -- 2026}
+    \item Neural Networks \hfill \cvdate{2025 -- 2026}
+    \item Patterns \hfill \cvdate{2025 -- 2026}
+    \item Transactions on Machine Learning Research (TMLR) \hfill \cvdate{2026}
+    \item Journal of Machine Learning Research (JMLR) \hfill \cvdate{2026}
+    \item Discover Artificial Intelligence \hfill \cvdate{2026}
+    \item Expert Systems with Applications \hfill \cvdate{2026}
+    \item Journal of Neuroscience Methods \hfill \cvdate{2026}
+    \item Neurocomputing \hfill \cvdate{2026}
+    \item Knowledge-Based Systems \hfill \cvdate{2026}
+    \item Applied Soft Computing Journal \hfill \cvdate{2026}
+    \item Information Fusion \hfill \cvdate{2026}
+    \item IEEE Transactions on Neural Networks and Learning Systems (TNNLS) \hfill \cvdate{2023 -- 2025}
+    \item The VLDB Journal \hfill \cvdate{2023 -- 2025}
+    \item PLOS ONE \hfill \cvdate{2024 -- 2025}
+    \item Data Mining and Knowledge Discovery \hfill \cvdate{2024 -- 2025}
+    \item Big Data Research \hfill \cvdate{2024}
+\end{itemize}
+
+\vspace{0.4em}
+\textbf{Session Chair} 
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,parsep=0em,topsep=0.3em]
+    \item ACM CIKM \hfill \cvdate{2024}
+\end{itemize}
+
+%\vspace{5pt}
+\newpage
+%──────────────────────────────────────────────────────────
+%  AWARDS
+%──────────────────────────────────────────────────────────
+\section*{Awards \& Honors}
+
+\textbf{Gold Reviewer}, ICML 2026 \hfill \cvdate{May 2026}\\
+\textbf{PhD Dissertation Award}, KAIST College of Engineering \hfill \cvdate{Feb.\ 2026}\\
+\textbf{Best Paper Award}, ICDM 2025 \hfill \cvdate{Dec.\ 2025}\\
+\textbf{One of the Best-Ranked Papers}, ICDM 2025 \hfill \cvdate{Dec.\ 2025}\\
+\textbf{Best Survey Paper Award}, PAKDD 2025 \hfill \cvdate{Jun.\ 2025}\\
+\textbf{Outstanding Reviewer}, KDD 2025 \hfill \cvdate{Dec.\ 2024}\\
+\textbf{KAIST Outstanding Paper Award} \hfill \cvdate{Nov.\ 2024}\\
+\textbf{Best Short Paper Candidate}, RecSys 2024 \hfill \cvdate{Oct.\ 2024}\\
+\textbf{One of the Best-Ranked Papers}, ICDM 2021 \hfill \cvdate{Dec.\ 2021}\\
+\textbf{Sungkyunkwan Presidential Award} \hfill \cvdate{Aug.\ 2019}\\
+\textbf{Sungkyunkwan Software Scholarship} (Full tuition, all semesters) \hfill \cvdate{2016 -- 2019}
+
+\vspace{5pt}
+%──────────────────────────────────────────────────────────
+%  TEACHING
+%──────────────────────────────────────────────────────────
+\section*{Teaching}
+
+\textbf{Teaching Assistant}
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,parsep=0em,topsep=0.3em]
+    \item KAIST AI506: Data Mining and Search \hfill \cvdate{Spring 2021, 2023}
+    \item KAIST AI607: Graph Mining and Social Network Analysis \hfill \cvdate{Fall 2020--2023}
+    \item KAIST AI617: Machine Learning for Robotics \hfill \cvdate{Spring 2022}
+    \item SKKU CSE3036: Seminar in Computer Engineering \hfill \cvdate{Fall 2019}
+\end{itemize}
+
+\vspace{0.4em}
+\textbf{Tutorial Presenter}
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,parsep=0em,topsep=0.3em]
+    \item Mining of Real-World Hypergraphs: Patterns, Tools, and Generators \hfill \cvdate{CIKM 2022, ICDM 2022, WWW 2023, KDD 2023}
+    \item Retrieval-Augmented Generation for LLM-Based Recommender Systems \hfill \cvdate{KDD 2026, CIKM 2026}
+\end{itemize}
+
+\vspace{0.4em}
+\textbf{Guest Lecture}
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,parsep=0em,topsep=0.3em]
+    \item Recent Advances in Recommender Systems (KAIST AI506) \hfill \cvdate{May 2026}
+\end{itemize}
+
+\vspace{5pt}
+%──────────────────────────────────────────────────────────
+%  TALKS
+%──────────────────────────────────────────────────────────
+\section*{Talks}
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,parsep=0em,topsep=0.3em]
+    \item Understanding Complex Interaction Systems with AI:\hfill\cvdate{Yonsei University}\\From Human Networks to AI Agent Societies \hfill \cvdate{Mar. 2026}
+\end{itemize}
+
+\end{document}
