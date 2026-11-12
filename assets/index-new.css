@@ -217,6 +217,7 @@ nav.topnav {
 }
 
 #bio,
+#tutorials,
 #publications,
 #teaching { grid-column: 1 / -1; }
 #experience { grid-column: 1; }
@@ -344,6 +345,7 @@ nav.topnav {
 }
 
 .pub-item:has(+ .pub-year-header),
+#tutorials > .pub-item:last-child,
 #publications > .pub-item:last-child {
   border-bottom: 0;
 }
