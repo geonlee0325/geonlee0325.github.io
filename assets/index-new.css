@@ -49,7 +49,7 @@ nav.topnav {
   position: static;
   width: 100%;
   height: 60px;
-  padding: 0 max(24px, calc((100vw - 960px) / 2));
+  padding: 0 max(24px, calc((100vw - 907px) / 2));
   border-bottom: 1px solid var(--rule);
   background: var(--bg);
   backdrop-filter: none;
@@ -104,7 +104,7 @@ nav.topnav {
   display: grid;
   grid-template-columns: 140px minmax(0, 1fr);
   gap: 38px;
-  max-width: 1008px;
+  max-width: 955px;
   min-height: 0;
   margin: 0 auto;
   padding: 48px 24px 42px;
@@ -204,24 +204,23 @@ nav.topnav {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0 56px;
-  max-width: 1008px;
+  max-width: 955px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
 .section {
   min-width: 0;
-  padding: 46px 0;
-  border-top: 1px solid var(--rule);
+  padding: 34px 0;
   animation: none;
 }
 
 #bio,
+#experience,
+#education,
 #tutorials,
 #publications,
 #teaching { grid-column: 1 / -1; }
-#experience { grid-column: 1; }
-#education { grid-column: 2; }
 #service { grid-column: 1; }
 #awards { grid-column: 2; }
 
@@ -271,13 +270,26 @@ nav.topnav {
 
 .timeline {
   display: block;
-  border-top: 1px solid var(--rule);
 }
 
 .timeline-row {
-  display: block;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) auto;
+  gap: 0 18px;
+  align-items: start;
   padding: 12px 0;
   border-bottom: 1px solid var(--rule);
+}
+
+.timeline-logo {
+  box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  margin-top: 4px;
+  padding: 6px;
+  border-radius: 10px;
+  background: #fff;
+  object-fit: contain;
 }
 
 .timeline-institution {
@@ -294,23 +306,34 @@ nav.topnav {
   font-size: 14px;
 }
 
+.timeline-advisor {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .timeline-right {
   display: flex;
-  gap: 6px;
-  margin-top: 4px;
-  padding: 0;
-  text-align: left;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  margin-top: 0;
+  /* Skip the institution line so date/location sit beside role/advisor. */
+  padding: calc(15px * 1.58 + 2px) 0 0;
+  text-align: right;
 }
+
+/* Two-line entries (no advisor) keep date/location level with the first line. */
+.timeline-left:not(:has(.timeline-advisor)) + .timeline-right { padding-top: 0; }
 
 .timeline-date,
 .timeline-loc-right {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   white-space: normal;
 }
 
 .timeline-loc-right { margin: 0; }
-.timeline-loc-right::before { content: "·"; margin-right: 6px; }
 
 .pub-year-header {
   position: static;
@@ -348,6 +371,16 @@ nav.topnav {
 #tutorials > .pub-item:last-child,
 #publications > .pub-item:last-child {
   border-bottom: 0;
+}
+
+/* Last rows end flush so every section has the same gap below its text. */
+.timeline-row:last-child,
+#tutorials > .pub-item:last-child,
+#publications > .pub-item:last-child,
+.service-block:last-child,
+.award-row:last-child,
+.teaching-row:last-child {
+  padding-bottom: 0;
 }
 
 .pub-title {
@@ -520,6 +553,7 @@ nav.topnav {
 }
 
 .teaching-block + .teaching-block { margin-top: 28px; }
+.section-header + .teaching-block { border-top: 0; }
 
 .teaching-sublabel {
   padding: 11px 0 6px;
@@ -543,7 +577,7 @@ nav.topnav {
 
 footer {
   display: flex;
-  max-width: 960px;
+  max-width: 907px;
   margin: 0 auto;
   padding: 32px 0 52px;
   border-top: 1px solid var(--rule);
@@ -682,7 +716,7 @@ footer {
   }
 
   .main { display: block; padding: 0 18px; }
-  .section { padding: 36px 0; }
+  .section { padding: 28px 0; }
   .section-title { font-size: 22px; }
 
   .teaching-row {
@@ -691,6 +725,21 @@ footer {
   }
 
   .teaching-term { text-align: left; }
+
+  .timeline-row { grid-template-columns: 40px minmax(0, 1fr); gap: 0 14px; }
+  .timeline-logo { width: 40px; height: 40px; padding: 5px; border-radius: 8px; }
+  .timeline-right {
+    grid-column: 2;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 6px;
+    margin-top: 4px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .timeline-loc-right::before { content: "·"; margin-right: 6px; }
+
   footer { margin: 0 18px; padding-bottom: 36px; }
 }
 
