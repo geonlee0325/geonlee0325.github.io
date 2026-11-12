@@ -274,22 +274,11 @@ nav.topnav {
 
 .timeline-row {
   display: grid;
-  grid-template-columns: 52px minmax(0, 1fr) auto;
-  gap: 0 18px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
   align-items: start;
   padding: 12px 0;
   border-bottom: 1px solid var(--rule);
-}
-
-.timeline-logo {
-  box-sizing: border-box;
-  width: 52px;
-  height: 52px;
-  margin-top: 4px;
-  padding: 6px;
-  border-radius: 10px;
-  background: #fff;
-  object-fit: contain;
 }
 
 .timeline-institution {
@@ -726,10 +715,8 @@ footer {
 
   .teaching-term { text-align: left; }
 
-  .timeline-row { grid-template-columns: 40px minmax(0, 1fr); gap: 0 14px; }
-  .timeline-logo { width: 40px; height: 40px; padding: 5px; border-radius: 8px; }
+  .timeline-row { display: block; }
   .timeline-right {
-    grid-column: 2;
     flex-direction: row;
     align-items: baseline;
     gap: 6px;
